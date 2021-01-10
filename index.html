@@ -8,12 +8,16 @@
   <link rel="stylesheet" href="/style/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
   <link rel="stylesheet" href="/style/style.css">
 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="/scripts/choices.min.js"></script>
-  <script src="/scripts/main.js"></script>
+  <script defer src="/scripts/main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -170,11 +174,10 @@
 
   <section class="gallery">
     <div class="container">
-      <h2 class="title gallery__title">Галерея</h2>
-
       <div class="gallery__inner">
         <div class="gallery__leftside-container">
           <div class="leftside__up-container">
+            <h2 class="title gallery__title">Галерея</h2>
             <p class="gallery__select-title">Фильтровать по</p>
             <select name="select" id="gallery__select">
               <option disabled selected>Автор</option>
@@ -245,14 +248,648 @@
 
     </div>
   </section>
-<!--
+
   <section class="catalogue">
     <div class="container">
       <div class="catalogue__inner">
         <h2 class="title catalogue__title">Каталог</h2>
-      </div>
-    </div>
-  </section> -->
+        <p class="catalogue__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+
+        <div class="catalogue__tabs-nav">
+          <ul>
+            <li><a class="active" href="#accordion-france" style="background: url(/img/catalogue-tabsnav-france.svg) no-repeat center;"></a></li>
+            <li><a href="#accordion-germany" style="background: url(/img/catalogue-tabsnav-germany.svg) no-repeat center;"></a></li>
+            <li><a href="#accordion-italy" style="background: url(/img/catalogue-tabsnav-italy.svg) no-repeat center;"></a></li>
+            <li><a href="#accordion-russia" style="background: url(/img/catalogue-tabsnav-russia.svg) no-repeat center;"></a></li>
+            <li><a href="#accordion-belgium" style="background: url(/img/catalogue-tabsnav-belgium.svg) no-repeat center;"></a></li>
+          </ul>
+        </div>
+
+        <div class="catalogue__tabs-content">
+          <div class="tabs-content__wrapper faded in active" id="accordion-france">
+            <h3 class="tabs-content__title">C 1400 по 1499 гг. FRANCE</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1500 по 1599 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1700 по 1799 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1800 по 1899 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 2000 г.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+              </li>
+            </ul>
+          </div> <!-- accordion-france -->
+
+          <div class="tabs-content__wrapper faded" id="accordion-germany">
+            <h3 class="tabs-content__title">C 1400 по 1499 гг. GERMANY</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1500 по 1599 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1700 по 1799 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1800 по 1899 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 2000 г.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+              </li>
+            </ul>
+          </div> <!-- accordion-germany -->
+
+          <div class="tabs-content__wrapper faded" id="accordion-italy">
+            <h3 class="tabs-content__title">C 1400 по 1499 гг. italy</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1500 по 1599 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1700 по 1799 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1800 по 1899 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 2000 г.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+              </li>
+            </ul>
+          </div> <!-- accordion-italy -->
+
+          <div class="tabs-content__wrapper faded" id="accordion-russia">
+            <h3 class="tabs-content__title">C 1400 по 1499 гг. russia</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1500 по 1599 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1700 по 1799 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1800 по 1899 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 2000 г.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+              </li>
+            </ul>
+          </div> <!-- accordion-russia -->
+
+          <div class="tabs-content__wrapper faded" id="accordion-belgium">
+            <h3 class="tabs-content__title">C 1400 по 1499 гг. belgium</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1500 по 1599 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1700 по 1799 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+                <a href="#">Бреа, Людовико</a>
+                <a href="#">Джорджоне</a>
+                <a href="#">Парентино, Бернардо</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 1800 по 1899 гг.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Больтраффио, Джованни</a>
+                <a href="#">Бонсиньори, Франческо</a>
+                <a href="#">Боттичини, Рафаэлло</a>
+                <a href="#">Брамантино</a>
+              </li>
+            </ul>
+
+            <h3 class="tabs-content__title">C 2000 г.</h3>
+            <ul class="tabs-content__list">
+              <li class="tabs-content__list-column">
+                <a href="#">Бенедетто ди Биндо</a>
+                <a href="#">Бергоньоне, Амброджо</a>
+              </li>
+            </ul>
+          </div> <!-- accordion-belgium -->
+
+        </div> <!-- catalogue__tabs-content -->
+      </div> <!-- catalogue__inner -->
+    </div> <!-- container -->
+  </section>
 
 </body>
 </html>
