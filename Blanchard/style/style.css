@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url(/fonts/OpenSans-Light.woff);
+  src: url(../fonts/OpenSans-Light.woff);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(/fonts/OpenSans-Light.woff2);
+  src: url(../fonts/OpenSans-Light.woff2);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(/fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(/fonts/OpenSans-Regular.woff2);
+  src: url(../fonts/OpenSans-Regular.woff2);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(/fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(/fonts/OpenSans-Bold.woff2);
+  src: url(../fonts/OpenSans-Bold.woff2);
   font-weight: 700;
   font-style: normal;
 }
@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -87,7 +88,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 body {
   font-family: 'OpenSans';
-  /* overflow-x: hidden; */
 }
 
 .container {
@@ -132,7 +132,7 @@ body {
 }
 
 .header-up__nav-list__item > a {
-  font-size: 18px;
+font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.55px;
@@ -150,7 +150,7 @@ body {
 }
 
 .header-up__enter::before {
-  content: url(/img/icon-enter.svg);
+  content: url(../img/icon-enter.svg);
 
   position: absolute;
   width: 20px;
@@ -219,7 +219,7 @@ body {
 }
 
 .widget__for-icon::before {
-  content: url(/img/icon-downarrow.svg);
+  content: url(../img/icon-downarrow.svg);
 
   position: absolute;
   right: -15px;
@@ -227,7 +227,7 @@ body {
 }
 
 .widget__list-section:hover .widget__for-icon::before {
-  content:url(/img/icon-uparrow.svg);
+  content:url(../img/icon-uparrow.svg);
 
   top: 1px;
 }
@@ -303,7 +303,7 @@ body {
 }
 
 .widget__search::before {
-  content: url(/img/icon-search.svg);
+  content: url(../img/icon-search.svg);
 
   position: absolute;
   left: -30px;
@@ -393,7 +393,7 @@ body {
 .gallery {
   height: 995px;
 
-  background: url(/img/gallery-background-desktop.jpg) no-repeat;
+  background: url(../img/gallery-background-desktop.jpg) no-repeat;
 }
 
 .gallery__title {
@@ -502,11 +502,11 @@ body {
 }
 
 .swiper-button-prev:after {
-  content: url(/img/gallery-leftarrow-desktop.svg);
+  content: url(../img/gallery-leftarrow-desktop.svg);
 }
 
 .swiper-button-next:after {
-  content: url(/img/gallery-rightarrow-desktop.svg);
+  content: url(../img/gallery-rightarrow-desktop.svg);
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
@@ -537,7 +537,7 @@ body {
 }
 
 .choices[data-type*=select-one]::after {
-  content: url(/img/icon-downarrow.svg);
+  content: url(../img/icon-downarrow.svg);
 
   top: 8px;
   right: 20px;
@@ -546,7 +546,7 @@ body {
 }
 
 .choices[data-type*=select-one].is-open::after {
-  content: url(/img/icon-uparrow.svg);
+  content: url(../img/icon-uparrow.svg);
 
   top: 15px;
   right: 20px;
@@ -738,20 +738,20 @@ body {
 }
 
 .ui-state-active .ui-icon, .ui-button:active .ui-icon {
-  background: url(/img/icon-accordion-uparrow.svg);
+  background: url(../img/icon-accordion-uparrow.svg);
 }
 
 .ui-icon, .ui-widget-content .ui-icon {
 
-  background: url(/img/icon-accordion-downarrow.svg);
+  background: url(../img/icon-accordion-downarrow.svg);
 }
 
 .ui-state-active .ui-icon, .ui-button:active .ui-icon {
-  background: url(/img/icon-accordion-uparrow.svg) !important;
+  background: url(../img/icon-accordion-uparrow.svg) !important;
 }
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
-  background: url(/img/icon-accordion-downarrow.svg);
+  background: url(../img/icon-accordion-downarrow.svg);
 }
 
 .ui-accordion-header-collapsed {
