@@ -78,11 +78,7 @@ $('.catalogue__tabs-nav a').on('click', function(e) {
   }, 200);
 })
 
-$('.ui-icon').hover(
-  function () {
-      $(this).parent().removeClass('ui-state-hover');
-  }
-);
+
 
 
 
