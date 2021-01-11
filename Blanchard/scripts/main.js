@@ -78,7 +78,13 @@ $('.catalogue__tabs-nav a').on('click', function(e) {
   }, 200);
 })
 
+// $('#girlandao').on('click', function(e) {
+//   e.preventDefault();
 
+//   $('.domenico-girlandao').addClass('active');
+// })
+
+// брать из data-path значение, искать его в bio
 
 
 

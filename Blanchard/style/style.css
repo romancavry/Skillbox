@@ -105,7 +105,7 @@ body {
 }
 
 .active {
-  display: block;
+  display: block !important;
 }
 
 /* Header-up */
@@ -649,10 +649,42 @@ font-size: 18px;
   pointer-events: none;
 }
 
-.catalogue__menu {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 86px;
+.tabs-content__bio {
+  margin-right: 50px;
+  width: 750px;
+  height: 100%;
+}
+
+.bio__wrapper {
+  display: none;
+}
+
+.bio__img {
+  margin-bottom: 26px;
+}
+
+.bio__name {
+  margin-bottom: 11px;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.bio__date {
+  margin-bottom: 5px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: #cacaca;
+}
+
+.bio__text {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 .tabs-content__title {
@@ -663,13 +695,13 @@ font-size: 18px;
 }
 
 .catalogue__tabs-content {
-  width: 800px;
-
-  /* float: right; */
+  display: flex;
+  margin-bottom: 86px;
 }
 
 .tabs-content__wrapper {
   display: none;
+  width: 800px;
 }
 
 .tabs-content__wrapper.active {
@@ -759,10 +791,14 @@ font-size: 18px;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-  border-bottom: 1px solid #CACACA;;
+  border-bottom: 1px solid #CACACA;
   border-top: none;
   border-right: none;
   border-left: none;
+}
+
+.ui-state-default:first-child, .ui-widget-content .ui-state-default:first-child, .ui-widget-header .ui-state-default:first-child, .ui-button:first-child, html .ui-button.ui-state-disabled:hover:first-child, html .ui-button.ui-state-disabled:active:first-child {
+  border-top: 1px solid #CACACA;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -798,7 +834,7 @@ font-size: 18px;
   position: relative;
 
   padding: 350px 30px 50px 50px;
-  max-width: 500px;
+  width: 500px;
   height: 700px;
   border: 1px solid #cacaca;
 }
@@ -828,6 +864,7 @@ font-size: 18px;
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
+  letter-spacing: -1px;
 }
 
 .events__item-suptitle {
@@ -850,4 +887,8 @@ font-size: 18px;
   font-weight: 400;
 
   color:#9D5CD0 !important;
+}
+
+.events__btn {
+  
 }
