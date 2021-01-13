@@ -86,7 +86,10 @@ $('.catalogue__tabs-nav a').on('click', function(e) {
 
 // брать из data-path значение, искать его в bio
 
-
+$('.events__btn').on('click', function() {
+  $('.events__btn').addClass('not-active');
+  $('.events__item').removeClass('not-active');
+})
 
 
 
