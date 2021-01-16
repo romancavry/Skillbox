@@ -12,7 +12,7 @@ const choices = new Choices(element, {
 
 // Gallery swiper
 var mySwiper = new Swiper('.gallery__rightside-container', {
-  loop: false,
+  loop: true,
   nested: true,
 
   pagination: {
@@ -91,5 +91,31 @@ $('.events__btn').on('click', function() {
   $('.events__item').removeClass('not-active');
 })
 
+// Gallery swiper
+var mySwiper = new Swiper('.books__rightside-container', {
+  loop: true,
+  nested: true,
+
+  pagination: {
+    el: '.books__swiper-pagination',
+    type: 'fraction',
+  },
+
+  navigation: {
+    nextEl: '.books__swiper-button-next',
+    prevEl: '.books__swiper-button-prev',
+  },
+})
+
+// Partners swiper
+var mySwiper = new Swiper('.partners__swiper-container', {
+  loop: true,
+  nested: true,
+
+  navigation: {
+    nextEl: '.partners__swiper-button-next',
+    prevEl: '.partners__swiper-button-prev',
+  },
+})
 
 
