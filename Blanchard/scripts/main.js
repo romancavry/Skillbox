@@ -91,7 +91,15 @@ $('.events__btn').on('click', function() {
   $('.events__item').removeClass('not-active');
 })
 
-// Gallery swiper
+$('.checkbox-label__input').click(function(){
+  if($(this).is(':checked')){
+    $(this).parent().addClass('purple-color');
+  }else{
+    $(this).parent().removeClass('purple-color');
+  }
+});
+
+// Books swiper
 var mySwiper = new Swiper('.books__rightside-container', {
   loop: true,
   nested: true,
@@ -111,6 +119,7 @@ var mySwiper = new Swiper('.books__rightside-container', {
 var mySwiper = new Swiper('.partners__swiper-container', {
   loop: true,
   nested: true,
+  spaceBetween: 100,
 
   navigation: {
     nextEl: '.partners__swiper-button-next',
@@ -118,4 +127,30 @@ var mySwiper = new Swiper('.partners__swiper-container', {
   },
 })
 
+const authorEl = document.querySelectorAll('.js-catalog-author-link');
+const authorDesc = document.querySelectorAll('.accordion-card');
 
+authorEl.forEach((authorBtn) => {
+  authorBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const authorPath = e.currentTarget.dataset.path;
+    const cardTarget = document.querySelector(`[data-target=${authorPath}]`);
+
+    authorEl.forEach((el) => {
+      if (el.classList.contains('active')) {
+        el.classList.remove('active')
+      }
+    });
+
+    authorDesc.forEach((card) => {
+      card.classList.remove('card-active');
+    });
+
+    authorBtn.classList.add('active');
+    // cardTarget.classList.add('active')
+
+    if (authorBtn.classList.contains('active')) {
+      cardTarget.classList.add('card-active');
+    }
+  });
+});

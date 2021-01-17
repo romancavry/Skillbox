@@ -268,7 +268,14 @@
 
           <div class="catalogue__tabs-content">
             <div class="tabs-content__bio">
-              <div class="bio__wrapper domenico-girlandao">
+              <div class="bio__wrapper accordion-card" data-target="author-1">
+                <img src="./img/catalogue-bio-girlandao.jpg" alt="Доменико Гирландайо" class="bio__img">
+                <h3 class="bio__name">Доменико Гирландайо</h3>
+                <p class="bio__date">2 июня 1448 — 11 января 1494.</p>
+                <p class="bio__text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+              </div>
+
+              <div class="bio__wrapper accordion-card" data-target="author-2">
                 <img src="./img/catalogue-bio-girlandao.jpg" alt="Доменико Гирландайо" class="bio__img">
                 <h3 class="bio__name">Доменико Гирландайо</h3>
                 <p class="bio__date">2 июня 1448 — 11 января 1494.</p>
@@ -280,7 +287,7 @@
               <h3 class="tabs-content__title">C 1400 по 1499 гг. FRANCE</h3>
               <ul class="tabs-content__list">
                 <li class="tabs-content__list-column">
-                  <a href="#" data-path="girlandao">Доменико Гирландайо</a>
+                  <a href="#" class="js-catalog-author-link" data-target="author-1">Доменико Гирландайо</a>
                   <a href="#">Бергоньоне, Амброджо</a>
                   <a href="#">Больтраффио, Джованни</a>
                   <a href="#">Бонсиньори, Франческо</a>
@@ -1384,7 +1391,7 @@
     </div> <!-- container -->
   </section>
 
-  <section class="contacts">
+  <!-- <section class="contacts">
     <div class="container">
       <h2 class="title contacts__title">Контакты</h2>
       <div class="contacts__inner">
@@ -1400,13 +1407,34 @@
             <button class="form__btn">Заказать</button>
           </form>
           <h4 class="form__subtitle">Связаться в один клик</h4>
-        </div> <!-- rightside-container -->
+        </div>
 
         <div class="contacts__leftside-container">
 
-        </div> <!-- leftside-container -->
-      </div> <!-- contacts-inner -->
-    </div> <!-- container -->
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="contacts">
+    <div class="contacts__inner">
+      <div class="container">
+        <h2 class="title contacts__title">Контакты</h2>
+        <address class="contacts__address">
+          <h3 class="address__title">Шоурум №4</h3>
+          <p class="address__subtitle">Леонтьевский переулок, дом 5, строение 1</p>
+        </address>
+        <h4 class="form__title">Заказать обратный звонок</h4>
+        <form action="#" class="contacts__form">
+          <input type="text" required name="Имя" placeholder="Имя*">
+          <input type="number" required name="Номер телефона" placeholder="Телефон*">
+          <button class="form__btn">Заказать</button>
+        </form>
+        <h4 class="form__subtitle">Связаться в один клик</h4>
+      </div>
+    </div>
+
+    <div class="contacts__map-container"></div>
   </section>
 </body>
 </html>

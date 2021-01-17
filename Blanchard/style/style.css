@@ -138,7 +138,8 @@ body {
 }
 
 .purple-color {
-  color: #9D5CD0;
+  color: #9D5CD0 !important;
+  transition: color .3s ease-in-out;
 }
 
 :root {
@@ -696,6 +697,28 @@ font-size: 18px;
   display: none;
 }
 
+.accordion-card.card-active {
+  position: static;
+  opacity: 1;
+  width: auto;
+  height: auto;
+  z-index: auto;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: opacity .3s linear,
+  -webkit-transform .25s linear;
+  transition: opacity .3s linear,
+  -webkit-transform .25s linear;
+  -o-transition: transform .25s linear,
+  opacity .3s linear;
+  transition: transform .25s linear,
+  opacity .3s linear;
+  transition: transform .25s linear,
+  opacity .3s linear,
+  -webkit-transform .25s linear;
+}
+
 .bio__img {
   margin-bottom: 26px;
 }
@@ -994,6 +1017,7 @@ font-size: 18px;
   font-weight: 400;
 
   color: #fff;
+  transition: color .3s ease-in-out;
 
   cursor: pointer;
 }
