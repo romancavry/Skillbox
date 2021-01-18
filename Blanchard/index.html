@@ -17,6 +17,7 @@
   <script src="scripts/swiper-bundle.js"></script>
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/choices.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script defer src="scripts/main.js"></script>
 </head>
 <body>
@@ -1391,50 +1392,32 @@
     </div> <!-- container -->
   </section>
 
-  <!-- <section class="contacts">
-    <div class="container">
-      <h2 class="title contacts__title">Контакты</h2>
-      <div class="contacts__inner">
-        <div class="contacts__rightside-container">
-          <address class="contacts__address">
-            <h3 class="address__title">Шоурум №4</h3>
-            <p class="address__subtitle">Леонтьевский переулок, дом 5, строение 1</p>
-          </address>
-          <h4 class="form__title">Заказать обратный звонок</h4>
-          <form action="#" class="contacts__form">
-            <input type="text" required name="Имя" placeholder="Имя*">
-            <input type="number" required name="Номер телефона" placeholder="Телефон*">
-            <button class="form__btn">Заказать</button>
-          </form>
-          <h4 class="form__subtitle">Связаться в один клик</h4>
-        </div>
-
-        <div class="contacts__leftside-container">
-
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <section class="contacts">
-    <div class="contacts__inner">
-      <div class="container">
-        <h2 class="title contacts__title">Контакты</h2>
+    <div class="container contacts__title-container">
+      <h2 class="title contacts__title">Контакты</h2>
+    </div>
+    <div class="contact__inner">
+      <div class="contacts__leftside-container">
         <address class="contacts__address">
           <h3 class="address__title">Шоурум №4</h3>
           <p class="address__subtitle">Леонтьевский переулок, дом 5, строение 1</p>
         </address>
         <h4 class="form__title">Заказать обратный звонок</h4>
-        <form action="#" class="contacts__form">
-          <input type="text" required name="Имя" placeholder="Имя*">
-          <input type="number" required name="Номер телефона" placeholder="Телефон*">
-          <button class="form__btn">Заказать</button>
+        <form action="#" class="contacts-form">
+          <input style="display: block" class="contacts-form__input" type="text" required name="Имя" placeholder="Имя*">
+          <input class="contacts-form__input" type="number" required name="Номер телефона" placeholder="Телефон*">
+          <button class="contacts-form__btn">Заказать</button>
         </form>
-        <h4 class="form__subtitle">Связаться в один клик</h4>
-      </div>
-    </div>
+        <h4 class="form__title">Связаться в один клик</h4>
+        <div class="social-media__container">
+          <a href="#"><span style="background-image: url(./img/icon-whatsup.svg); margin-right: 17px"></span></a>
+          <a href="#"><span style="background-image: url(./img/icon-tg.svg);"></span></a>
+        </div>
+      </div><!-- leftside-container -->
 
-    <div class="contacts__map-container"></div>
+      <div id="map" class="contacts__rightside-container"></div>
+
+    </div> <!-- contacts-inner -->
   </section>
 </body>
 </html>

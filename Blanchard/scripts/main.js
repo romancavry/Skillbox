@@ -78,14 +78,6 @@ $('.catalogue__tabs-nav a').on('click', function(e) {
   }, 200);
 })
 
-// $('#girlandao').on('click', function(e) {
-//   e.preventDefault();
-
-//   $('.domenico-girlandao').addClass('active');
-// })
-
-// брать из data-path значение, искать его в bio
-
 $('.events__btn').on('click', function() {
   $('.events__btn').addClass('not-active');
   $('.events__item').removeClass('not-active');
@@ -154,3 +146,11 @@ authorEl.forEach((authorBtn) => {
     }
   });
 });
+
+ymaps.ready(init);
+function init(){
+    var myMap = new ymaps.Map("map", {
+        center: [55.758332997776776,37.60265127448263],
+        zoom: 15
+    });
+}
