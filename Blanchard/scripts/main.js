@@ -149,8 +149,17 @@ authorEl.forEach((authorBtn) => {
 
 ymaps.ready(init);
 function init(){
-    var myMap = new ymaps.Map("map", {
-        center: [55.758332997776776,37.60265127448263],
-        zoom: 15
-    });
+  var myMap = new ymaps.Map("map", {
+      center: [55.758332997776776,37.60265127448263],
+      zoom: 15
+  });
+
+  var myPlacemark = new ymaps.Placemark([55.758332997776776,37.60265127448263], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: './img/icon-formaps.svg',
+    iconImageSize: [20, 20],
+    iconImageOffset: [-3, -42]
+  });
+
+  myMap.geoObjects.add(myPlacemark);
 }
