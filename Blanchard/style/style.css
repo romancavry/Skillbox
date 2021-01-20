@@ -535,7 +535,7 @@ font-size: 18px;
   color: #fff;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.gallery__swiper-button-next, .gallery__swiper-button-prev {
   top: 13%;
 }
 
@@ -1303,23 +1303,60 @@ font-size: 18px;
 
 .partners__list {
   display: flex;
+  height: 150px;
 }
 
-.partners__list > li {
+.partners__list-item {
   display: flex;
   align-items: center;
-  background-size: contain;
+  width: 450px;
+
   background-repeat: no-repeat;
+  background-position: center;
+  transition: background .3s ease-in-out;
+
+  cursor: pointer;
 }
 
-.partners__list > li:hover {
-  display: flex;
-  align-items: center;
-}
+.partners__list-item:not(:last-child) {margin-right: 50px;}
 
-.partners__list > li:not(:last-child) {
-  margin-right: 50px;
-}
+.partners__list-item:hover {transition: background .3s ease-in-out;}
+
+#p__l1 {background-image: url(../img/partners-swiper1\(not-hover\).jpg);}
+
+#p__l1:hover {background-image: url(../img/partners-swiper1\(hover\).jpg);}
+
+.p__l2 {background-image: url(../img/partners-swiper2\(not-hover\).jpg);}
+
+.p__l2:hover {background-image: url(../img/partners-swiper2\(hover\).jpg);}
+
+.p__l3 {background-image: url(../img/partners-swiper3\(not-hover\).jpg);}
+
+.p__l3:hover {background-image: url(../img/partners-swiper3\(hover\).jpg);}
+
+.p__l4 {background-image: url(../img/partners-swiper4\(not-hover\).jpg);}
+
+.p__l4:hover {background-image: url(../img/partners-swiper4\(hover\).jpg);}
+
+.p__l5 {background-image: url(../img/partners-swiper5\(not-hover\).jpg);}
+
+.p__l5:hover {background-image: url(../img/partners-swiper5\(hover\).jpg);}
+
+.p__l6 {background-image: url(../img/partners-swiper6\(not-hover\).jpg);}
+
+.p__l6:hover {background-image: url(../img/partners-swiper6\(hover\).jpg);}
+
+.p__l7 {background-image: url(../img/partners-swiper7\(not-hover\).jpg);}
+
+.p__l7:hover {background-image: url(../img/partners-swiper7\(hover\).jpg);}
+
+.p__l8 {background-image: url(../img/partners-swiper8\(not-hover\).jpg);}
+
+.p__l8:hover {background-image: url(../img/partners-swiper8\(hover\).jpg);}
+
+.p__l9 {background-image: url(../img/partners-swiper9\(not-hover\).jpg);}
+
+.p__l9:hover {background-image: url(../img/partners-swiper9\(hover\).jpg);}
 
 .partners__swiper-button-prev {
   top: 50%;
