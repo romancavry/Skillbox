@@ -144,6 +144,12 @@ body {
 
 :root {
   --mainPurple: #9D5CD0;
+  --hoverPurple: #C283F3;
+}
+
+a:hover {
+  color: var(--hoverPurple);
+  transition: color .3s ease-in-out;
 }
 
 /* Header-up */
@@ -238,7 +244,14 @@ font-size: 18px;
   letter-spacing: 0.5px;
 
   color: #fff;
+  transition: color .3s ease-in-out;
+
   cursor: pointer;
+}
+
+.widget-list__title:hover {
+  color: var(--hoverPurple);
+  transition: color .3s ease-in-out;
 }
 
 .widget-list__title::after {
@@ -264,9 +277,20 @@ font-size: 18px;
   top: 0;
 }
 
-.widget__list-section:hover .widget__for-icon::before {
-  content:url(../img/icon-uparrow.svg);
+/*
+.widget__for-icon:hover .widget__for-icon::before {
+  color: var(--hoverPurple);
+  content: url(../img/icon-downarrow-hover.svg);
+} */
 
+/* .widget__for-icon:hover::before{
+  content: url(../img/icon-downarrow-hover.svg);
+} */
+/* а что если через keyframes сделать переход от белого до тёмно фиолетового */
+
+.widget__list-section:hover .widget__for-icon::before {
+  content: url(../img/icon-uparrow.svg);
+  color: var(--hoverPurple);
   top: 1px;
 }
 
