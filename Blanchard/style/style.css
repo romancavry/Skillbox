@@ -145,12 +145,13 @@ body {
 :root {
   --mainPurple: #9D5CD0;
   --hoverPurple: #C283F3;
+  --darkPurple: #7943A4;
 }
 
-a:hover {
+/* a:hover {
   color: var(--hoverPurple);
   transition: color .3s ease-in-out;
-}
+} */
 
 /* Header-up */
 .header {
@@ -176,10 +177,22 @@ a:hover {
 }
 
 .header-up__nav-list__item > a {
-font-size: 18px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.55px;
+
+  transition: color .3s ease-in-out;
+}
+
+.header-up__nav-list__item > a:hover {
+  color: var(--hoverPurple);
+  transition: color .3s ease-in-out;
+}
+
+.header-up__nav-list__item > a:active {
+  color: var(--darkPurple);
+  transition: color .3s ease-in-out;
 }
 
 .header-up__nav-list__item:not(:last-child) {
@@ -191,7 +204,20 @@ font-size: 18px;
 
   font-size: 18px;
   font-weight: 400;
+
+  transition: color .3s ease-in-out;
 }
+
+.header-up__enter:hover {
+  color: var(--hoverPurple);
+  transition: color .3s ease-in-out;
+}
+
+.icon-enter-svg:hover {
+  fill: var(--hoverPurple);
+}
+
+
 
 .header-up__enter::before {
   content: url(../img/icon-enter.svg);
