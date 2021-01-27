@@ -134,7 +134,7 @@ body {
 }
 
 .not-active {
-  display: none;
+  display: none !important;
 }
 
 .purple-color {
@@ -246,7 +246,7 @@ body {
 }
 
 .widget-list__wrapper {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 70px;
 
@@ -291,9 +291,9 @@ body {
   height: 60px;
 }
 
-.widget__list-section:hover .widget-list__wrapper {
+/* .widget__list-section:hover .widget-list__wrapper {
   display: block;
-}
+} */
 
 .widget__for-icon::before {
   content: url(../img/icon-downarrow.svg);

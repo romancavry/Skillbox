@@ -1,3 +1,17 @@
+// Menu
+document.querySelectorAll('.widget-list__title').forEach(function (openTab) {
+  openTab.addEventListener('click', function(event) {
+    const path = event.currentTarget.dataset.target;
+    console.log(event)
+    console.log(path)
+    console.log(document.querySelector(`[data-target="${path}"]`));
+    document.querySelectorAll('.widget-list__wrapper').forEach(function (activateTab) {
+      activateTab.classList.toggle('not-active')
+    })
+    document.querySelector(`[data-target="${path}"]`).classList.add('active');
+  })
+})
+
 // Hero swiper
 var mySwiper = new Swiper('.swiper-container', {
   loop: true,
