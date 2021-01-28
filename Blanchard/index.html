@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style/swiper-bundle.css">
   <link rel="stylesheet" href="style/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/jquery-ui.css">
-  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <link rel="stylesheet" href="style/style.css">
 
   <script src="scripts/jquery.js"></script>
@@ -22,110 +21,111 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header-up">
-        <a href="#" class="header-up__logo"><img src="img/header-logo-desktop.svg" alt="Blanchard"></a>
-
-        <nav class="header-up__nav">
-          <ul class="header-up__nav-list">
-            <li class="header-up__nav-list__item"><a href="#">О нас</a></li>
-            <li class="header-up__nav-list__item"><a href="#">Галерея</a></li>
-            <li class="header-up__nav-list__item"><a href="#">Каталог</a></li>
-            <li class="header-up__nav-list__item"><a href="#">События</a></li>
-            <li class="header-up__nav-list__item"><a href="#">Издания</a></li>
-            <li class="header-up__nav-list__item"><a href="#">Проекты</a></li>
-            <li class="header-up__nav-list__item"><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-
-        <a href="#" class="header-up__enter">Войти</a>
+    <div class="header__wrapper">
+      <div class="container">
+        <div class="header-up">
+          <a href="#" class="header-logo"><img src="img/header-logo-desktop.svg" alt="Blanchard"></a>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item"><a class="header-nav__link" href="#about">О нас</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#gallery">Галерея</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#catalogue">Каталог</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#events">События</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#books">Издания</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#projects">Проекты</a></li>
+              <li class="header-nav__item"><a class="header-nav__link" href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="header-enter">Войти</a>
+        </div>
       </div>
     </div>
-  </header>
 
-  <section class="widget">
+    <div class="widget">
       <div class="container">
-        <ul class="widget__inner">
-          <li class="widget__list-section">
-            <h3 class="widget-list__title widget__for-icon">Реализм</h3>
-            <div dataset="realizm" class="widget-list__wrapper not-active" data-target="realizm">
-              <ul class="widget-list" aria-label="Выбор направления">
-                <li style="background-image: url(img/widget-background-TINTORETTO.jpg);"><a href="#">Тинторетто</a></li>
-                <li style="background-image: url(img/widget-background-FRIDRIH.jpg);"><a href="#">Фридрих</a></li>
-                <li style="background-image: url(img/widget-background-LEONARDO.jpg);"><a href="#">Леонардо</a></li>
-                <li style="background-image: url(img/widget-background-VEROKKO.jpg);"><a href="#">Верроккьо</a></li>
-                <li style="background-image: url(img/widget-background-TINTORETTO.jpg);"><a href="#">Тинторетто</a></li>
-                <li style="background-image: url(img/widget-background-FRIDRIH.jpg);"><a href="#">Фридрих</a></li>
-                <li style="background-image: url(img/widget-background-LEONARDO.jpg);"><a href="#">Леонардо</a></li>
-                <li style="background-image: url(img/widget-background-VEROKKO.jpg);"><a href="#">Верроккьо</a></li>
-              </ul>
-            </div>
-          </li>
+        <div class="widget__inner">
+          <ul class="widget__list">
+            <li class="widget__list-section">
+              <button class="widget-list__title widget__for-icon">Реализм</button>
+              <div class="widget-list__wrapper not-active" data-target="realizm">
+                <ul class="widget-list" aria-label="Выбор направления">
+                  <li style="background-image: url(img/widget-background-TINTORETTO.jpg);"><a href="#">Тинторетто</a></li>
+                  <li style="background-image: url(img/widget-background-FRIDRIH.jpg);"><a href="#">Фридрих</a></li>
+                  <li style="background-image: url(img/widget-background-LEONARDO.jpg);"><a href="#">Леонардо</a></li>
+                  <li style="background-image: url(img/widget-background-VEROKKO.jpg);"><a href="#">Верроккьо</a></li>
+                  <li style="background-image: url(img/widget-background-TINTORETTO.jpg);"><a href="#">Тинторетто</a></li>
+                  <li style="background-image: url(img/widget-background-FRIDRIH.jpg);"><a href="#">Фридрих</a></li>
+                  <li style="background-image: url(img/widget-background-LEONARDO.jpg);"><a href="#">Леонардо</a></li>
+                  <li style="background-image: url(img/widget-background-VEROKKO.jpg);"><a href="#">Верроккьо</a></li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="widget__list-section">
-            <h3 class="widget-list__title widget__for-icon">Импрессионизм</h3>
-            <div dataset="impressionizm" class="widget-list__wrapper not-active" data-target="impressionizm">
-              <ul class="widget-list" aria-label="Выбор направления">
-                <li style="background-image: url(img/widget-background-MONE.jpg);"><a href="#">Моне</a></li>
-                <li style="background-image: url(img/widget-background-SISLEY.jpg);"><a href="#">Сислей</a></li>
-                <li style="background-image: url(img/widget-background-MANE.jpg);"><a href="#">Мане</a></li>
-                <li style="background-image: url(img/widget-background-RENUAR.jpg);"><a href="#">Ренуар</a></li>
-                <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
-                <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
-                <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
-                <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
-              </ul>
-            </div>
-          </li>
+            <li class="widget__list-section">
+              <button class="widget-list__title widget__for-icon">Импрессионизм</button>
+              <div class="widget-list__wrapper not-active" data-target="impressionizm">
+                <ul class="widget-list" aria-label="Выбор направления">
+                  <li style="background-image: url(img/widget-background-MONE.jpg);"><a href="#">Моне</a></li>
+                  <li style="background-image: url(img/widget-background-SISLEY.jpg);"><a href="#">Сислей</a></li>
+                  <li style="background-image: url(img/widget-background-MANE.jpg);"><a href="#">Мане</a></li>
+                  <li style="background-image: url(img/widget-background-RENUAR.jpg);"><a href="#">Ренуар</a></li>
+                  <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
+                  <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
+                  <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
+                  <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="widget__list-section">
-            <h3 class="widget-list__title widget__for-icon">Постимпрессионизм</h3>
-            <div dataset="post-impressionizm" class="widget-list__wrapper not-active" data-target="post-impressionizm">
-              <ul class="widget-list" aria-label="Выбор направления">
-                <li style="background-image: url(img/widget-background-VANGOG.jpg);"><a href="#">Ван Гог</a></li>
-                <li style="background-image: url(img/widget-background-SEZANN.jpg);"><a href="#">Сезанн</a></li>
-                <li style="background-image: url(img/widget-background-GOGEN.jpg);"><a href="#">Гоген</a></li>
-                <li style="background-image: url(img/widget-background-SERA.jpg);"><a href="#">Сёра</a></li>
-              </ul>
-            </div>
-          </li>
+            <li class="widget__list-section">
+              <button class="widget-list__title widget__for-icon">Постимпрессионизм</button>
+              <div class="widget-list__wrapper not-active" data-target="post-impressionizm">
+                <ul class="widget-list" aria-label="Выбор направления">
+                  <li style="background-image: url(img/widget-background-VANGOG.jpg);"><a href="#">Ван Гог</a></li>
+                  <li style="background-image: url(img/widget-background-SEZANN.jpg);"><a href="#">Сезанн</a></li>
+                  <li style="background-image: url(img/widget-background-GOGEN.jpg);"><a href="#">Гоген</a></li>
+                  <li style="background-image: url(img/widget-background-SERA.jpg);"><a href="#">Сёра</a></li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="widget__list-section">
-            <h3 class="widget-list__title widget__for-icon">Авангард</h3>
-            <div dataset="avangard" class="widget-list__wrapper not-active" data-target="avangard">
-              <ul class="widget-list" aria-label="Выбор направления">
-                <li style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><a href="#">Кандинский</a></li>
-                <li style="background-image: url(img/widget-background-MARINETTI.jpg);"><a href="#">Маринетти</a></li>
-                <li style="background-image: url(img/widget-background-MALEVICH.jpg);"><a href="#">Малевич</a></li>
-                <li style="background-image: url(img/widget-background-PICASSO.jpg);"><a href="#">Пикассо</a></li>
-                <li style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><a href="#">Кандинский</a></li>
-                <li style="background-image: url(img/widget-background-MARINETTI.jpg);"><a href="#">Маринетти</a></li>
-                <li style="background-image: url(img/widget-background-MALEVICH.jpg);"><a href="#">Малевич</a></li>
-                <li style="background-image: url(img/widget-background-PICASSO.jpg);"><a href="#">Пикассо</a></li>
-              </ul>
-            </div>
-          </li>
+            <li class="widget__list-section">
+              <button class="widget-list__title widget__for-icon">Авангард</button>
+              <div class="widget-list__wrapper not-active" data-target="avangard">
+                <ul class="widget-list" aria-label="Выбор направления">
+                  <li style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><a href="#">Кандинский</a></li>
+                  <li style="background-image: url(img/widget-background-MARINETTI.jpg);"><a href="#">Маринетти</a></li>
+                  <li style="background-image: url(img/widget-background-MALEVICH.jpg);"><a href="#">Малевич</a></li>
+                  <li style="background-image: url(img/widget-background-PICASSO.jpg);"><a href="#">Пикассо</a></li>
+                  <li style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><a href="#">Кандинский</a></li>
+                  <li style="background-image: url(img/widget-background-MARINETTI.jpg);"><a href="#">Маринетти</a></li>
+                  <li style="background-image: url(img/widget-background-MALEVICH.jpg);"><a href="#">Малевич</a></li>
+                  <li style="background-image: url(img/widget-background-PICASSO.jpg);"><a href="#">Пикассо</a></li>
+                </ul>
+              </div>
+            </li>
 
-          <li class="widget__list-section">
-            <h3 class="widget-list__title widget__for-icon">Футуризм</h3>
-            <div dataset="futurizm" class="widget-list__wrapper not-active" data-target="futurizm">
-              <ul class="widget-list" aria-label="Выбор направления">
-                <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
-                <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
-                <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
-                <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
-                <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
-                <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
-                <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
-                <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
-              </ul>
-            </div>
-          </li>
-
-          <div class="widget__search"><input type="search" placeholder="Поиск по сайту"></div>
-        </ul> <!-- widger__inner -->
-      </div> <!-- container -->
-  </section> <!-- widget -->
+            <li class="widget__list-section">
+              <button class="widget-list__title widget__for-icon">Футуризм</button>
+              <div class="widget-list__wrapper not-active" data-target="futurizm">
+                <ul class="widget-list" aria-label="Выбор направления">
+                  <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
+                  <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
+                  <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
+                  <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
+                  <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
+                  <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
+                  <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
+                  <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul> <!-- widger__list -->
+          <div class="widget__search"><div class="w__s-i-b"></div><input class="widget__search-input" type="search" placeholder="Поиск по сайту"><div class="w__s-i-a"></div></div>
+        </div>
+    </div> <!-- widget -->
+    </div>
+  </header>
 
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -165,7 +165,7 @@
     </div>
   </div>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
        <h2 class="title about__title">О нас</h2>
        <p class="about__suptitle">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
@@ -173,7 +173,7 @@
     </div>
   </section>
 
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <div class="container">
       <div class="gallery__inner">
         <div class="gallery__leftside-container">
@@ -194,48 +194,48 @@
         <div class="gallery__rightside-container swiper-container">
           <div class="gallery__swiper-wrapper swiper-wrapper">
             <ul class="gallery__swiper-list swiper-slide">
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper1-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper2-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper3-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper4-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper5-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper6-desktop.jpg);"></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper1-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper2-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper3-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper4-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper5-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper6-desktop.jpg);"><div class="g__s-i-b"></div></li>
             </ul>
 
             <ul class="gallery__swiper-list swiper-slide">
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper7-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper8-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper9-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper10-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper11-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper12-desktop.jpg);"></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper7-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper8-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper9-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper10-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper11-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper12-desktop.jpg);"><div class="g__s-i-b"></div></li>
             </ul>
 
             <ul class="gallery__swiper-list swiper-slide">
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper13-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper14-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper15-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper16-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper17-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper18-desktop.jpg);"></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper13-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper14-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper15-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper16-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper17-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper18-desktop.jpg);"><div class="g__s-i-b"></div></li>
             </ul>
 
             <ul class="gallery__swiper-list swiper-slide">
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper19-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper20-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper21-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper22-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper23-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper24-desktop.jpg);"></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper19-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper20-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper21-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper22-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper23-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper24-desktop.jpg);"><div class="g__s-i-b"></div></li>
             </ul>
 
             <ul class="gallery__swiper-list swiper-slide">
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper25-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper26-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper27-desktop.jpg); margin-bottom: 50px;"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper28-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper29-desktop.jpg);"></li>
-              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper30-desktop.jpg);"></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper25-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper26-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper27-desktop.jpg); margin-bottom: 50px;"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper28-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper29-desktop.jpg);"><div class="g__s-i-b"></div></li>
+              <li class="gallery__swiper-item" style="background: url(img/gallery-swiper30-desktop.jpg);"><div class="g__s-i-b"></div></li>
             </ul>
           </div>
 
@@ -250,7 +250,7 @@
     </div>
   </section>
 
-  <section class="catalogue">
+  <section class="catalogue" id="catalogue">
     <div class="container">
       <div class="catalogue__inner">
         <h2 class="title catalogue__title">Каталог</h2>
@@ -1105,7 +1105,7 @@
     </div> <!-- container -->
   </section>
 
-  <section class="events">
+  <section class="events" id="events">
     <div class="container">
       <h2 class="title events__title">События</h2>
       <div class="events__inner">
@@ -1165,7 +1165,7 @@
     </div> <!-- container -->
   </section>
 
-  <section class="books">
+  <section class="books" id="books">
     <div class="container">
       <div class="books__inner">
         <div class="books__leftside-container">
@@ -1339,7 +1339,7 @@
     </div> <!-- container -->
   </section>
 
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container">
       <div class="projects__inner">
         <h2 class="title projects__title">Проекты</h2>
@@ -1392,7 +1392,7 @@
     </div> <!-- container -->
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container contacts__title-container">
       <h2 class="title contacts__title">Контакты</h2>
     </div>
@@ -1419,7 +1419,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="footer__inner">
         <a href="#" class="header-up__logo"><img src="img/header-logo-desktop.svg" alt="Blanchard"></a>
