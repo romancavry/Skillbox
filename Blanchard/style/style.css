@@ -180,6 +180,11 @@ body {
   display: none !important;
 }
 
+/* .not-active-opacity {
+  display: none !important;
+  transition: display .3s ease-in-out;
+} */
+
 .visible {
   opacity: 1 !important;
 }
@@ -211,7 +216,7 @@ body {
 }
 
 .header-logo {
-  margin-right: -120px;
+  margin-right: -120px;widget__for-icon
 }
 
 .header-logo:focus {
