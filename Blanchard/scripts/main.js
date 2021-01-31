@@ -25,10 +25,49 @@ $('.header-enter').on('click', function (e) {
 
 // Menu
 $(".widget-list__title").on('click', function(){
+  let iconTarget = $(this).children();
+  let allIcons = $(".widget-list__title").children();
+
+  $(".widget-list__title").removeClass('widget__for-icon-darkPurple');
+  $(allIcons).removeClass('widget__for-icon-click');
+
+  $(this).toggleClass('widget__for-icon-darkPurple');
+  $('.widget-list__title').addClass('widget__for-icon-white');
+  $(iconTarget).toggleClass('widget__for-icon-click');
+
   $('.widget-list__wrapper').hide(500);
   let menuTarget = $(this).next('div').slideToggle();
   $(menuTarget).toggleClass('not-active');
 })
+
+$('.widget-list__title').on('click', function (e) {
+	$('<div class="cursorLightGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
+
+$('.widget-list__item').on('click', function() {
+  let itemTarget = $(this).children().slideToggle();
+  $(itemTarget).addClass('item-wrapper-clicked');
+})
+
+$('.widget-list__item').on('click', function (e) {
+	$('<div class="cursorLightGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
 
 $('.widget__search-input').on('focus', function() {
   $('.w__s-i-a').addClass('active');
@@ -76,7 +115,7 @@ $('.gallery__swiper-item').on('click', function (e) {
 });
 
 $('.gallery__swiper-item').on('click', function () {
-  $('.g__s-i-b').addClass('active');
+  $('.g__s-i-b').addClass('active').slideToggle();
   setTimeout(function(){
     $('.g__s-i-b').removeClass('active');
   }, 1000);

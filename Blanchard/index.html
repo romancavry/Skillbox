@@ -6,14 +6,14 @@
   <title>Blanchard</title>
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/choices.min.css">
-  <link rel="stylesheet" href="style/swiper-bundle.css">
+  <link rel="stylesheet" href="style/simplebar.css">
   <link rel="stylesheet" href="style/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/jquery-ui.css">
   <link rel="stylesheet" href="style/style.css">
 
   <script src="scripts/jquery.js"></script>
   <script src="scripts/jquery-ui.js"></script>
-  <script src="scripts/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/choices.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
@@ -46,77 +46,70 @@
         <div class="widget__inner">
           <ul class="widget__list">
             <li class="widget__list-section">
-              <button class="widget-list__title widget__for-icon">Реализм</button>
+              <button class="widget-list__title">Реализм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="realizm">
-                <ul class="widget-list" aria-label="Выбор направления">
-                  <li style="background-image: url(img/widget-background-TINTORETTO.jpg);"><a href="#">Тинторетто</a></li>
-                  <li style="background-image: url(img/widget-background-FRIDRIH.jpg);"><a href="#">Фридрих</a></li>
-                  <li style="background-image: url(img/widget-background-LEONARDO.jpg);"><a href="#">Леонардо</a></li>
-                  <li style="background-image: url(img/widget-background-VEROKKO.jpg);"><a href="#">Верроккьо</a></li>
-                  <li style="background-image: url(img/widget-background-TINTORETTO.jpg);"><a href="#">Тинторетто</a></li>
-                  <li style="background-image: url(img/widget-background-FRIDRIH.jpg);"><a href="#">Фридрих</a></li>
-                  <li style="background-image: url(img/widget-background-LEONARDO.jpg);"><a href="#">Леонардо</a></li>
-                  <li style="background-image: url(img/widget-background-VEROKKO.jpg);"><a href="#">Верроккьо</a></li>
+                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-TINTORETTO.jpg);"><div class="item-wrapper"><a href="#">Тинторетто</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-FRIDRIH.jpg);"><div class="item-wrapper"><a href="#">Фридрих</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-LEONARDO.jpg);"><div class="item-wrapper"><a href="#">Леонардо</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-VEROKKO.jpg);"><div class="item-wrapper"><a href="#">Верроккьо</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-TINTORETTO.jpg);"><div class="item-wrapper"><a href="#">Тинторетто</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-FRIDRIH.jpg);"><div class="item-wrapper"><a href="#">Фридрих</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-LEONARDO.jpg);"><div class="item-wrapper"><a href="#">Леонардо</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-VEROKKO.jpg);"><div class="item-wrapper"><a href="#">Верроккьо</a></div></li>
                 </ul>
               </div>
             </li>
 
             <li class="widget__list-section">
-              <button class="widget-list__title widget__for-icon">Импрессионизм</button>
+              <button class="widget-list__title">Импрессионизм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="impressionizm">
-                <ul class="widget-list" aria-label="Выбор направления">
-                  <li style="background-image: url(img/widget-background-MONE.jpg);"><a href="#">Моне</a></li>
-                  <li style="background-image: url(img/widget-background-SISLEY.jpg);"><a href="#">Сислей</a></li>
-                  <li style="background-image: url(img/widget-background-MANE.jpg);"><a href="#">Мане</a></li>
-                  <li style="background-image: url(img/widget-background-RENUAR.jpg);"><a href="#">Ренуар</a></li>
-                  <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
-                  <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
-                  <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
-                  <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
+                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MONE.jpg);"><div class="item-wrapper"><a href="#">Моне</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-SISLEY.jpg);"><div class="item-wrapper"><a href="#">Сислей</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MANE.jpg);"><div class="item-wrapper"><a href="#">Мане</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-RENUAR.jpg);"><div class="item-wrapper"><a href="#">Ренуар</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MONE.jpg);"><div class="item-wrapper"><a href="#">Моне</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-SISLEY.jpg);"><div class="item-wrapper"><a href="#">Сислей</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MANE.jpg);"><div class="item-wrapper"><a href="#">Мане</a></div></li>
                 </ul>
               </div>
             </li>
 
             <li class="widget__list-section">
-              <button class="widget-list__title widget__for-icon">Постимпрессионизм</button>
+              <button class="widget-list__title">Постимпрессионизм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="post-impressionizm">
-                <ul class="widget-list" aria-label="Выбор направления">
-                  <li style="background-image: url(img/widget-background-VANGOG.jpg);"><a href="#">Ван Гог</a></li>
-                  <li style="background-image: url(img/widget-background-SEZANN.jpg);"><a href="#">Сезанн</a></li>
-                  <li style="background-image: url(img/widget-background-GOGEN.jpg);"><a href="#">Гоген</a></li>
-                  <li style="background-image: url(img/widget-background-SERA.jpg);"><a href="#">Сёра</a></li>
+                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-VANGOG.jpg);"><div class="item-wrapper"><a href="#">Ван Гог</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-SEZANN.jpg);"><div class="item-wrapper"><a href="#">Сезанн</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-GOGEN.jpg);"><div class="item-wrapper"><a href="#">Гоген</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-SERA.jpg);"><div class="item-wrapper"><a href="#">Сёра</a></div></li>
                 </ul>
               </div>
             </li>
 
             <li class="widget__list-section">
-              <button class="widget-list__title widget__for-icon">Авангард</button>
+              <button class="widget-list__title">Авангард<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="avangard">
-                <ul class="widget-list" aria-label="Выбор направления">
-                  <li style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><a href="#">Кандинский</a></li>
-                  <li style="background-image: url(img/widget-background-MARINETTI.jpg);"><a href="#">Маринетти</a></li>
-                  <li style="background-image: url(img/widget-background-MALEVICH.jpg);"><a href="#">Малевич</a></li>
-                  <li style="background-image: url(img/widget-background-PICASSO.jpg);"><a href="#">Пикассо</a></li>
-                  <li style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><a href="#">Кандинский</a></li>
-                  <li style="background-image: url(img/widget-background-MARINETTI.jpg);"><a href="#">Маринетти</a></li>
-                  <li style="background-image: url(img/widget-background-MALEVICH.jpg);"><a href="#">Малевич</a></li>
-                  <li style="background-image: url(img/widget-background-PICASSO.jpg);"><a href="#">Пикассо</a></li>
+                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><div class="item-wrapper"><a href="#">Кандинский</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MARINETTI.jpg);"><div class="item-wrapper"><a href="#">Маринетти</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MALEVICH.jpg);"><div class="item-wrapper"><a href="#">Малевич</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-PICASSO.jpg);"><div class="item-wrapper"><a href="#">Пикассо</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><div class="item-wrapper"><a href="#">Кандинский</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MARINETTI.jpg);"><div class="item-wrapper"><a href="#">Маринетти</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-MALEVICH.jpg);"><div class="item-wrapper"><a href="#">Малевич</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-PICASSO.jpg);"><div class="item-wrapper"><a href="#">Пикассо</a></div></li>
                 </ul>
               </div>
             </li>
 
             <li class="widget__list-section">
-              <button class="widget-list__title widget__for-icon">Футуризм</button>
+              <button class="widget-list__title">Футуризм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="futurizm">
-                <ul class="widget-list" aria-label="Выбор направления">
-                  <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
-                  <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
-                  <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
-                  <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
-                  <li style="background-image: url(img/widget-background-KAPPA.jpg);"><a href="#">Карра</a></li>
-                  <li style="background-image: url(img/widget-background-PRATELLA.jpg);"><a href="#">Прателла</a></li>
-                  <li style="background-image: url(img/widget-background-SEVERINI.jpg);"><a href="#">Северени</a></li>
-                  <li style="background-image: url(img/widget-background-BALLA.jpg);"><a href="#">Балла</a></li>
+                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-KAPPA.jpg);"><div class="item-wrapper"><a href="#">Карра</a></div></li>
+                  <li class="widget-list__item" style="background-image: url(img/widget-background-PRATELLA.jpg);"><div class="item-wrapper"><a href="#">Прателла</a></div></li>
                 </ul>
               </div>
             </li>
