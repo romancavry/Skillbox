@@ -184,11 +184,6 @@ body {
   display: none !important;
 }
 
-/* .not-active-opacity {
-  display: none !important;
-  transition: display .3s ease-in-out;
-} */
-
 .visible {
   opacity: 1 !important;
 }
@@ -202,6 +197,10 @@ body {
   --mainPurple: #9D5CD0;
   --hoverPurple: #C283F3;
   --darkPurple: #7943A4;
+}
+
+*:focus {
+  outline: none;
 }
 
 /* Header-up */
@@ -526,7 +525,7 @@ body {
   outline-offset: 8px;
 }
 
-.w__s-i-a {
+.widget__search--after {
   display: none;
 
   position: absolute;
@@ -554,7 +553,7 @@ body {
   font-size: 18px;
 }
 
-.w__s-i-b {
+.widget__search--before {
   position: absolute;
   left: -33px;
   top: 0;
@@ -570,7 +569,7 @@ body {
   cursor: pointer;
 }
 
-.widget__search:hover .w__s-i-b  {
+.widget__search:hover .widget__search--before  {
   background-image: url(../img/icon-search-hover.svg);
   transition: background-image .3s ease-in-out;
 }
@@ -603,7 +602,7 @@ body {
 
 .hero__title {
   margin-bottom: 20px;
-  width: 600px;
+  max-width: 600px;
 
   font-size: 72px;
   font-weight: 700;
@@ -614,7 +613,7 @@ body {
 
 .hero__subtitle {
   margin-bottom: 92px;
-  width: 580px;
+  max-width: 580px;
 
   font-size: 18px;
   font-weight: 700;
@@ -708,7 +707,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 46px;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   height: 101%;
 }
 
@@ -763,7 +763,8 @@ body {
 
 .gallery__rightside-container{
   height: 100%;
-  width: 1150px;
+  max-width: 1150px;
+  width: 100%;
 }
 
 .gallery__swiper-wrapper {
@@ -814,7 +815,7 @@ body {
   transition: opacity .3s ease-in-out;
 }
 
-.g__s-i-b {
+.gallery__swiper-item--after {
   position: absolute;
   z-index: 11;
 
@@ -843,21 +844,51 @@ body {
 
 .gallery__swiper-pagination {
   width: 58px;
-  height: 50px;
+  height: 20px;
 
   color: #fff;
 }
 
 .gallery__swiper-button-next, .gallery__swiper-button-prev {
-  top: 13%;
+  top: 14%;
+
+  width: 32.5px;
+  height: 32.5px;
+}
+
+.gallery__swiper-button-next:focus, .gallery__swiper-button-prev:focus {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--darkPurple);
+  border-radius: 50%;
+}
+
+.gallery__swiper-button-next:after, .gallery__swiper-button-prev::after {
+  height: 46px;
 }
 
 .swiper-button-prev:after {
   content: url(../img/icon-swiper-leftarrow.svg);
 }
 
+.swiper-button-prev:hover::after {
+  content: url(../img/icon-swiper-leftarrow-hover.svg);
+}
+
+.swiper-button-prev:active::after {
+  content: url(../img/icon-swiper-leftarrow-activeborder.svg);
+}
+
 .swiper-button-next:after {
   content: url(../img/icon-swiper-rightarrow.svg);
+}
+
+.swiper-button-next:hover::after {
+  content: url(../img/icon-swiper-rightarrow-hover.svg);
+}
+
+.swiper-button-next:active::after {
+  content: url(../img/icon-swiper-rightarrow-activeborder.svg);
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
@@ -948,6 +979,8 @@ body {
 
 /* Catalogue */
 .catalogue__title {
+  display: inline-block;
+
   margin-bottom: 27px;
 }
 
@@ -973,27 +1006,31 @@ body {
   right: 0;
 }
 
-.catalogue__tabs-nav > ul {
+.tabs__list {
   display: flex;
 }
 
-.catalogue__tabs-nav > ul > li {
+.tabs__item {
   width: 66px;
   height: 66px;
 }
 
-.catalogue__tabs-nav > ul > li:not(:last-child) {
+.tabs__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.catalogue__tabs-nav > ul > li > a {
+.tabs__item:hover {
+  box-shadow: rgba(157, 92, 208, 0.7);
+}
+
+.tabs__link {
   display: block;
 
   width: 66px;
   height: 66px;
 }
 
-.catalogue__tabs-nav ul li a.active {
+.tabs__link.active {
   border: 2px solid var(--mainPurple);
   border-radius: 50%;
 
@@ -1830,7 +1867,12 @@ body {
   height: 140px;
 }
 
-.footer__nav-list > a > span {
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav-icon {
   display: inline-block;
   width: 45px;
   height: 45px;
@@ -1840,10 +1882,10 @@ body {
   background-color: transparent;
 }
 
-.footer__nav-list > a {
+.footer__nav-link {
   display: inline-block;
 }
 
-.footer__nav-list > a:not(:last-child) {
-  margin-right: 17px;
+.footer__nav-item:not(:last-child) {
+  margin-right: 22px;
 }

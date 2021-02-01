@@ -70,11 +70,11 @@ $('.widget-list__item').on('click', function (e) {
 });
 
 $('.widget__search-input').on('focus', function() {
-  $('.w__s-i-a').addClass('active');
-  $('.w__s-i-b').addClass('not-active');
+  $('.widget__search--after').addClass('active');
+  $('.widget__search--before').addClass('not-active');
   setTimeout(function(){
-    $('.w__s-i-a').removeClass('active');
-    $('.w__s-i-b').removeClass('not-active');
+    $('.widget__search--after').removeClass('active');
+    $('.widget__search--before').removeClass('not-active');
   }, 4000);
 });
 
@@ -115,10 +115,36 @@ $('.gallery__swiper-item').on('click', function (e) {
 });
 
 $('.gallery__swiper-item').on('click', function () {
-  $('.g__s-i-b').addClass('active').slideToggle();
+  let target = $(this).children().slideToggle();
+  $(target).removeClass('not-active');
+  $(target).addClass('active');
   setTimeout(function(){
-    $('.g__s-i-b').removeClass('active');
+    $('.gallery__swiper-item--after').addClass('not-active');
   }, 1000);
+});
+
+$('.gallery__swiper-button-next').on('click', function (e) {
+	$('<div class="cursorDarkGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
+
+$('.gallery__swiper-button-prev').on('click', function (e) {
+	$('<div class="cursorDarkGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
 });
 
 // Gallery swiper
