@@ -212,7 +212,6 @@ $( function() {
   });
 } );
 
-
 $('.catalogue__tabs-nav a').on('click', function(e) {
   e.preventDefault();
 
@@ -227,6 +226,57 @@ $('.catalogue__tabs-nav a').on('click', function(e) {
     $(href).addClass('in');
   }, 200);
 })
+
+const authorEl = document.querySelectorAll('.tabs-content__link');
+const authorDesc = document.querySelectorAll('.bio__wrapper');
+
+authorEl.forEach((authorBtn) => {
+  authorBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const authorPath = e.currentTarget.dataset.path;
+    const cardTarget = document.querySelector(`[data-target=${authorPath}]`);
+
+    authorEl.forEach((el) => {
+      if (el.classList.contains('active')) {
+        el.classList.remove('active')
+      }
+    });
+
+    authorDesc.forEach((card) => {
+      card.classList.remove('card-active');
+    });
+
+    authorBtn.classList.add('active');
+
+    if (authorBtn.classList.contains('active')) {
+      cardTarget.classList.add('card-active');
+    }
+  });
+});
+
+$('.tabs-content__link').on('click', function (e) {
+	$('<div class="cursorDarkGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
+
+$('.tabs__link').on('click', function (e) {
+	$('<div class="cursorDarkGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
 
 // Events
 $('.events__btn').on('click', function() {
@@ -294,34 +344,6 @@ var mySwiper = new Swiper('.partners__swiper-container', {
     prevEl: '.partners__swiper-button-prev',
   },
 })
-
-const authorEl = document.querySelectorAll('.js-catalog-author-link');
-const authorDesc = document.querySelectorAll('.accordion-card');
-
-authorEl.forEach((authorBtn) => {
-  authorBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const authorPath = e.currentTarget.dataset.path;
-    const cardTarget = document.querySelector(`[data-target=${authorPath}]`);
-
-    authorEl.forEach((el) => {
-      if (el.classList.contains('active')) {
-        el.classList.remove('active')
-      }
-    });
-
-    authorDesc.forEach((card) => {
-      card.classList.remove('card-active');
-    });
-
-    authorBtn.classList.add('active');
-    // cardTarget.classList.add('active')
-
-    if (authorBtn.classList.contains('active')) {
-      cardTarget.classList.add('card-active');
-    }
-  });
-});
 
 ymaps.ready(init);
 function init(){
