@@ -123,7 +123,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: #fff;
 }
 
 textarea {
@@ -1144,6 +1144,23 @@ body {
   font-weight: 600;
 
   color: #333;
+  transition: color .3s ease-in-out;
+}
+
+.tabs-content__title:focus {
+  outline: 2px solid var(--darkPurple);
+  outline-offset: 1px;
+}
+
+.tabs-content__title:hover {
+  color: var(--hoverPurple);
+  transition: color .3s ease-in-out;
+}
+
+.tabs-content__title:active {
+  color: var(--darkPurple);
+  transition: color .3s ease-in-out;
+  transition: background .3s ease-in-out;
 }
 
 .catalogue__tabs-content {
@@ -1169,6 +1186,7 @@ body {
   position: relative;
 
   display: block;
+  width: fit-content;
   margin-bottom: 5px;
 
   font-weight: 400;
@@ -1176,6 +1194,10 @@ body {
   line-height: 27px;
 
   transition: color .2s;
+}
+
+.tabs-content__link:visited {
+  color: #333;
 }
 
 .tabs-content__link:hover {
@@ -1259,14 +1281,21 @@ body {
 
 .ui-icon, .ui-widget-content .ui-icon {
   background: url(../img/icon-accordion-downarrow.svg);
+  transition: background .3s ease-in-out;
 }
 
-.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+.ui-state-active .ui-icon {
   background: url(../img/icon-accordion-uparrow.svg) !important;
 }
 
+.tabs-content__title:active .ui-icon {
+  background: url(../img/icon-accordion-uparrow-active.svg) !important;
+  transition: background .3s ease-in-out;
+}
+
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
-  background: url(../img/icon-accordion-downarrow.svg);
+  background: url(../img/icon-accordion-downarrow-hover.svg);
+  transition: background .3s ease-in-out;
 }
 
 .ui-accordion-header-collapsed {
@@ -1323,10 +1352,10 @@ body {
 .events__item {
   position: relative;
 
-  margin-bottom: 50px;
-  padding: 350px 30px 50px 50px;
-  width: 500px;
-  height: 700px;
+  margin-bottom: 42px;
+  padding: 316px 18px 50px 50px;
+  max-width: 500px;
+  width: 100%;
   border: 1px solid #cacaca;
   animation: appearance 0.7s linear forwards
 }
@@ -1336,10 +1365,6 @@ body {
 }
 
 .events__item-subtitle {
-  position: absolute;
-  bottom: 352px;
-  right: 17px;
-
   min-width: 210px;
 
   font-size: 12px;
@@ -1361,6 +1386,7 @@ body {
 
 .events__item-suptitle {
   max-width: 400px;
+  margin-bottom: 28px;
 
   font-size: 16px;
   line-height: 32px;
@@ -1368,26 +1394,19 @@ body {
 }
 
 .events__item-link {
-  position: absolute;
-  bottom: 43px;
-  left: 49px;
-
   border-bottom: 1px solid var(--mainPurple);
 
   font-size: 16px;
   line-height: 23px;
   font-weight: 400;
-  transition: font-weight .15s ease-in-out;
+  transition: font-weight .3s ease-in-out;
 
   color:var(--mainPurple) !important;
 }
 
 .events__item-link:hover {
   font-weight: 700;
-  transition: font-weight .15s ease-in-out;
-
-  transform: scale(1.035, 1.035);
-  transition: transform .3s linear;
+  transition: font-weight .3s ease-in-out;
 }
 
 .events__item-link:active {
@@ -1411,6 +1430,29 @@ body {
 
   background-color: #fff;
   color: var(--mainPurple);
+}
+
+.events__btn::after {
+  content: '';
+
+  position: absolute;
+  top: 92.5%;
+  left: 43.75%;
+
+  width: 200px;
+  height: 70px;
+  border: 2px solid var(--darkPurple);
+  border-radius: 100px;
+
+  background-color: transparent;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.events__btn:focus:after {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 
 /* Books */
@@ -1570,6 +1612,7 @@ body {
 
 .swiper-item {
   max-width: 350px;
+  min-height: 520px;
 }
 
 .swiper-item:not(:last-child) {
@@ -1613,6 +1656,8 @@ body {
 }
 
 .swiper-item__btn {
+  position: relative;
+
   padding: 8px 21px 8px 18px;
   border: 2px solid #9D5CD0;
   border-radius: 100px;
@@ -1625,6 +1670,33 @@ body {
   background: transparent;
 }
 
+.swiper-item__btn:nth-child(1n) {
+  margin-left: 3px;
+}
+
+.swiper-item__btn:after {
+  content: '';
+
+  position: absolute;
+  top: -5px;
+  left: -5.5px;
+
+  width: 110%;
+  height: 126%;
+  border: 2px solid var(--darkPurple);
+  border-radius: 100px;
+
+  background-color: transparent;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.swiper-item__btn:focus::after {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
 .books__swiper-pagination {
   height: 50px;
   top: 120px;
@@ -1633,14 +1705,30 @@ body {
   color: #fff;
 }
 
-.books__swiper-button-prev {
-  top: 127px;
-  left: 1px;
+.books__swiper-button-next {
+  left: 8.5%;
 }
 
-.books__swiper-button-next {
-  top: 127px;
-  left: 100px;
+.books__swiper-button-prev {
+  left: 0;
+}
+
+.books__swiper-button-next, .books__swiper-button-prev {
+  top: 19.3%;
+
+  width: 32.5px;
+  height: 32.5px;
+}
+
+.books__swiper-button-next:focus, .books__swiper-button-prev:focus {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--darkPurple);
+  border-radius: 50%;
+}
+
+.books__swiper-button-next:after, .books__swiper-button-prev::after {
+  height: 46px;
 }
 
 /* Projects */
@@ -1757,6 +1845,15 @@ body {
   width: 100%;
 }
 
+.partners__swiper-button-next:focus, .partners__swiper-button-prev:focus {
+  top: 55%;
+
+  width: 33px;
+  height: 33.5px;
+  border: 2px solid var(--darkPurple);
+  border-radius: 50%;
+}
+
 .partners__list {
   display: flex;
   height: 150px;
@@ -1852,7 +1949,8 @@ body {
   z-index: 100;
 
   padding: 123px 123px 123px 148px;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   border: 1px solid #cacaca;
 
   background-color: #fff;
@@ -1903,6 +2001,8 @@ body {
 }
 
 .contacts-form__btn {
+  position: relative;
+
   padding: 17px 35px;
   border: 2px solid var(--mainPurple);
   border-radius: 30px;
@@ -1913,6 +2013,29 @@ body {
 
   background-color: #fff;
   color: var(--mainPurple);
+}
+
+.contacts-form__btn::after {
+  content: '';
+
+  position: absolute;
+  top: -7px;
+  left: -8.5px;
+
+  width: 110%;
+  height: 126%;
+  border: 2px solid var(--darkPurple);
+  border-radius: 100px;
+
+  background-color: transparent;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.contacts-form__btn:focus:after {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 
 .social-media__container > a > span {
@@ -1943,7 +2066,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 140px;
+  padding: 50px 0;
 }
 
 .footer__nav-list {

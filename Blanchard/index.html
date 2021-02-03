@@ -248,11 +248,11 @@
         <h2 class="title catalogue__title">Каталог</h2>
         <div class="catalogue__tabs-nav">
           <ul class="tabs__list">
-            <li class="tabs__item"><a class="tabs__link tabs__link--active-france active" href="#accordion-france" style="background: url(img/catalogue-tabsnav-france.svg) no-repeat center;"></a></li>
-            <li class="tabs__item"><a class="tabs__link tabs__link--active-germany" href="#accordion-germany" style="background: url(img/catalogue-tabsnav-germany.svg) no-repeat center;"></a></li>
-            <li class="tabs__item"><a class="tabs__link tabs__link--active-italy" href="#accordion-italy" style="background: url(img/catalogue-tabsnav-italy.svg) no-repeat center;"></a></li>
-            <li class="tabs__item"><a class="tabs__link tabs__link--active-russia" href="#accordion-russia" style="background: url(img/catalogue-tabsnav-russia.svg) no-repeat center;"></a></li>
-            <li class="tabs__item"><a class="tabs__link tabs__link--active-belgium" href="#accordion-belgium" style="background: url(img/catalogue-tabsnav-belgium.svg) no-repeat center;"></a></li>
+            <li tabindex="0" class="tabs__item"><a class="tabs__link tabs__link--active-france active" href="#accordion-france" style="background: url(img/catalogue-tabsnav-france.svg) no-repeat center;"></a></li>
+            <li tabindex="0" class="tabs__item"><a class="tabs__link tabs__link--active-germany" href="#accordion-germany" style="background: url(img/catalogue-tabsnav-germany.svg) no-repeat center;"></a></li>
+            <li tabindex="0" class="tabs__item"><a class="tabs__link tabs__link--active-italy" href="#accordion-italy" style="background: url(img/catalogue-tabsnav-italy.svg) no-repeat center;"></a></li>
+            <li tabindex="0" class="tabs__item"><a class="tabs__link tabs__link--active-russia" href="#accordion-russia" style="background: url(img/catalogue-tabsnav-russia.svg) no-repeat center;"></a></li>
+            <li tabindex="0" class="tabs__item"><a class="tabs__link tabs__link--active-belgium" href="#accordion-belgium" style="background: url(img/catalogue-tabsnav-belgium.svg) no-repeat center;"></a></li>
           </ul>
         </div>
 
@@ -1391,9 +1391,8 @@
 
           <div class="books__swiper-pagination swiper-pagination"></div>
 
-
-          <div class="books__swiper-button-prev swiper-button-prev"></div>
-          <div class="books__swiper-button-next swiper-button-next"></div>
+          <div class="books__swiper-button-prev swiper-button-prev" tabindex="-1"></div>
+          <div class="books__swiper-button-next swiper-button-next" tabindex="-1"></div>
 
         </div> <!-- books-rightside-container -->
       </div> <!-- books-inner -->
@@ -1483,7 +1482,7 @@
   <footer class="footer" id="footer">
     <div class="container">
       <div class="footer__inner">
-        <a href="#" class="header-up__logo"><img src="img/header-logo-desktop.svg" alt="Blanchard"></a>
+        <a href="#" class="header-logo"><img src="img/header-logo-desktop.svg" alt="Blanchard"></a>
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">

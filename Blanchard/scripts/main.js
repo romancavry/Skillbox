@@ -28,6 +28,8 @@ $(".widget-list__title").on('click', function(){
   let iconTarget = $(this).children();
   let allIcons = $(".widget-list__title").children();
 
+  $(".widget-list__title").css({ 'outline' : 'none' });
+
   $(".widget-list__title").removeClass('widget__for-icon-darkPurple');
   $(allIcons).removeClass('widget__for-icon-click');
 
@@ -123,7 +125,7 @@ $('.gallery__swiper-item').on('click', function () {
   }, 1000);
 });
 
-$('.gallery__swiper-button-next').on('click', function (e) {
+$('.swiper-button-next').on('click', function (e) {
 	$('<div class="cursorDarkGray">')
 		.css({
 			top: e.clientY,
@@ -135,7 +137,7 @@ $('.gallery__swiper-button-next').on('click', function (e) {
 		});
 });
 
-$('.gallery__swiper-button-prev').on('click', function (e) {
+$('.swiper-button-prev').on('click', function (e) {
 	$('<div class="cursorDarkGray">')
 		.css({
 			top: e.clientY,
@@ -278,6 +280,18 @@ $('.tabs__link').on('click', function (e) {
 		});
 });
 
+$('.tabs-content__title').on('click', function (e) {
+	$('<div class="cursorDarkGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
+
 // Events
 $('.events__btn').on('click', function() {
   $('.events__btn').addClass('not-active');
@@ -319,6 +333,18 @@ var mySwiper = new Swiper('.books__rightside-container', {
     prevEl: '.books__swiper-button-prev',
   },
 })
+
+$('.swiper-item__btn').on('click', function (e) {
+	$('<div class="cursorLightGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
 
 // Projects
 $('.projects__text > a').on('click', function (e) {
