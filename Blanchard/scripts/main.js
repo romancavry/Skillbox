@@ -72,11 +72,9 @@ $('.widget-list__item').on('click', function (e) {
 });
 
 $('.widget__search-input').on('focus', function() {
-  $('.widget__search--after').addClass('active');
-  $('.widget__search--before').addClass('not-active');
+  $('.widget__search-icon').addClass('widget__search-icon--hover');
   setTimeout(function(){
-    $('.widget__search--after').removeClass('active');
-    $('.widget__search--before').removeClass('not-active');
+    $('.widget__search-icon').removeClass('widget__search-icon--hover');
   }, 4000);
 });
 

@@ -148,7 +148,6 @@ ul, ol {
 }
 
 button {
-  display: block;
   outline: none;
   border: none;
   cursor: pointer;
@@ -332,7 +331,7 @@ body {
 .widget__inner {
   display: flex;
   align-items: center;
-  padding: 23px 0;
+  padding: 21px 0;
 }
 
 .widget__list {
@@ -525,7 +524,7 @@ body {
   outline-offset: 8px;
 }
 
-.widget__search--after {
+/* .widget__search--after {
   display: none;
 
   position: absolute;
@@ -536,7 +535,7 @@ body {
   height: 21px;
 
   background-image: url(../img/icon-search-hover.svg);
-}
+} */
 
 .widget__search-input:focus::placeholder {
   color: transparent;
@@ -553,11 +552,11 @@ body {
   font-size: 18px;
 }
 
-.widget__search--before {
+.widget__search-icon {
   position: absolute;
   left: -33px;
   top: 0;
-  z-index: 1500;
+  z-index: 10;
 
   width: 23px;
   height: 21px;
@@ -569,7 +568,12 @@ body {
   cursor: pointer;
 }
 
-.widget__search:hover .widget__search--before  {
+.widget__search:hover .widget__search-icon  {
+  background-image: url(../img/icon-search-hover.svg);
+  transition: background-image .3s ease-in-out;
+}
+
+.widget__search-icon--hover {
   background-image: url(../img/icon-search-hover.svg);
   transition: background-image .3s ease-in-out;
 }
@@ -595,23 +599,29 @@ body {
 }
 
 /* Hero */
+.hero {
+  transform: translateX(-9px);
+}
+
 .hero__inner {
-  padding-top: 242px;
-  padding-bottom: 128px;
+  padding-top: 238px;
+  padding-bottom: 122px;
 }
 
 .hero__title {
-  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-bottom: 21px;
   max-width: 600px;
 
   font-size: 72px;
   font-weight: 700;
-  line-height: 82px;
+  line-height: 84px;
 
   color: #fff;
 }
 
 .hero__subtitle {
+  margin-left: 10px;
   margin-bottom: 92px;
   max-width: 580px;
 
@@ -623,34 +633,65 @@ body {
 }
 
 .hero__btn {
-  padding: 22.5px 35px;
+  position: relative;
+
+  margin-left: 10px;
+  padding: 25.5px 36px 25.5px 36px;
   border-radius: 100px;
 
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.1px;
 
   background: var(--mainPurple);
+  transition: background-color .2s ease-in-out;
   color: #fff;
 }
 
-.hero__btn:hover {
-  padding: 19.5px 32px;
+.hero__btn:after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 101%;
+  height: 101%;
   border: 3px solid #D1A9F0;
   border-radius: 100px;
+
+  background-color: transparent;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
-.hero__btn:focus {
-  padding: 19.5px 32px;
-  border: 3px solid var(--darkPurple);
-  border-radius: 100px;
+.hero__btn:hover::after {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
+}
+
+.hero__btn:focus.hero__btn::after {
+  top: -5px;
+  left: -5px;
+
+  width: 103%;
+  height: 115%;
+  border: 2px solid #C283F3;
+
+  opacity: 1;
 }
 
 .hero__btn:active {
-  padding: 19.5px 32px;
-  border: 3px solid #D1A9F0;
-  border-radius: 100px;
-  background: #7943A4;
+  background-color: #7943A4;
+  transition: background-color .2s ease-in-out;
+}
+
+.hero__btn:active::after {
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 
 .swiper-container {
@@ -660,6 +701,19 @@ body {
 
 .swiper-slide {
   min-height: 800px;
+}
+
+.hero__fixed {
+  position: relative;
+}
+
+.hero__swiper-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 /* About */
@@ -681,16 +735,18 @@ body {
 
 /* Gallery */
 .gallery {
-  height: 995px;
-
   background: url(../img/gallery-background-desktop.jpg) no-repeat center;
 }
+
+/* .gallery__inner {
+  padding-top: 88px;
+} */
 
 .gallery__title {
   display: inline-block;
   margin-bottom: 22px;
+  margin-top: 88px;
   max-width: 400px;
-  padding-top: 88px;
 
   color: #fff;
 }
@@ -732,23 +788,28 @@ body {
   color: #Fff;
 }
 
-.gallery__select-suptitle > a {
+.gallery__link {
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
-  color: var(--mainPurple);
+  color: #D1A9F0;
+  transition: color .3s linear;
 }
 
-.gallery__select-suptitle > a:hover {
-  transform: scale(1.035, 1.035);
-  transition: transform .3s linear;
+.gallery__link:visited {
+  color: #D1A9F0;
 }
 
-.gallery__select-suptitle > a:active {
+.gallery__link:hover {
+  color: var(--hoverPurple);
+  transition: color .3s linear;
+}
+
+.gallery__link:active {
   color: var(--darkPurple);
 }
 
-.gallery__select-suptitle > a:focus {
+.gallery__link:focus {
   outline: 2px solid var(--darkPurple);
   outline-offset: 3px;
 }
