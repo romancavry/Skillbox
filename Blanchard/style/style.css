@@ -646,6 +646,8 @@ body {
   background: var(--mainPurple);
   transition: background-color .2s ease-in-out;
   color: #fff;
+
+  pointer-events: auto;
 }
 
 .hero__btn:after {
@@ -694,26 +696,22 @@ body {
   transition: opacity .3s ease-in-out;
 }
 
-.swiper-container {
-  width: inherit;
-  height: 100%;
-}
-
-.swiper-slide {
+/* .swiper-slide {
   min-height: 800px;
-}
+} */
 
 .hero__fixed {
-  position: relative;
-}
-
-.hero__swiper-container {
   position: absolute;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.hero__swiper-slide {
+  height: 800px;
 }
 
 /* About */
@@ -737,10 +735,6 @@ body {
 .gallery {
   background: url(../img/gallery-background-desktop.jpg) no-repeat center;
 }
-
-/* .gallery__inner {
-  padding-top: 88px;
-} */
 
 .gallery__title {
   display: inline-block;
@@ -1394,6 +1388,10 @@ body {
   border-left: none;
 }
 
+.ui-widget {
+  font-family: 'OpenSans';
+}
+
 /* Events */
 .events {
   margin-bottom: 77px;
@@ -1480,6 +1478,7 @@ body {
 }
 
 .events__btn {
+  display: block;
   margin: 0 auto;
   padding: 17px 35px;
   border: 2px solid var(--mainPurple);
@@ -1491,6 +1490,13 @@ body {
 
   background-color: #fff;
   color: var(--mainPurple);
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.events__btn:hover {
+  background-color: #9D5CD0;
+  color: #fff;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .events__btn::after {
@@ -1508,7 +1514,19 @@ body {
   background-color: transparent;
 
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out, border .3s ease-in-out;
+}
+
+.events__btn:hover::after {
+  top: 93%;
+  left: 44%;
+
+  width: 193px;
+  height: 65px;
+  border: 3px solid #D1A9F0;
+
+  opacity: 1;
+  transition: opacity .3s ease-in-out, border .3s ease-in-out;
 }
 
 .events__btn:focus:after {
@@ -1728,7 +1746,18 @@ body {
   font-weight: 700;
 
   color: #fff;
-  background: transparent;
+  background-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.swiper-item__btn:hover {
+  background-color: #9D5CD0;
+  transition: background-color .3s ease-in-out;
+}
+
+.swiper-item__btn:active {
+  background-color: #7943A4;
+  transition: background-color .3s ease-in-out;
 }
 
 .swiper-item__btn:nth-child(1n) {
@@ -2073,7 +2102,14 @@ body {
   font-weight: 700;
 
   background-color: #fff;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
   color: var(--mainPurple);
+}
+
+.contacts-form__btn:hover {
+  background-color: #9D5CD0;
+  color: #fff;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .contacts-form__btn::after {
@@ -2091,7 +2127,19 @@ body {
   background-color: transparent;
 
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out, border .3s ease-in-out;
+}
+
+.contacts-form__btn:hover::after {
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+  border: 3px solid #D1A9F0;
+
+  opacity: 1;
+  transition: opacity .3s ease-in-out, border .3s ease-in-out;
 }
 
 .contacts-form__btn:focus:after {

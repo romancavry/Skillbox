@@ -386,6 +386,18 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
 }
 
+$('.contacts-form__btn').on('click', function (e) {
+	$('<div class="cursorDarkGray">')
+		.css({
+			top: e.clientY,
+			left: e.clientX
+		})
+		.appendTo($(document.body))
+		.on('animationend webkitAnimationEnd', function (e) {
+			$(this).remove();
+		});
+});
+
 $('a').click(function(e) {
   e.preventDefault();
 });
