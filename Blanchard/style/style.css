@@ -851,9 +851,6 @@ body {
 
 .gallery__swiper-item {
   position: relative;
-
-  height: 350px;
-  width: 350px;
 }
 
 .gallery__swiper-item::after {
@@ -863,12 +860,12 @@ body {
   content: '';
 
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 7%;
+  left: 7%;
   z-index: 10;
 
-  width: 300px;
-  height: 300px;
+  width: 85%;
+  height: 85%;
 
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../img/icon-galleryitem-hover.svg);
@@ -885,6 +882,7 @@ body {
 
 .gallery__swiper-item--after {
   position: absolute;
+  top: 0;
   z-index: 11;
 
   display: none;
@@ -900,6 +898,8 @@ body {
 .gallery__swiper-item:not(:nth-child(3n)) {
   margin-right: 50px;
 }
+
+.gallery1,.gallery2,.gallery3,.gallery7,.gallery8,.gallery9,.gallery13,.gallery14,.gallery15,.gallery19,.gallery20,.gallery21,.gallery25,.gallery26,.gallery27 {margin-bottom: 50px;}
 
 .swiper-slide {
   min-height: 0;
@@ -2214,7 +2214,7 @@ body {
   margin-right: 22px;
 }
 
-/* @media (max-width: 1920px) {
+@media (max-width: 1919px) {
   .container {
     max-width: 925px;
   }
@@ -2311,34 +2311,45 @@ body {
   }
 
 
-  .gallery__inner {
-    height: 839px;
+  .gallery {
+    background: url(../img/1920-gallery-background.jpg) no-repeat center;
+  }
+
+  .gallery__title {
+    margin-bottom: 18px;
   }
 
   .gallery__leftside-container {
     max-width: 280px;
   }
 
+  .gallery__rightside-container {
+    height: 839px;
+    max-width: 594px;
+  }
+
   .gallery__select-suptitle {
     letter-spacing: 0.2px;
   }
 
+  .gallery__swiper-item--after {
+    width: 280px;
+    height: 280px;
+  }
 
+  .gallery__swiper-item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
 
+  .gallery__swiper-item:not(:nth-child(2n)) {
+    margin-right: 34px;
+  }
 
+  .gallery1, .gallery2, .gallery3, .gallery7, .gallery8, .gallery9, .gallery13, .gallery14, .gallery15, .gallery19, .gallery20, .gallery21, .gallery25, .gallery26, .gallery27 {
+    margin-bottom: 0;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-} */
+  .gallery1, .gallery2, .gallery7, .gallery8, .gallery13, .gallery14,.gallery19,.gallery20, .gallery25, .gallery26 {
+    margin-bottom: 34px;
+  }
+}

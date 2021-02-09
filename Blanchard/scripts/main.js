@@ -153,6 +153,13 @@ var mySwiper = new Swiper('.gallery__rightside-container', {
   nested: true,
   autoHeight: true,
 
+  breakpoints: {
+    // when window width is >= 1920px
+    1920: {
+
+    },
+  },
+
   pagination: {
     el: '.gallery__swiper-pagination',
     type: 'fraction',
