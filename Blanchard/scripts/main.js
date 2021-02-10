@@ -151,7 +151,7 @@ $('.swiper-button-prev').on('click', function (e) {
 var mySwiper = new Swiper('.gallery__rightside-container', {
   loop: true,
   nested: true,
-  // autoHeight: true,
+  spaceBetween: 50,
   slidesPerView: 6,
 
   // breakpoints: {

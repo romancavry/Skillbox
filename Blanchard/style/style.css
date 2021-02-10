@@ -843,6 +843,7 @@ body {
   max-width: 1150px;
   width: 100%;
   height: 995px !important;
+
 }
 
 /* .gallery__swiper-list {
@@ -855,8 +856,9 @@ body {
 
 .gallery__swiper-item {
   position: relative;
-  max-width: 350px;
-  max-height: 350px;
+  width: 350px !important;
+  height: 350px;
+  transform: translateY(174px);
 }
 
 .gallery__swiper-item::after {
@@ -901,9 +903,9 @@ body {
   cursor: pointer;
 }
 
-.gallery__swiper-item:not(:nth-child(3n)) {
+/* .gallery__swiper-item:not(:nth-child(3n)) {
   margin-right: 50px;
-}
+} */
 
 .gallery1,.gallery2,.gallery3,.gallery7,.gallery8,.gallery9,.gallery13,.gallery14,.gallery15,.gallery19,.gallery20,.gallery21,.gallery25,.gallery26,.gallery27 {margin-bottom: 50px;}
 
