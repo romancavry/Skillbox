@@ -151,14 +151,15 @@ $('.swiper-button-prev').on('click', function (e) {
 var mySwiper = new Swiper('.gallery__rightside-container', {
   loop: true,
   nested: true,
-  autoHeight: true,
+  // autoHeight: true,
+  slidesPerView: 6,
 
-  breakpoints: {
-    // when window width is >= 1920px
-    1920: {
-
-    },
-  },
+  // breakpoints: {
+  //   // when window width is >= 1920px
+  //   1919: {
+  //     slidesPerView: 4,
+  //   },
+  // },
 
   pagination: {
     el: '.gallery__swiper-pagination',
@@ -241,6 +242,7 @@ const authorDesc = document.querySelectorAll('.bio__wrapper');
 authorEl.forEach((authorBtn) => {
   authorBtn.addEventListener('click', (e) => {
     e.preventDefault();
+    $(authorBtn).css({ 'outline' : 'none' });
     const authorPath = e.currentTarget.dataset.path;
     const cardTarget = document.querySelector(`[data-target=${authorPath}]`);
 
