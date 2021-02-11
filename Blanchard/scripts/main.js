@@ -152,7 +152,7 @@ var mySwiper = new Swiper('.gallery__rightside-container', {
   loop: true,
   nested: true,
   spaceBetween: 50,
-  slidesPerView: 6,
+  slidesPerView: 3,
 
   // breakpoints: {
   //   // when window width is >= 1920px
@@ -314,7 +314,7 @@ $('.checkbox-label__input').click(function(){
   }
 });
 
-$('.events__item-link').on('click', function (e) {
+$('.events__item-btn').on('click', function (e) {
 	$('<div class="cursorDarkGray">')
 		.css({
 			top: e.clientY,
@@ -330,6 +330,15 @@ $('.events__item-link').on('click', function (e) {
 var mySwiper = new Swiper('.books__rightside-container', {
   loop: true,
   nested: true,
+  slidesPerView: 3,
+  spaceBetween: 50,
+
+  breakpoints: {
+    // when window width is >= 1920px
+    1919: {
+      slidesPerView: 2,
+    },
+  },
 
   pagination: {
     el: '.books__swiper-pagination',
