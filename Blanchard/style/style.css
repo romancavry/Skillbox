@@ -2429,6 +2429,7 @@ body {
   .events__item {
     max-width: 290px;
     min-height: 683px;
+    margin-bottom: 52px;
     padding: 217px 18px 50px 34px;
   }
 
@@ -2456,7 +2457,7 @@ body {
   }
 
   .events__item-btn {
-    bottom: 67px;
+    bottom: 50px;
   }
 
   .events__btn::after {

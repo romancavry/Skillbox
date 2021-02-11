@@ -330,15 +330,13 @@ $('.events__item-btn').on('click', function (e) {
 var mySwiper = new Swiper('.books__rightside-container', {
   loop: true,
   nested: true,
-  slidesPerView: 3,
-  spaceBetween: 50,
 
-  breakpoints: {
-    // when window width is >= 1920px
-    1919: {
-      slidesPerView: 2,
-    },
-  },
+  // breakpoints: {
+  //   // when window width is >= 1919px
+  //   1919: {
+  //     slidesPerView: 2,
+  //   },
+  // },
 
   pagination: {
     el: '.books__swiper-pagination',
