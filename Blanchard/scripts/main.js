@@ -150,16 +150,19 @@ $('.swiper-button-prev').on('click', function (e) {
 // Gallery swiper
 var mySwiper = new Swiper('.gallery__rightside-container', {
   loop: true,
-  nested: true,
   spaceBetween: 50,
-  slidesPerView: 3,
 
-  // breakpoints: {
-  //   // when window width is >= 1920px
-  //   1919: {
-  //     slidesPerView: 4,
-  //   },
-  // },
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+    },
+
+    1024: {
+      slidesPerView: 4,
+      slidesPerColumn: 2,
+    }
+  },
 
   pagination: {
     el: '.gallery__swiper-pagination',
@@ -378,7 +381,18 @@ $('.projects__text > a').on('click', function (e) {
 var mySwiper = new Swiper('.partners__swiper-container', {
   loop: true,
   nested: true,
-  spaceBetween: 100,
+  spaceBetween: 50,
+
+  breakpoints: {
+    // when window width is >= 1920px
+    1919: {
+      slidesPerView: 'auto',
+    },
+
+    1024: {
+      slidesPerView: 2,
+    },
+  },
 
   navigation: {
     nextEl: '.partners__swiper-button-next',
