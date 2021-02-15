@@ -162,8 +162,6 @@ body {
 }
 
 .container {
-  position: relative;
-
   max-width: 1604px;
   margin: 0 auto;
 }
@@ -830,11 +828,16 @@ body {
   font-size: 16px;
 }
 
-.gallery__rightside-container{
-  padding-top: 167px;
+.gallery__rightside-container {
+  position: relative;
+
+  padding-top: 162px;
   height: 995px;
   max-width: 1150px;
   width: 100%;
+}
+
+.gallery__swiper-wrapper {
 }
 
 .gallery__swiper-item {
@@ -883,12 +886,16 @@ body {
   cursor: pointer;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
   top: 12.4%;
   left: 3.5%;
-}
+} */
 
 .gallery__swiper-pagination {
+  position: relative;
+  top: -40%;
+  left: -93%;
+
   width: 58px;
   height: 20px;
 
@@ -896,10 +903,16 @@ body {
 }
 
 .gallery__swiper-button-next, .gallery__swiper-button-prev {
-  top: 14%;
+  top: -2%;
+  left: 2%;
 
   width: 32.5px;
   height: 32.5px;
+}
+
+.gallery__swiper-button-prev {
+  left: 0;
+  /* left: 54%; */
 }
 
 .gallery__swiper-button-next:focus, .gallery__swiper-button-prev:focus {
@@ -937,13 +950,13 @@ body {
   content: url(../img/icon-swiper-rightarrow-activeborder.svg);
 }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+/* .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
   right: 88.5%;
-}
+} */
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+/* .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
   left: 6px;
-}
+} */
 
 /* Choices */
 .choices__inner {
@@ -2035,14 +2048,6 @@ body {
   left: 98%;
 }
 
-.partners__list-item.swiper-slide-active {
-  margin-left: 75px;
-}
-
-.partners__list-item.swiper-slide-next + div {
-  margin-right: 85px !important;
-}
-
 /* Contacts */
 .contacts__title {
   margin-bottom: 23px;
@@ -2165,7 +2170,7 @@ body {
   transition: opacity .3s ease-in-out;
 }
 
-.social-media__container > a > span {
+.social-media__span {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -2173,6 +2178,14 @@ body {
   background-position: center;
   background-size: contain;
   background-color: transparent;
+}
+
+.social-media__whatsapp {
+  background-image: url(../img/icon-whatsup.svg); margin-right: 17px;
+}
+
+.social-media__tg {
+  background-image: url(../img/icon-tg.svg);
 }
 
 .contacts__rightside-container {
@@ -2390,7 +2403,7 @@ body {
   }
 
   .ui-accordion .ui-accordion-content {
-    padding: 24px 0 26px 0;
+    padding: 24px 0 15px 0;
   }
 
   .tabs-content__link {
@@ -2422,7 +2435,7 @@ body {
   }
 
   .events__item-subtitle {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
 
   .events__item-suptitle {
@@ -2433,21 +2446,55 @@ body {
     bottom: 50px;
   }
 
+  .events__btn {
+    padding: 15px 35px;
+  }
+
   .events__btn::after {
-    top: 92.4%;
+    top: 92.7%;
     left: 39.2%;
   }
 
   .events__btn:hover::after {
-    top: 92.5%;
+    top: 93.4%;
     left: 39.5%;
     width: 195px;
+    height: 57px;
   }
 
   .swiper-item__img {
     max-width: 290px;
     max-height: 320px;
     object-fit: cover;
+  }
+
+  .books__leftside-container {
+    padding-bottom: 81px;
+  }
+
+  .books__checkbox {
+    width: 123%;
+  }
+
+  .books__prices {
+    width: 277px;
+  }
+
+  .prices__text--from {
+    padding: 0px 7px 5px 11px;
+  }
+
+  .prices__input {
+    width: 72px;
+    height: 37px;
+  }
+
+  .prices__text--to {
+    padding: 4px 7px 5px 6px;
+  }
+
+  .prices__text--currency {
+    padding: 4px 2px 5px 6px;
   }
 
   .books__inner {
@@ -2458,9 +2505,12 @@ body {
     margin-bottom: 85px;
   }
 
+  .projects__inner {
+    padding-top: 84px;
+  }
+
   .projects__text {
     margin-bottom: 16px;
-    line-height: 33px;
   }
 
   .partners__swiper-container {
@@ -2490,7 +2540,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 45%;
-    padding: 120px 36px 128px 401px;
+    padding: 122px 36px 103px 296px;
   }
 
   .contacts__address {
@@ -2504,5 +2554,44 @@ body {
   .contacts-form__btn {
     display: block;
     padding: 16px 34px;
+  }
+
+  .address__title {
+    line-height: 36px;
+  }
+
+  .contacts__address {
+    margin-bottom: 29px;
+  }
+
+  .social-media__span {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social-media__whatsapp {
+    background-image: url(../img/1920-icon-whatsapp.svg);
+  }
+
+  .footer__inner {
+    padding: 39px 0;
+  }
+
+  .footer-logo {
+    order: 1;
+    margin-left: 0;
+  }
+
+  .footer__nav {
+    order: 2;
+  }
+
+  .footer__nav-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__nav-item:not(:last-child) {
+    margin-right: 31px;
   }
 }
