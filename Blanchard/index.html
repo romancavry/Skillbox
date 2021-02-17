@@ -170,9 +170,94 @@
           </p>
         </div>
 
-        <div class="gallery__rightside-container swiper-container">
+        <div class="gallery__rightside-container">
+          <div class="pagination-container">
+            <button class="pagination-arrows pagination-arrows__prev"></button>
+            <span class="pagination-numbers"></span>
+            <button class="pagination-arrows pagination-arrows__next"></button>
+          </div>
+
+          <div class="gallery__swiper-container">
+            <div class="gallery__swiper-wrapper swiper-wrapper">
+              <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper1.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper1-desktop.jpg" alt="Picture1">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper2.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper2-desktop.jpg" alt="Picture2">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper3.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper3-desktop.jpg" alt="Picture3">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery4">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper4.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper4-desktop.jpg">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery5">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper5.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper5-desktop.jpg" alt="Picture5">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery6">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper6.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper6-desktop.jpg" alt="Picture6">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery7">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper7.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper7-desktop.jpg" alt="Picture7">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery8">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper8.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper8-desktop.jpg" alt="Picture8">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery9">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper9.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper9-desktop.jpg" alt="Picture9">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery10">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper10.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper10-desktop.jpg" alt="Picture10">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery11">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper11.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper11-desktop.jpg" alt="Picture11">
+                </picture>
+              </div>
+              <div class="gallery__swiper-slide swiper-slide gallery12">
+                <picture>
+                  <source srcset="./img/1920-gallery-swiper12.jpg" media="(max-width: 1919px)">
+                  <img src="./img/gallery-swiper12-desktop.jpg" alt="Picture12">
+                </picture>
+              </div>
+            </div> <!-- swiper-wrapper -->
+          </div> <!-- swiper-container -->
+        </div> <!-- right-side-container -->
+
+        <!-- <div class="gallery__rightside-container swiper-container">
           <div class="gallery__swiper-wrapper swiper-wrapper">
-            <div class="gallery__swiper-item swiper-slide gallery1">
+            <div class="gallery__swiper-slide swiper-slide gallery1">
               <picture>
                 <source srcset="./img/1920-gallery-swiper1.jpg" media="(max-width: 1919px)">
                 <img src="./img/gallery-swiper1-desktop.jpg" alt="Picture1">
@@ -391,7 +476,7 @@
             <div class="gallery__swiper-button-prev swiper-button-prev" tabindex="0"></div>
             <div class="gallery__swiper-button-next swiper-button-next" tabindex="0"></div>
           </div>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -1417,22 +1502,26 @@
 
         <div class="projects__partners">
           <h3 class="partners__title">Партнёры проектов:</h3>
-          <div class="partners__swiper-container swiper-container">
-            <div class="partners__swiper-wrapper swiper-wrapper">
-              <div class="p__l1 swiper-slide partners__list-item"></div>
-              <div class="p__l2 swiper-slide partners__list-item"></div>
-              <div class="p__l3 swiper-slide partners__list-item"></div>
-              <div class="p__l4 swiper-slide partners__list-item"></div>
-              <div class="p__l5 swiper-slide partners__list-item"></div>
-              <div class="p__l6 swiper-slide partners__list-item"></div>
-              <div class="p__l7 swiper-slide partners__list-item"></div>
-              <div class="p__l8 swiper-slide partners__list-item"></div>
-              <div class="p__l9 swiper-slide partners__list-item"></div>
-            </div> <!-- swiper-wrapper -->
 
-            <div class="partners__swiper-button-prev swiper-button-prev"></div>
-            <div class="partners__swiper-button-next swiper-button-next"></div>
-          </div> <!-- partners__swiper-container -->
+          <div class="partners__inner">
+            <button class="pagination-arrows pagination-arrows__prev partners-prev"></button>
+
+            <div class="partners__swiper-container">
+              <div class="partners__swiper-wrapper swiper-wrapper">
+                <div class="p__l1 swiper-slide partners__list-item"></div>
+                <div class="p__l2 swiper-slide partners__list-item"></div>
+                <div class="p__l3 swiper-slide partners__list-item"></div>
+                <div class="p__l4 swiper-slide partners__list-item"></div>
+                <div class="p__l5 swiper-slide partners__list-item"></div>
+                <div class="p__l6 swiper-slide partners__list-item"></div>
+                <div class="p__l7 swiper-slide partners__list-item"></div>
+                <div class="p__l8 swiper-slide partners__list-item"></div>
+                <div class="p__l9 swiper-slide partners__list-item"></div>
+              </div>
+            </div>
+
+            <button class="pagination-arrows pagination-arrows__next partners-next"></button>
+          </div>
 
         </div> <!-- projects__partners -->
       </div> <!-- projects-inner -->
