@@ -45,42 +45,41 @@ const choices = new Choices(element, {
   itemSelectText: '',
 });
 
-$('.gallery__swiper-item').on('click', function () {
+$('.gallery__swiper-slide').on('click', function () {
   let target = $(this).children().slideToggle();
   $(target).removeClass('not-active');
   $(target).addClass('active');
   setTimeout(function(){
-    $('.gallery__swiper-item--after').addClass('not-active');
+    $('.gallery__swiper-slide--clicked').addClass('not-active');
   }, 1000);
 });
 
 // Gallery swiper
 var mySwiper = new Swiper('.gallery__swiper-container', {
   loop: true,
-  slidesPerView: 3,
-  slidesPerColumn: 2,
-  spaceBetween: 50,
 
-  // breakpoints: {
-  //   // 1920: {
-  //   //   slidesPerView: 3,
-  //   //   slidesPerColumn: 2,
-  //   // },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34,
+    },
 
-  //   1024: {
-  //     slidesPerView: 4,
-  //     slidesPerColumn: 2,
-  //   }
-  // },
+    1919: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 50,
+    },
+  },
 
   pagination: {
-    el: '.pagination-numbers',
+    el: '.gallery-numbers',
     type: 'fraction',
   },
 
   navigation: {
-    nextEl: '.pagination-arrows__prev',
-    prevEl: '.pagination-arrows__next',
+    nextEl: '.gallery-next',
+    prevEl: '.gallery-prev',
   },
 })
 
@@ -178,25 +177,22 @@ $('.checkbox-label__input').click(function(){
 });
 
 // Books
-var mySwiper = new Swiper('.books__rightside-container', {
+var mySwiper = new Swiper('.books__swiper', {
   loop: true,
-  nested: true,
+  slidesPerView: 3,
+  spaceBetween: 50,
 
-  // breakpoints: {
-  //   // when window width is >= 1919px
-  //   1919: {
-  //     slidesPerView: 2,
-  //   },
-  // },
+  breakpoints: {
+  },
 
   pagination: {
-    el: '.books__swiper-pagination',
+    el: '.books-numbers',
     type: 'fraction',
   },
 
   navigation: {
-    nextEl: '.books__swiper-button-next',
-    prevEl: '.books__swiper-button-prev',
+    nextEl: '.books-next',
+    prevEl: '.books-prev',
   },
 })
 
@@ -206,16 +202,15 @@ var mySwiper = new Swiper('.partners__swiper-container', {
   spaceBetween: 50,
   slidesPerView: 3,
 
-  // breakpoints: {
-  //   // when window width is >= 1920px
-  //   1919: {
-  //     slidesPerView: 3,
-  //   },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+    },
 
-  //   1024: {
-  //     slidesPerView: 2,
-  //   },
-  // },
+    1919: {
+      slidesPerView: 3,
+    },
+  },
 
   navigation: {
     nextEl: '.partners-next',
