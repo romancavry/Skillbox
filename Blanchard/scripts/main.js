@@ -179,10 +179,17 @@ $('.checkbox-label__input').click(function(){
 // Books
 var mySwiper = new Swiper('.books__swiper', {
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 50,
 
   breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+
+    1919: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 
   pagination: {

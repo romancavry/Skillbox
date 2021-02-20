@@ -2171,10 +2171,6 @@ body {
     line-height: 32px;
   }
 
-  .gallery {
-    background: url(../img/1920-gallery-background.jpg) no-repeat center;
-  }
-
   .gallery__title {
     margin-bottom: 18px;
   }
@@ -2240,7 +2236,7 @@ body {
 
   .tabs-content__link {
     margin-right: 63px;
-    line-height: 27.5px;
+    line-height: 28px;
     transform: translateX(-4px);
     letter-spacing: -0.5px;
   }
@@ -2251,6 +2247,10 @@ body {
     min-height: 683px;
     margin-bottom: 52px;
     padding: 217px 18px 50px 34px;
+  }
+
+  .events__item-title {
+    margin-bottom: 0;
   }
 
   .events__item:not(:nth-child(3n)) {
@@ -2303,6 +2303,10 @@ body {
     object-fit: cover;
   }
 
+  .books__title {
+    transform: translateX(-4px);
+  }
+
   .books__leftside-container {
     padding-bottom: 81px;
   }
@@ -2334,6 +2338,10 @@ body {
 
   .books__inner {
     padding-bottom: 0;
+  }
+
+  .books__rightside-container {
+    max-width: 630px;
   }
 
   .projects {
