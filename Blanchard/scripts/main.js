@@ -3,7 +3,7 @@ $(".widget-list__title").on('click', function(){
   let iconTarget = $(this).children();
   let allIcons = $(".widget-list__title").children();
 
-  $(".widget-list__title").css({ 'outline' : 'none' });
+  // $(".widget-list__title").css({ 'outline' : 'none' });
 
   $(".widget-list__title").removeClass('widget__for-icon-darkPurple');
   $(allIcons).removeClass('widget__for-icon-click');
@@ -34,8 +34,17 @@ $('.widget__search-input').on('focus', function() {
 });
 
 // Hero
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.hero__swiper-container', {
   loop: true,
+  allowTouchMove: false,
+  fadeEffect: { crossFade: true },
+  virtualTranslate: true,
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+  },
+  speed: 1000,
+  effect: "fade",
 })
 
 // Gallery
@@ -69,6 +78,7 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
       slidesPerView: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,
+      slidesPerGroup: 6,
     },
   },
 
@@ -85,44 +95,16 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
 
 // Catalogue
 $( function() {
-  $( "#accordion-france" ).accordion({
+  $( ".js-tabs-content-wrapper" ).accordion({
     collapsible: true,
     heightStyle: "content",
   });
 } );
 
-$( function() {
-  $( "#accordion-germany" ).accordion({
-    collapsible: true,
-    heightStyle: "content",
-  });
-} );
-
-$( function() {
-  $( "#accordion-italy" ).accordion({
-    collapsible: true,
-    heightStyle: "content",
-  });
-} );
-
-$( function() {
-  $( "#accordion-russia" ).accordion({
-    collapsible: true,
-    heightStyle: "content",
-  });
-} );
-
-$( function() {
-  $( "#accordion-belgium" ).accordion({
-    collapsible: true,
-    heightStyle: "content",
-  });
-} );
-
-$('.catalogue__tabs-nav a').on('click', function(e) {
+$('.js-tabs-link').on('click', function(e) {
   e.preventDefault();
 
-  $('.catalogue__tabs-nav a').removeClass('active');
+  $('.js-tabs-link').removeClass('active');
   $(this).addClass('active');
 
   let href = $(this).attr('href');
@@ -140,13 +122,12 @@ const authorDesc = document.querySelectorAll('.bio__wrapper');
 authorEl.forEach((authorBtn) => {
   authorBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    $(authorBtn).css({ 'outline' : 'none' });
     const authorPath = e.currentTarget.dataset.path;
     const cardTarget = document.querySelector(`[data-target=${authorPath}]`);
 
     authorEl.forEach((el) => {
-      if (el.classList.contains('active')) {
-        el.classList.remove('active')
+      if (el.classList.contains('tabs-content__link--active')) {
+        el.classList.remove('tabs-content__link--active')
       }
     });
 
@@ -154,9 +135,9 @@ authorEl.forEach((authorBtn) => {
       card.classList.remove('card-active');
     });
 
-    authorBtn.classList.add('active');
+    authorBtn.classList.add('tabs-content__link--active');
 
-    if (authorBtn.classList.contains('active')) {
+    if (authorBtn.classList.contains('tabs-content__link--active')) {
       cardTarget.classList.add('card-active');
     }
   });
