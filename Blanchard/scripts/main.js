@@ -68,6 +68,12 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
   loop: true,
 
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      spaceBetween: 34,
+    },
+
     1024: {
       slidesPerView: 2,
       slidesPerColumn: 2,

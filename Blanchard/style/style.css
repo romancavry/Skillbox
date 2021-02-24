@@ -2465,3 +2465,111 @@ body {
     margin-right: 31px;
   }
 }
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 666px;
+  }
+
+  /* Hero */
+  .hero__swiper-container {
+    max-width: 768px;
+    transform: translateX(9px);
+  }
+
+  .hero1 {background: url(../img/768-hero-swiper1.jpg);}
+  .hero2 {background: url(../img/768-hero-swiper2.jpg);}
+  .hero3 {background: url(../img/768-hero-swiper3.jpg);}
+
+  .hero__fixed {
+    left: -5px;
+  }
+
+  .hero__btn {
+    padding: 25.5px 36px 27.5px 36px;
+  }
+
+  /* About */
+  .about__title {
+    margin-bottom: 19px;
+  }
+
+  /* Gallery */
+  .gallery {
+    background: url(../img/768-gallery-background.jpg);
+  }
+
+  .gallery__inner {
+    position: relative;
+
+    flex-direction: column;
+    padding-top: 84px;
+  }
+
+  .gallery__leftside-container {
+    margin-bottom: 90px;
+  }
+
+  .gallery__title {
+    margin-left: -4px;
+  }
+
+  .gallery__select-title {
+    margin-bottom: 13px
+  }
+
+  .gallery__select-suptitle {
+    /* position: absolute; */
+    bottom: 80px;
+
+    max-width: 100%;
+  }
+
+  .choices__inner {
+    padding: 3.5px 15px 13.5px 9px;
+  }
+
+  .gallery-prev {
+    margin-right: 69px;
+  }
+
+  .gallery-numbers {
+    top: 6px;
+    left: 69px;
+  }
+
+  .gallery__swiper-container {
+    max-width: 668px;
+  }
+
+  .gallery__swiper-slide {
+    max-width: 317px;
+  }
+
+  /* Если у wrapper'a появляется высота - то всё работает, надо разбираться */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
