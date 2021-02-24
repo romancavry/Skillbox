@@ -78,7 +78,6 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
       slidesPerView: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,
-      slidesPerGroup: 6,
     },
   },
 
