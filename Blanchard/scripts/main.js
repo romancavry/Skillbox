@@ -167,6 +167,12 @@ var mySwiper = new Swiper('.books__swiper', {
   loop: true,
 
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesOffsetBefore: 42,
+    },
+
     1024: {
       slidesPerView: 2,
       spaceBetween: 50,

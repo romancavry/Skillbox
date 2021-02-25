@@ -2659,7 +2659,7 @@ body {
 
   .books__inner {
     flex-direction: column;
-    padding-bottom: 92px;
+    padding-bottom: 58px;
   }
 
   .books__title {
@@ -2667,11 +2667,45 @@ body {
     margin-left: 0;
   }
 
+  .books__leftside-container {
+    margin-bottom: 36px;
+    padding-bottom: 0;
+  }
+
+  .prices__text--from {
+    padding: 0px 4px 5px 11px;
+  }
+
   .books__checkbox {
-    flex-direction: row;
     flex-wrap: wrap;
     max-height: 150px;
     max-width: 100%;
+    margin-bottom: 23px;
+  }
+
+  .checkbox-label {
+    display: block;
+    margin-right: 54px;
+  }
+
+  .books-item {
+    max-width: 290px;
+  }
+
+  .books__rightside-container {
+    padding-top: 0;
+    max-width: 656px;
+  }
+
+  .books-item__img {
+    margin-bottom: 9px;
+  }
+
+  .projects__text {
+    margin-bottom: 28px;
+
+    letter-spacing: 0.4px;
+    line-height: 31.9px;
   }
 
 
