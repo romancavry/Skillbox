@@ -2227,7 +2227,7 @@ body {
   }
 
   .gallery-numbers {
-    left: 38px;
+    left: 63px;
   }
 
   .catalogue__title {
@@ -2467,6 +2467,10 @@ body {
 }
 
 @media (max-width: 1023px) {
+  .title {
+    margin-left: -4px;
+  }
+
   .container {
     max-width: 666px;
   }
@@ -2504,14 +2508,15 @@ body {
 
     flex-direction: column;
     padding-top: 84px;
+    padding-bottom: 163px;
   }
 
   .gallery__leftside-container {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
   }
 
   .gallery__title {
-    margin-left: -4px;
+    margin-bottom: 21px;
   }
 
   .gallery__select-title {
@@ -2519,10 +2524,12 @@ body {
   }
 
   .gallery__select-suptitle {
-    /* position: absolute; */
+    position: absolute;
     bottom: 80px;
 
     max-width: 100%;
+
+    letter-spacing: 0.35px;
   }
 
   .choices__inner {
@@ -2540,22 +2547,132 @@ body {
 
   .gallery__swiper-container {
     max-width: 668px;
+    max-height: 594px;
+  }
+
+  .gallery__swiper-wrapper {
+    max-height: 594px;
   }
 
   .gallery__swiper-slide {
     max-width: 317px;
   }
 
-  /* Если у wrapper'a появляется высота - то всё работает, надо разбираться */
+  /* Catalogue */
+  .catalogue__inner {
+    padding-top: 84px;
+  }
 
+  .catalogue__tabs-nav {
+    transform: translate(28px, -17px);
+  }
 
+  .tabs__item:not(:last-child) {
+    margin-right: 34px;
+  }
 
+  .catalogue__text {
+    margin-top: -4px;
+    margin-bottom: 19px;
+  }
 
+  .catalogue__tabs-content {
+    flex-direction: column-reverse;
+    margin-bottom: 73px;
+  }
 
+  .tabs-content__wrapper {
+    max-width: 100%;
+  }
 
+  .tabs-content__link {
+    margin-right: 45px;
+    margin-left: 7px;
+  }
 
+  .ui-accordion .ui-accordion-content {
+    max-height: 341px;
+  }
 
+  .ui-accordion .ui-accordion-header {
+    padding-top: 37px;
+    padding-bottom: 42px;
+  }
 
+  .tabs-content__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .tabs-content__bio {
+    max-width: 100%;
+  }
+
+  .bio__img {
+    margin-bottom: 28px;
+  }
+
+  /* Events */
+  .events {
+    margin-bottom: 83px;
+  }
+
+  .events__item {
+    margin-bottom: 50px;
+    padding: 215px 18px 50px 34px;
+    max-width: 316px;
+
+    background-size: 317px 200px;
+  }
+
+  .events__item:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .events__item:nth-child(2n) {
+    margin-left: 34px;
+  }
+
+  .events__item-title {
+    letter-spacing: 0.1px;
+  }
+
+  .events__item3 {
+    display: none;
+  }
+
+  .events__btn::after {
+    top: -11.4%;
+    left: -3.5%;
+
+    height: 66px;
+  }
+
+  .events__btn:hover::after {
+    top: -2.6%;
+    left: -2.5%;
+  }
+
+  /* Books */
+  .books {
+    background: url(../img/768-books-background.png);
+  }
+
+  .books__inner {
+    flex-direction: column;
+    padding-bottom: 92px;
+  }
+
+  .books__title {
+    margin-bottom: 21px;
+    margin-left: 0;
+  }
+
+  .books__checkbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 150px;
+    max-width: 100%;
+  }
 
 
 

@@ -65,7 +65,6 @@ $('.gallery__swiper-slide').on('click', function () {
 
 // Gallery swiper
 var mySwiper = new Swiper('.gallery__swiper-container', {
-  loop: true,
 
   breakpoints: {
     768: {
@@ -151,6 +150,7 @@ authorEl.forEach((authorBtn) => {
 // Events
 $('.events__btn').on('click', function() {
   $('.events__btn').addClass('not-active');
+  $('.events__item3').addClass('active');
   $('.events__item').removeClass('not-active');
 })
 
