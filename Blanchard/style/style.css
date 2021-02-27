@@ -997,10 +997,14 @@ body {
   margin-right: 30px;
 }
 
+.tabs-france {background: url(../img/catalogue-tabsnav-france.svg) no-repeat center;}
+.tabs-germany {background: url(../img/catalogue-tabsnav-germany.svg) no-repeat center;}
+.tabs-italy {background: url(../img/catalogue-tabsnav-italy.svg) no-repeat center;}
+.tabs-russia {background: url(../img/catalogue-tabsnav-russia.svg) no-repeat center;}
+.tabs-belgium {background: url(../img/catalogue-tabsnav-belgium.svg) no-repeat center;}
+
 .tabs__link {
   position: relative;
-
-  /* display: block; */
 
   width: 100%;
   height: 100%;
@@ -2815,7 +2819,7 @@ body {
   .hero__btn:focus.hero__btn::after {
     top: -3px;
     left: -3px;
-    width: 102.5%;
+    width: 103.2%;
   }
 
   .hero__inner {
@@ -2863,9 +2867,73 @@ body {
 
   /* Gallery */
   .gallery {
-    background: url(../img/320-gallery-background.png);
+    background: url(../img/320-gallery-background.png) center no-repeat;
   }
 
+  .gallery__inner {
+    padding-top: 50px;
+    padding-bottom: 249px;
+  }
+
+  .gallery__title {
+    margin-bottom: 12px;
+    margin-left: -2px;
+  }
+
+  .gallery__leftside-container {
+    margin-bottom: 116px;
+    max-width: 100%;
+  }
+
+  .gallery__select-title {
+    margin-bottom: 6px;
+  }
+
+  .gallery__swiper-container {
+    margin-bottom: 22px;
+    max-width: 100%;
+  }
+
+  .gallery__swiper-slide {
+    max-height: 367px;
+  }
+
+  .pagination-container {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .gallery-numbers {
+    left: 64px;
+  }
+
+  /* Catalogue */
+  .catalogue__inner {
+    padding-top: 79px;
+  }
+
+  .catalogue__title {
+    margin-bottom: 30px;
+  }
+
+  .catalogue__tabs-nav {
+    margin-left: -30px;
+  }
+
+  .tabs__item {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tabs__link:hover::before {
+    opacity: 0;
+  }
+
+  .tabs-france {background: url(../img/320-catalogue-tabsnav-france.svg) no-repeat center;}
+  .tabs-germany {background: url(../img/320-catalogue-tabsnav-germany.svg) no-repeat center;}
+  .tabs-italy {background: url(../img/320-catalogue-tabsnav-italy.svg) no-repeat center;}
+  .tabs-russia {background: url(../img/320-catalogue-tabsnav-russia.svg) no-repeat center;}
+  .tabs-belgium {background: url(../img/320-catalogue-tabsnav-belgium.svg) no-repeat center;}
 
 
 

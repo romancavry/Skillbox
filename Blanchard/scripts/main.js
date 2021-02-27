@@ -36,15 +36,15 @@ $('.widget__search-input').on('focus', function() {
 // Hero
 var mySwiper = new Swiper('.hero__swiper-container', {
   loop: true,
-  // allowTouchMove: false,
-  // fadeEffect: { crossFade: true },
-  // virtualTranslate: true,
-  // autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: true,
-  // },
-  // speed: 1000,
-  // effect: "fade",
+  allowTouchMove: false,
+  fadeEffect: { crossFade: true },
+  virtualTranslate: true,
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+  },
+  speed: 1000,
+  effect: "fade",
 })
 
 // Gallery
@@ -67,6 +67,11 @@ $('.gallery__swiper-slide').on('click', function () {
 var mySwiper = new Swiper('.gallery__swiper-container', {
 
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+    },
+
     768: {
       slidesPerView: 2,
       slidesPerColumn: 2,
