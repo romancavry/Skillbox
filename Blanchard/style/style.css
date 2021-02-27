@@ -2410,14 +2410,13 @@ body {
     max-width: 818px;
   }
   .partners__list-item {
-    max-width: 384px !important;
     max-height: 128px;
 
     background-size: contain;
   }
 
   .contacts__leftside-container {
-    margin-left: 19.6%;
+    margin-left: 15.8%;
   }
 
   .contacts__rightside-container {
@@ -2496,6 +2495,7 @@ body {
   /* About */
   .about__title {
     margin-bottom: 19px;
+    margin-left: 0;
   }
 
   /* Gallery */
@@ -2617,7 +2617,7 @@ body {
   }
 
   .events__item {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     padding: 215px 18px 50px 34px;
     max-width: 316px;
 
@@ -2694,22 +2694,62 @@ body {
 
   .books__rightside-container {
     padding-top: 0;
-    max-width: 656px;
+    max-width: 643px;
   }
 
   .books-item__img {
     margin-bottom: 9px;
   }
 
+  .projects {
+    margin-bottom: 88px;
+  }
+
   .projects__text {
     margin-bottom: 28px;
 
     letter-spacing: 0.4px;
-    line-height: 31.9px;
+    line-height: 32px;
   }
 
+  /* Partners */
+  .partners__swiper-container {
+    max-width: 560px;
+  }
 
+  .partners__list-item {
+    max-height: 106px;
+    background-size: 263px 106px;
+  }
 
+  .p__l1 {background-image: url(../img/768-partners-swiper1.png); transition: background-image .3s ease-in-out;}
+  .p__l2 {background-image: url(../img/768-partners-swiper2.png); transition: background-image .3s ease-in-out;}
+  .p__l3 {background-image: url(../img/768-partners-swiper3.png); transition: background-image .3s ease-in-out;}
+  .p__l4 {background-image: url(../img/768-partners-swiper4.png); transition: background-image .3s ease-in-out;}
+  .p__l5 {background-image: url(../img/768-partners-swiper5.png); transition: background-image .3s ease-in-out;}
+  .p__l6 {background-image: url(../img/768-partners-swiper6.png); transition: background-image .3s ease-in-out;}
+  .p__l7 {background-image: url(../img/768-partners-swiper7.png); transition: background-image .3s ease-in-out;}
+  .p__l8 {background-image: url(../img/768-partners-swiper8.png); transition: background-image .3s ease-in-out;}
+  .p__l9 {background-image: url(../img/768-partners-swiper9.png); transition: background-image .3s ease-in-out;}
+
+  /* Contacts */
+  .contacts__leftside-container {
+    padding: 122px 44px 100px 0;
+    width: 39.5%;
+  }
+
+  .address__title {
+    margin-bottom: 2px;
+  }
+
+  .contacts__rightside-container {
+    width: 200%;
+  }
+
+  /* Footer */
+  .footer__nav {
+    transform: translate(0px,2px);
+  }
 
 
 

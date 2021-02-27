@@ -170,7 +170,7 @@ var mySwiper = new Swiper('.books__swiper', {
     768: {
       slidesPerView: 2,
       spaceBetween: 34,
-      slidesOffsetBefore: 42,
+      slidesOffsetBefore: 55,
     },
 
     1024: {
@@ -202,6 +202,11 @@ var mySwiper = new Swiper('.partners__swiper-container', {
   slidesPerView: 3,
 
   breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
+
     1024: {
       slidesPerView: 2,
     },
