@@ -36,15 +36,15 @@ $('.widget__search-input').on('focus', function() {
 // Hero
 var mySwiper = new Swiper('.hero__swiper-container', {
   loop: true,
-  allowTouchMove: false,
-  fadeEffect: { crossFade: true },
-  virtualTranslate: true,
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-  },
-  speed: 1000,
-  effect: "fade",
+  // allowTouchMove: false,
+  // fadeEffect: { crossFade: true },
+  // virtualTranslate: true,
+  // autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: true,
+  // },
+  // speed: 1000,
+  // effect: "fade",
 })
 
 // Gallery
