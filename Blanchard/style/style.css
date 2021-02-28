@@ -1271,6 +1271,9 @@ body {
 
   width: 50px;
   height: 50px;
+
+  background-size: contain;
+  background-position: center;
 }
 
 .ui-state-active .ui-icon, .ui-button:active .ui-icon {
@@ -1280,20 +1283,28 @@ body {
 .ui-icon, .ui-widget-content .ui-icon {
   background: url(../img/icon-accordion-downarrow.svg);
   transition: background .3s ease-in-out;
+  background-size: contain;
+  background-position: center;
 }
 
 .ui-state-active .ui-icon {
   background: url(../img/icon-accordion-uparrow.svg) !important;
+  background-size: contain !important;
+  background-position: center !important;
 }
 
 .tabs-content__title:active .ui-icon {
   background: url(../img/icon-accordion-uparrow-active.svg) !important;
   transition: background .3s ease-in-out;
+  background-size: contain !important;
+  background-position: center !important;
 }
 
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
   background: url(../img/icon-accordion-downarrow-hover.svg);
   transition: background .3s ease-in-out;
+  background-size: contain;
+  background-position: center;
 }
 
 .ui-accordion-header-collapsed {
@@ -2916,13 +2927,21 @@ body {
     margin-bottom: 30px;
   }
 
+  .catalogue__text {
+    display: none;
+  }
+
   .catalogue__tabs-nav {
     margin-left: -30px;
   }
 
   .tabs__item {
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .tabs__item:not(:last-child) {
+    margin-right: 19px;
   }
 
   .tabs__link:hover::before {
@@ -2936,9 +2955,81 @@ body {
   .tabs-belgium {background: url(../img/320-catalogue-tabsnav-belgium.svg) no-repeat center;}
 
 
+  .ui-accordion .ui-accordion-header {
+    padding-top: 18px;
+    padding-bottom: 20px;
 
+    font-size: 18px;
+  }
 
+  .ui-icon {
+    top: 32%;
 
+    width: 30px;
+    height: 30px;
+  }
+
+  .ui-accordion .ui-accordion-content {
+    flex-wrap: nowrap;
+    padding: 16px 0 19px 0;
+    max-height: 805px;
+  }
+
+  .tabs-content__link {
+    margin-bottom: 0;
+
+    line-height: 32px;
+  }
+
+  .tabs-content__wrapper {
+    margin-bottom: 53px;
+  }
+
+  .bio__img {
+    margin-bottom: 17px;
+  }
+
+  .bio__name {
+    margin-bottom: 12px;
+  }
+
+  .bio__date {
+    margin-bottom: 7px;
+  }
+
+  .catalogue__tabs-content {
+    margin-bottom: 51px;
+  }
+
+  .bio__text {
+    letter-spacing: 0.1px;
+  }
+
+  /* Events */
+  .events__title {
+    margin-left: -2px;
+    margin-bottom: 11px;
+  }
+
+  .events__item {
+    padding: 215px 10px 50px 27px;
+  }
+
+  .events__item-title {
+    margin-bottom: 36px;
+  }
+
+  .events__item-suptitle {
+    letter-spacing: 0;
+  }
+
+  .item-subtitle__location {
+    letter-spacing: 0.3px;
+  }
+
+  .item-subtitle__date {
+    letter-spacing: 0.2px;
+  }
 
 
 }
