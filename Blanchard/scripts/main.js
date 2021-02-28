@@ -167,6 +167,16 @@ $('.checkbox-label__input').click(function(){
   }
 });
 
+var mySwiper = new Swiper('.events__swiper', {
+  loop: true,
+  slidesPerView: 1,
+
+  pagination: {
+    el: '.events__dots',
+    type: 'bullets',
+  },
+})
+
 // Books
 var mySwiper = new Swiper('.books__swiper', {
   loop: true,

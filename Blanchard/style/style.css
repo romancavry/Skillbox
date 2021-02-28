@@ -1363,6 +1363,14 @@ body {
   flex-wrap: wrap;
 }
 
+.events__swiper {
+  display: none;
+}
+
+.events__dots {
+  display: none;
+}
+
 .events__item {
   position: relative;
 
@@ -3006,13 +3014,20 @@ body {
   }
 
   /* Events */
+  .events {
+    margin-bottom: 46px;
+  }
+
   .events__title {
     margin-left: -2px;
     margin-bottom: 11px;
   }
 
   .events__item {
-    padding: 215px 10px 50px 27px;
+    padding: 215px 10px 130px 27px;
+    max-height: 682px;
+    min-height: 0;
+    background-size: contain;
   }
 
   .events__item-title {
@@ -3030,6 +3045,56 @@ body {
   .item-subtitle__date {
     letter-spacing: 0.2px;
   }
+
+  .events__inner {
+    display: none;
+  }
+
+  .events__btn {
+    display: none;
+  }
+
+  .events__swiper {
+    display: block;
+    margin-bottom: 15px;
+    max-height: 683px;
+    overflow: hidden;
+  }
+
+  .events__item:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  .events__dots {
+    display: block;
+    margin-left: 31%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: url(../img/320-icon-activeslide.svg);
+  }
+
+  .events__item-btn {
+    bottom: 50px;
+  }
+
+  .events__item-suptitle {
+    max-height: 222px;
+  }
+
+ /* Books */
+ .books__inner {
+   padding-top: 51px;
+ }
 
 
 }
