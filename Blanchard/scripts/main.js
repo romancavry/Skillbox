@@ -210,6 +210,16 @@ var mySwiper = new Swiper('.books__swiper', {
   },
 })
 
+const books__select = document.getElementById('books__select');
+const choices2 = new Choices(books__select, {
+  searchEnabled: false,
+  itemSelectText: '',
+  classNames: {
+    containerOuter: 'choices books__choices',
+    containerInner: 'choices__inner choices__books-inner',listSingle: 'choices__list--single books-choices__list--single',
+  }
+});
+
 // Partners
 var mySwiper = new Swiper('.partners__swiper-container', {
   loop: true,
@@ -217,6 +227,11 @@ var mySwiper = new Swiper('.partners__swiper-container', {
   slidesPerView: 3,
 
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+
     768: {
       slidesPerView: 2,
       spaceBetween: 34,
