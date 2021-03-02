@@ -3269,23 +3269,45 @@ body {
   }
 
   .contacts__leftside-container {
-    position: relative;
-
     margin-left: 0;
+    padding: 0;
     width: 100%;
     border-right: none;
   }
 
   .contacts__wrapper {
     float: none;
+    transform: translateX(-2px);
+
+    padding-bottom: 28px;
+  }
+
+  .form__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .contacts-form__input {
+    max-width: 100%;
+  }
+
+  .contacts__rightside-container {
+    position: absolute;
+    top: 7.9%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 320px;
+    width: 150%;
   }
 
   .contacts__address {
-    position: absolute;
-    top: 0;
+    margin-bottom: 355px;
   }
 
   .address__title {
+    margin-bottom: 0px;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
@@ -3297,16 +3319,70 @@ body {
     line-height: 19px;
   }
 
-  .contacts__rightside-container {
-    position: absolute;
-    top: 8.9%;
-
-    height: 320px;
-    width: 100%;
-    max-width: 320px;
+  .contacts-form {
+    transform: translateX(2px);
+    margin-bottom: 19px;
   }
 
+  .contacts-form__input {
+    margin-bottom: 21px;
+  }
 
+  .contacts-form__btn {
+    padding: 10px 34px;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  .contacts-form__btn::after {
+    top: -5px;
+    left: -5.5px;
+
+    width: 108%;
+    height: 126%;
+  }
+
+  .social-media__container {
+    transform: translateX(3px);
+  }
+
+  .social-media__span {
+    width: 49px;
+    height: 49px;
+  }
+
+  .form-title__message {
+    margin-bottom: 6px;
+  }
+
+  .social-media__whatsapp {
+    margin-right: 17px;
+  }
+
+  /* Footer */
+  .footer__inner {
+    flex-direction: column-reverse;
+    padding: 17px 0 20px 0;
+  }
+
+  .footer__nav {
+    margin-bottom: 17px;
+  }
+
+  .footer__nav-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+
+  .footer-logo__img {
+    max-width: 97px;
+  }
 
 
 
