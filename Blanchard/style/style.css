@@ -2269,6 +2269,10 @@ body {
     transform: translate(26px, -6px);
   }
 
+  .catalogue__tabs-content {
+    margin-bottom: 115px;
+  }
+
   .catalogue__text {
     margin-bottom: 40px;
     line-height: 32px;
@@ -2352,15 +2356,15 @@ body {
   }
 
   .events__btn::after {
-    top: 92.7%;
-    left: 39.2%;
+    top: -13.3%;
+    left: -3.8%;
   }
 
   .events__btn:hover::after {
-    top: 93.4%;
-    left: 39.5%;
-    width: 195px;
-    height: 57px;
+    top: -3.5%;
+    left: -1%;
+    width: 191px;
+    height: 59px;
   }
 
   .swiper-item__img {
