@@ -1530,6 +1530,10 @@ body {
   color: #fff;
 }
 
+.books__mobile-container {
+  display: none;
+}
+
 .books__checkbox {
   display: flex;
   flex-direction: column;
@@ -2289,7 +2293,7 @@ body {
   }
 
   .ui-accordion .ui-accordion-content {
-    padding: 24px 0 19px 0;
+    padding: 24px 0 26px 5px;
   }
 
   .ui-accordion .ui-accordion-header {
@@ -2297,7 +2301,7 @@ body {
   }
 
   .tabs-content__link {
-    margin-right: 63px;
+    margin-right: 58px;
     line-height: 28px;
     transform: translateX(-4px);
     letter-spacing: -0.5px;
@@ -2494,6 +2498,10 @@ body {
 }
 
 @media (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .title {
     margin-left: -4px;
   }
@@ -2521,6 +2529,10 @@ body {
   }
 
   /* About */
+  .about {
+    padding-top: 82px;
+  }
+
   .about__title {
     margin-bottom: 19px;
     margin-left: 0;
@@ -2614,12 +2626,13 @@ body {
   }
 
   .tabs-content__link {
+    margin-bottom: 4px;
     margin-right: 45px;
     margin-left: 7px;
   }
 
   .ui-accordion .ui-accordion-content {
-    max-height: 341px;
+    max-height: 343px;
   }
 
   .ui-accordion .ui-accordion-header {
@@ -2762,8 +2775,8 @@ body {
 
   /* Contacts */
   .contacts__leftside-container {
-    padding: 122px 44px 100px 0;
-    width: 39.5%;
+    padding: 122px 42px 100px 0;
+    width: 40%;
   }
 
   .address__title {
@@ -3098,7 +3111,7 @@ body {
 
   /* Books */
   .books {
-    background: url(../img/320-books-background.png) center no-repeat;
+    background: url(../img/320-books-background.png) top;
   }
 
   .books__title {
@@ -3123,30 +3136,74 @@ body {
     margin-right: 0;
   }
 
-  .books__choices {
-    margin-bottom: 57px;
+  .books__mobile-container {
+    position: relative;
   }
 
-  .choices__books-inner {
-    padding: 4.5px 0 12.5px 0;
-    border-radius: 0;
-    border-right: none;
-    border-left: none;
+  .books__mobile-btn {
+    position: relative;
 
-    font-weight: 700;
+    padding-bottom: 5px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    color: #fff;
+    background: transparent;
+
     font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: start;
   }
 
-  .books-choices__list--single {
-    padding: 4px 0;
+  .mobile-btn__icon {
+    position: absolute;
+    top: 11px;
+    right: 0;
+
+    width: 12px;
+    height: 12px;
+
+    background-image: url(../img/icon-uparrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  .books__choices[data-type*=select-one]::after {
-    right: 7px;
+  .mobile__checkbox-label {
+    margin-bottom: 17px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .books__choices[data-type*=select-one].is-open::after {
-    right: 7px;
+  .mobile-btn__icon--clicked {
+    background-image: url(../img/icon-downarrow.svg);
+  }
+
+  .checkbox-label__input + span {
+    top: 12px;
+    left: 0px;
+  }
+
+  .checkbox-label__input + span::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: -278px;
+
+    height: 12px;
+    width: 12px;
+
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    background: url(../img/320-icon-cross.svg) no-repeat center;
+  }
+
+  .checkbox-label__input:checked + span::after {
+    opacity: 1;
   }
 
 
@@ -3364,7 +3421,7 @@ body {
   /* Footer */
   .footer__inner {
     flex-direction: column-reverse;
-    padding: 17px 0 20px 0;
+    padding: 21px 0;
   }
 
   .footer__nav {
@@ -3383,16 +3440,4 @@ body {
   .footer-logo__img {
     max-width: 97px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
 }

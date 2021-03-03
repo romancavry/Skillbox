@@ -210,15 +210,17 @@ var mySwiper = new Swiper('.books__swiper', {
   },
 })
 
-const books__select = document.getElementById('books__select');
-const choices2 = new Choices(books__select, {
-  searchEnabled: false,
-  itemSelectText: '',
-  classNames: {
-    containerOuter: 'choices books__choices',
-    containerInner: 'choices__inner choices__books-inner',listSingle: 'choices__list--single books-choices__list--single',
-  }
-});
+$('.books__mobile-btn').on('click', function() {
+  $('.mobile-btn__icon').toggleClass('mobile-btn__icon--clicked');
+  $('.mobile__checkbox-label').toggleClass('not-active');
+
+  let labelTarget = $('label[class*="purple-color"]');
+  $(labelTarget).removeClass('not-active');
+
+  $(labelTarget).on('click', function() {
+    $(this).addClass('not-active');
+  })
+})
 
 // Partners
 var mySwiper = new Swiper('.partners__swiper-container', {
