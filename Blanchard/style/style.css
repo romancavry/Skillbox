@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Light.woff);
   src: url(../fonts/OpenSans-Light.woff2);
+  src: url(../fonts/OpenSans-Light.woff);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Regular.woff);
   src: url(../fonts/OpenSans-Regular.woff2);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-SemiBold.woff);
   src: url(../fonts/OpenSans-SemiBold.woff2);
+  src: url(../fonts/OpenSans-SemiBold.woff);
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Bold.woff);
   src: url(../fonts/OpenSans-Bold.woff2);
+  src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -539,10 +539,6 @@ body {
 }
 
 /* Hero */
-.hero {
-  transform: translateX(-9px);
-}
-
 .hero__inner {
   padding-top: 238px;
   padding-bottom: 122px;
@@ -638,8 +634,8 @@ body {
 
 .hero__fixed {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 12%;
+  left: -13px;
   right: 0;
   z-index: 1;
 
@@ -647,7 +643,7 @@ body {
 }
 
 .hero__swiper-slide {
-  height: 800px;f
+  height: 800px;
 }
 
 .hero1 {
@@ -1564,37 +1560,44 @@ body {
   cursor: pointer;
 }
 
-.checkbox-label:focus {
-  outline: 2px solid var(--darkPurple);
-  outline-offset: 2px;
-}
-
 .checkbox-label__input {
-  display: none;
+  position: absolute;
+  left: 0px;
+  top: 9px;
+
+  width: 249px;
+
+  opacity: 0;
 }
 
-.checkbox-label__input + span {
+.checkbox-label__input:focus + span {
+  outline: 2px solid var(--darkPurple);
+  outline-offset: 5px;
+}
+
+.checkbox__span {
   position: absolute;
   top: 10px;
   left: 2px;
 
   display: inline-block;
-  width: 12px;
+  width: 260px;
   height: 12px;
-  border: 1px solid #fff;
   transition: border .3s ease-in-out;
+
+  background: url(../img/checkbox-frame.svg) no-repeat;
 
   text-align: center;
 }
 
-.checkbox-label__input + span::before {
+.checkbox__span::before {
   content: '';
 
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -95%;
 
   opacity: 0;
   transition: opacity .3s ease-in-out;
@@ -1606,8 +1609,7 @@ body {
 }
 
 .checkbox-label__input:checked + span {
-  border: 1px solid var(--mainPurple);
-  transition: border .3s ease-in-out;
+  background-image: url(../img/checkbox-frame-clicked.svg);
 }
 
 .prices__title {
@@ -2190,6 +2192,15 @@ body {
 
   .swiper-container {
     max-width: 1024px;
+  }
+
+  .hero {
+    transform: translateX(-9px);
+  }
+
+  .hero__fixed {
+    bottom: 0;
+    left: 0;
   }
 
   .hero__swiper-container {

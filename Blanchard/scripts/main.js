@@ -3,8 +3,6 @@ $(".widget-list__title").on('click', function(){
   let iconTarget = $(this).children();
   let allIcons = $(".widget-list__title").children();
 
-  // $(".widget-list__title").css({ 'outline' : 'none' });
-
   $(".widget-list__title").removeClass('widget__for-icon-darkPurple');
   $(allIcons).removeClass('widget__for-icon-click');
 
