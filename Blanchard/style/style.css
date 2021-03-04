@@ -1920,39 +1920,39 @@ body {
 
 .p__s1 {background-image: url(../img/partners-swiper1\(not-hover\).jpg);}
 
-.p__s1:hover {background-image: url(../img/partners-swiper1\(hover\).jpg);}
+.p__s1:hover {background-image: url(../img/partners-swiper1\(hover\).jpg); background-size: contain;}
 
 .p__s2 {background-image: url(../img/partners-swiper2\(not-hover\).jpg);}
 
-.p__s2:hover {background-image: url(../img/partners-swiper2\(hover\).jpg);}
+.p__s2:hover {background-image: url(../img/partners-swiper2\(hover\).jpg); background-size: contain;}
 
 .p__s3 {background-image: url(../img/partners-swiper3\(not-hover\).jpg);}
 
-.p__s3:hover {background-image: url(../img/partners-swiper3\(hover\).jpg);}
+.p__s3:hover {background-image: url(../img/partners-swiper3\(hover\).jpg); background-size: contain;}
 
 .p__s4 {background-image: url(../img/partners-swiper4\(not-hover\).jpg);}
 
-.p__s4:hover {background-image: url(../img/partners-swiper4\(hover\).jpg);}
+.p__s4:hover {background-image: url(../img/partners-swiper4\(hover\).jpg); background-size: contain;}
 
 .p__s5 {background-image: url(../img/partners-swiper5\(not-hover\).jpg);}
 
-.p__s5:hover {background-image: url(../img/partners-swiper5\(hover\).jpg);}
+.p__s5:hover {background-image: url(../img/partners-swiper5\(hover\).jpg); background-size: contain;}
 
 .p__s6 {background-image: url(../img/partners-swiper6\(not-hover\).jpg);}
 
-.p__s6:hover {background-image: url(../img/partners-swiper6\(hover\).jpg);}
+.p__s6:hover {background-image: url(../img/partners-swiper6\(hover\).jpg); background-size: contain;}
 
 .p__s7 {background-image: url(../img/partners-swiper7\(not-hover\).jpg);}
 
-.p__s7:hover {background-image: url(../img/partners-swiper7\(hover\).jpg);}
+.p__s7:hover {background-image: url(../img/partners-swiper7\(hover\).jpg); background-size: contain;}
 
 .p__s8 {background-image: url(../img/partners-swiper8\(not-hover\).jpg);}
 
-.p__s8:hover {background-image: url(../img/partners-swiper8\(hover\).jpg);}
+.p__s8:hover {background-image: url(../img/partners-swiper8\(hover\).jpg); background-size: contain;}
 
 .p__s9 {background-image: url(../img/partners-swiper9\(not-hover\).jpg);}
 
-.p__s9:hover {background-image: url(../img/partners-swiper9\(hover\).jpg);}
+.p__s9:hover {background-image: url(../img/partners-swiper9\(hover\).jpg); background-size: contain;}
 
 /* Contacts */
 .contacts__title {
@@ -2775,18 +2775,22 @@ body {
 
   .partners__slide {
     max-height: 106px;
-    background-size: 263px 106px;
   }
 
-  .p__s1 {background-image: url(../img/768-partners-swiper1.png); transition: background-image .3s ease-in-out;}
-  .p__s2 {background-image: url(../img/768-partners-swiper2.png); transition: background-image .3s ease-in-out;}
-  .p__s3 {background-image: url(../img/768-partners-swiper3.png); transition: background-image .3s ease-in-out;}
-  .p__s4 {background-image: url(../img/768-partners-swiper4.png); transition: background-image .3s ease-in-out;}
-  .p__s5 {background-image: url(../img/768-partners-swiper5.png); transition: background-image .3s ease-in-out;}
-  .p__s6 {background-image: url(../img/768-partners-swiper6.png); transition: background-image .3s ease-in-out;}
-  .p__s7 {background-image: url(../img/768-partners-swiper7.png); transition: background-image .3s ease-in-out;}
-  .p__s8 {background-image: url(../img/768-partners-swiper8.png); transition: background-image .3s ease-in-out;}
-  .p__s9 {background-image: url(../img/768-partners-swiper9.png); transition: background-image .3s ease-in-out;}
+  .partners__slide:hover {
+    background-size: 263px 106px;
+    transition: background-image .3s ease-in-out;
+  }
+
+  .p__s1 {background-image: url(../img/768-partners-swiper1.png);}
+  .p__s2 {background-image: url(../img/768-partners-swiper2.png);}
+  .p__s3 {background-image: url(../img/768-partners-swiper3.png);}
+  .p__s4 {background-image: url(../img/768-partners-swiper4.png);}
+  .p__s5 {background-image: url(../img/768-partners-swiper5.png);}
+  .p__s6 {background-image: url(../img/768-partners-swiper6.png);}
+  .p__s7 {background-image: url(../img/768-partners-swiper7.png);}
+  .p__s8 {background-image: url(../img/768-partners-swiper8.png);}
+  .p__s9 {background-image: url(../img/768-partners-swiper9.png);}
 
   /* Contacts */
   .contacts__leftside-container {
@@ -2846,7 +2850,6 @@ body {
   }
 
   /* Hero */
-
   .hero__swiper-container {
     max-width: 320px;
   }
@@ -3318,6 +3321,10 @@ body {
 
   .partners__slide {
     max-height: 65px;
+    background-size: 195px 65px;
+  }
+
+  .partners__slide:hover {
     background-size: 195px 65px;
   }
 
