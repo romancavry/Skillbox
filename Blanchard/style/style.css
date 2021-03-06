@@ -638,7 +638,8 @@ body {
 
 .hero__fixed {
   position: absolute;
-  bottom: 12%;
+  bottom: 0;
+  top: 0;
   left: -13px;
   right: 0;
   z-index: 1;
@@ -1993,17 +1994,13 @@ body {
 }
 
 .contacts__leftside-container {
-  padding: 122px 67px 100px 0;
-  width: 67.7%;
+  margin-left: calc(  (100% - 1604px)/2 );
+  padding: 121px 67px 117px 0;
   border-right: 1px solid #cacaca;
 }
 
-.contacts__wrapper {
-  float: right;
-}
-
 .contacts__rightside-container {
-  width: 150%;
+  width: 100%;
 }
 
 .contacts__address {
@@ -2877,6 +2874,10 @@ body {
   }
 
   /* Hero */
+  .hero__inner {
+    padding-top: 75px;
+  }
+
   .hero__swiper-container {
     max-width: 320px;
   }
@@ -2926,10 +2927,6 @@ body {
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
-  }
-
-  .hero__fixed {
-    bottom: 22px;
   }
 
   /* About */

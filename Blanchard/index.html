@@ -13,6 +13,8 @@
 
   <script src="scripts/jquery.js"></script>
   <script src="scripts/jquery-ui.js"></script>
+  <script src="scripts/inputmask.min.js"></script>
+  <script src="scripts/just-validate.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/choices.min.js"></script>
@@ -1737,22 +1739,34 @@
 
       <div class="contacts__inner">
         <div class="contacts__leftside-container">
-          <div class="contacts__wrapper">
-            <address class="contacts__address">
-              <h3 class="address__title">Шоурум №2</h3>
-              <p class="address__subtitle">Покровский бульвар, дом 24, строение 3</p>
-            </address>
-            <h4 class="form__title form-title__order">Заказать обратный звонок</h4>
-            <form action="#" class="contacts-form">
-              <input style="display: block" class="contacts-form__input" type="text" required name="Имя" placeholder="Имя*">
-              <input class="contacts-form__input" type="number" required name="Номер телефона" placeholder="Телефон*">
-              <button class="contacts-form__btn">Заказать</button>
-            </form>
-            <h4 class="form__title form-title__message">Связаться в один клик</h4>
-            <div class="social-media__container">
-              <a href="#"><span class="social-media__span social-media__whatsapp"></span></a>
-              <a href="#"><span class="social-media__span social-media__tg"></span></a>
-            </div>
+          <address class="contacts__address">
+            <h3 class="address__title">Шоурум №2</h3>
+            <p class="address__subtitle">Покровский бульвар, дом 24, строение 3</p>
+          </address>
+          <h4 class="form__title form-title__order">Заказать обратный звонок</h4>
+          <form action="#" class="contacts-form js-contacts-form">
+            <input
+              style="display: block"
+              class="contacts-form__input"
+              type="text"
+              required
+              name="Имя"
+              data-validate-field="name"
+              placeholder="Имя*">
+            <input
+              class="contacts-form__input"
+              type="tel"
+              name="tel"
+              required
+              placeholder="Телефон*"
+              data-validate-field="tel"
+              data-validate-rules="phone">
+            <button class="contacts-form__btn">Заказать</button>
+          </form>
+          <h4 class="form__title form-title__message">Связаться в один клик</h4>
+          <div class="social-media__container">
+            <a href="#"><span class="social-media__span social-media__whatsapp"></span></a>
+            <a href="#"><span class="social-media__span social-media__tg"></span></a>
           </div>
         </div>
 
