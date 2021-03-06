@@ -1918,13 +1918,21 @@ body {
 }
 
 .partners__slide {
-  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 150px;
+  border: 1px solid #CACACA;
 
-  background-position: center;
-  background-repeat: no-repeat;
+  filter: grayscale(1);
+  transition: filter .3s ease-in-out;
 
   cursor: pointer;
+}
+
+.partners__slide:hover {
+  filter: grayscale(0);
+  transition: filter .3s ease-in-out;
 }
 
 .partners-prev, .partners-next {
@@ -1946,42 +1954,6 @@ body {
 
 .partners__slide:hover {transition: background .3s ease-in-out;}
 
-.p__s1 {background-image: url(../img/partners-swiper1\(not-hover\).jpg);}
-
-.p__s1:hover {background-image: url(../img/partners-swiper1\(hover\).jpg); background-size: contain;}
-
-.p__s2 {background-image: url(../img/partners-swiper2\(not-hover\).jpg);}
-
-.p__s2:hover {background-image: url(../img/partners-swiper2\(hover\).jpg); background-size: contain;}
-
-.p__s3 {background-image: url(../img/partners-swiper3\(not-hover\).jpg);}
-
-.p__s3:hover {background-image: url(../img/partners-swiper3\(hover\).jpg); background-size: contain;}
-
-.p__s4 {background-image: url(../img/partners-swiper4\(not-hover\).jpg);}
-
-.p__s4:hover {background-image: url(../img/partners-swiper4\(hover\).jpg); background-size: contain;}
-
-.p__s5 {background-image: url(../img/partners-swiper5\(not-hover\).jpg);}
-
-.p__s5:hover {background-image: url(../img/partners-swiper5\(hover\).jpg); background-size: contain;}
-
-.p__s6 {background-image: url(../img/partners-swiper6\(not-hover\).jpg);}
-
-.p__s6:hover {background-image: url(../img/partners-swiper6\(hover\).jpg); background-size: contain;}
-
-.p__s7 {background-image: url(../img/partners-swiper7\(not-hover\).jpg);}
-
-.p__s7:hover {background-image: url(../img/partners-swiper7\(hover\).jpg); background-size: contain;}
-
-.p__s8 {background-image: url(../img/partners-swiper8\(not-hover\).jpg);}
-
-.p__s8:hover {background-image: url(../img/partners-swiper8\(hover\).jpg); background-size: contain;}
-
-.p__s9 {background-image: url(../img/partners-swiper9\(not-hover\).jpg);}
-
-.p__s9:hover {background-image: url(../img/partners-swiper9\(hover\).jpg); background-size: contain;}
-
 /* Contacts */
 .contacts__title {
   margin-bottom: 23px;
@@ -1989,13 +1961,12 @@ body {
 
 .contacts__inner {
   display: flex;
-  width: 100%;
   border-top: 1px solid #cacaca;
 }
 
 .contacts__leftside-container {
   margin-left: calc(  (100% - 1604px)/2 );
-  padding: 121px 67px 117px 0;
+  padding: 121px 67px 105px 0;
   border-right: 1px solid #cacaca;
 }
 
@@ -2222,9 +2193,12 @@ body {
     transform: translateX(-9px);
   }
 
+  .hero__inner {
+    padding-top: 214px;
+  }
+
   .hero__fixed {
-    bottom: 0;
-    left: 0;
+    left: -4px;
   }
 
   .hero__swiper-container {
@@ -2469,11 +2443,11 @@ body {
 
   .projects__inner {
     margin-left: -2px;
-    padding-top: 81px;
+    padding-top: 78px;
   }
 
   .projects__text {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .partners__swiper-container {
@@ -2486,12 +2460,12 @@ body {
     background-size: contain;
   }
 
-  .contacts__leftside-container {
-    margin-left: 15.8%;
+  .contacts__title {
+    margin-left: -4px;
   }
 
-  .contacts__rightside-container {
-    width: 135%;
+  .contacts__leftside-container {
+    margin-left: calc( (100% - 925px)/2 );
   }
 
   .contacts-form__input {
@@ -2537,10 +2511,6 @@ body {
 }
 
 @media (max-width: 1023px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .title {
     margin-left: -4px;
   }
@@ -2565,6 +2535,10 @@ body {
 
   .hero__btn {
     padding: 25.5px 36px 27.5px 36px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 129px;
   }
 
   /* About */
@@ -2697,7 +2671,7 @@ body {
   }
 
   .events__item {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     padding: 215px 18px 50px 34px;
     max-width: 316px;
 
@@ -2785,14 +2759,22 @@ body {
     margin-bottom: 88px;
   }
 
+  .projects__inner {
+    padding-top: 84px;
+  }
+
   .projects__text {
-    margin-bottom: 28px;
+    margin-bottom: 23px;
 
     letter-spacing: 0.4px;
     line-height: 32px;
   }
 
   /* Partners */
+  .partners__title {
+    margin-bottom: 28px;
+  }
+
   .partners__swiper-container {
     max-width: 560px;
   }
@@ -2801,33 +2783,23 @@ body {
     max-height: 106px;
   }
 
+  .partners__slide > img {
+    max-width: 210px;
+  }
+
   .partners__slide:hover {
     background-size: 263px 106px;
     transition: background-image .3s ease-in-out;
   }
 
-  .p__s1 {background-image: url(../img/768-partners-swiper1.png);}
-  .p__s2 {background-image: url(../img/768-partners-swiper2.png);}
-  .p__s3 {background-image: url(../img/768-partners-swiper3.png);}
-  .p__s4 {background-image: url(../img/768-partners-swiper4.png);}
-  .p__s5 {background-image: url(../img/768-partners-swiper5.png);}
-  .p__s6 {background-image: url(../img/768-partners-swiper6.png);}
-  .p__s7 {background-image: url(../img/768-partners-swiper7.png);}
-  .p__s8 {background-image: url(../img/768-partners-swiper8.png);}
-  .p__s9 {background-image: url(../img/768-partners-swiper9.png);}
-
   /* Contacts */
   .contacts__leftside-container {
+    margin-left: calc( (100% - 666px)/2);
     padding: 122px 42px 100px 0;
-    width: 40%;
   }
 
   .address__title {
     margin-bottom: 2px;
-  }
-
-  .contacts__rightside-container {
-    width: 200%;
   }
 
   /* Footer */
@@ -2946,7 +2918,7 @@ body {
 
   /* Gallery */
   .gallery {
-    background: url(../img/320-gallery-background.png) center no-repeat;
+    background: url(../img/320-gallery-background.png) top no-repeat;
   }
 
   .gallery__inner {
@@ -2971,6 +2943,10 @@ body {
   .gallery__swiper-container {
     margin-bottom: 22px;
     max-width: 100%;
+  }
+
+  .gallery__swiper-wrapper {
+    max-height: 365px;
   }
 
   .gallery__swiper-slide {
@@ -3180,6 +3156,8 @@ body {
 
   .books__mobile-container {
     position: relative;
+
+    display: block;
   }
 
   .books__mobile-btn {
@@ -3250,7 +3228,7 @@ body {
 
 
   .prices__title {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
   }
 
   .books__swiper {
@@ -3348,6 +3326,10 @@ body {
     background-size: 195px 65px;
   }
 
+  .partners__slide > img {
+    max-width: 140px;
+  }
+
   .partners__slide:hover {
     background-size: 195px 65px;
   }
@@ -3373,7 +3355,7 @@ body {
 
   .contacts__leftside-container {
     margin-left: 0;
-    padding: 0;
+    padding: 0 0 26px 0;
     width: 100%;
     border-right: none;
   }
@@ -3432,7 +3414,7 @@ body {
   }
 
   .contacts-form__btn {
-    padding: 10px 34px;
+    padding: 10px 32px;
 
     font-size: 12px;
     line-height: 16px;
