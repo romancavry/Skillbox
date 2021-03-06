@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Light.woff2);
-  src: url(../fonts/OpenSans-Light.woff);
+  src: url(../fonts/OpenSans-Light.woff2),
+  url(../fonts/OpenSans-Light.woff);
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Regular.woff2);
-  src: url(../fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff2),
+  url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-SemiBold.woff2);
-  src: url(../fonts/OpenSans-SemiBold.woff);
+  src: url(../fonts/OpenSans-SemiBold.woff2),
+  url(../fonts/OpenSans-SemiBold.woff);
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/OpenSans-Bold.woff2);
-  src: url(../fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff2),
+  url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -145,6 +145,10 @@ body {
 
 *:focus {
   outline: none;
+}
+
+.js-animation-swiper {
+  transform: scale(0.7);
 }
 
 /* Header-up */
@@ -644,18 +648,41 @@ body {
 
 .hero__swiper-slide {
   height: 800px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero1 {
-  background: url(../img/hero1-desktop.jpg);
+.hero__swiper-slide > .swiper-slide-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent no-repeat 50% 50% /cover;
 }
 
-.hero2 {
-  background: url(../img/hero2-desktop.jpg);
+.hero__swiper-slide .hero1 {
+  background-image: url(../img/hero1-desktop.jpg);
 }
 
-.hero3 {
-  background: url(../img/hero3-desktop.jpg);
+.hero__swiper-slide .hero2 {
+  background-image: url(../img/hero2-desktop.jpg);
+}
+
+.hero__swiper-slide .hero3 {
+  background-image: url(../img/hero3-desktop.jpg);
+}
+
+.swiper-scale-effect .swiper-slide-cover {
+  transition: 10s ease-out;
+  transform: scale(1.1);
+}
+
+.swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover {
+  transform: scale(1);
 }
 
 /* About */

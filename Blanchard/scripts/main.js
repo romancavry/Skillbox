@@ -1,3 +1,14 @@
+// Header
+$('.header-nav__link').click(function() {
+  $("html, body").animate({
+    scrollTop: $($(this).attr("href")).offset().top + "px"
+  }, {
+    duration: 750,
+    easing: "swing"
+  });
+  return false;
+});
+
 // Menu
 $(".widget-list__title").on('click', function(){
   let iconTarget = $(this).children();
@@ -35,15 +46,24 @@ $('.widget__search-input').on('focus', function() {
 var mySwiper = new Swiper('.hero__swiper-container', {
   loop: true,
   allowTouchMove: false,
+  centeredSlides: true,
+  effect: 'fade',
   fadeEffect: { crossFade: true },
-  virtualTranslate: true,
   autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
+    delay: 10000,
+    disableOnInteraction: false,
   },
-  speed: 1000,
-  effect: "fade",
 })
+
+$('.hero__btn').click(function() {
+  $("html, body").animate({
+    scrollTop: $($(this).attr("href")).offset().top + "px"
+  }, {
+    duration: 750,
+    easing: "swing"
+  });
+  return false;
+});
 
 // Gallery
 const element = document.getElementById('gallery__select');
@@ -269,6 +289,6 @@ function init(){
   myMap.geoObjects.add(myPlacemark);
 }
 
-$('a').click(function(e) {
-  e.preventDefault();
-});
+// $('a').click(function(e) {
+//   e.preventDefault();
+// });
