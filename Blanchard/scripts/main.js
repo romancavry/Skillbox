@@ -185,6 +185,20 @@ $('.checkbox-label__input').click(function(){
   }
 });
 
+$( ".checkbox-label__input" ).focus(function() {
+  let target = $(this).parent();
+  $(target).addClass('checkbox-label--focus');
+});
+
+$( ".checkbox-label__input" ).focusout(function() {
+  let target = $(this).parent();
+  $(target).removeClass('checkbox-label--focus');
+});
+
+if ($('.js-max-width-767').is(':visible')) {
+  $('.books__checkbox')
+}
+
 var mySwiper = new Swiper('.events__swiper', {
   loop: true,
   slidesPerView: 1,
@@ -310,7 +324,3 @@ new JustValidate('.js-contacts-form', {
     },
   },
 });
-
-// $('a').click(function(e) {
-//   e.preventDefault();
-// });

@@ -152,6 +152,10 @@ body {
 }
 
 /* Header-up */
+.js-max-width-767 {
+  display: none;
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -1588,19 +1592,17 @@ body {
   cursor: pointer;
 }
 
+.checkbox-label--focus {
+  outline: 2px solid var(--darkPurple);
+  outline-offset: 2px;
+}
+
 .checkbox-label__input {
   position: absolute;
   left: 0px;
   top: 9px;
 
-  width: 249px;
-
   opacity: 0;
-}
-
-.checkbox-label__input:focus + span {
-  outline: 2px solid var(--darkPurple);
-  outline-offset: 5px;
 }
 
 .checkbox__span {
@@ -1609,7 +1611,7 @@ body {
   left: 2px;
 
   display: inline-block;
-  width: 260px;
+  width: 12px;
   height: 12px;
   transition: border .3s ease-in-out;
 
@@ -1625,7 +1627,7 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: -95%;
+  left: 0;
 
   opacity: 0;
   transition: opacity .3s ease-in-out;
@@ -2809,6 +2811,11 @@ body {
 }
 
 @media (max-width: 767px) {
+  .js-max-width-767 {
+    position: absolute;
+    display: block;
+  }
+
   .container {
     max-width: 290px;
   }
@@ -3191,7 +3198,7 @@ body {
   }
 
   .mobile__checkbox-label {
-    margin-bottom: 17px;
+    margin-bottom: 7px;
     padding-top: 2px;
     padding-bottom: 4px;
     width: 100%;
@@ -3202,17 +3209,11 @@ body {
     background-image: url(../img/icon-downarrow.svg);
   }
 
-  .checkbox-label__input + span {
-    top: 12px;
-    left: 0px;
-  }
-
   .checkbox-label__input + span::after {
     content: '';
 
     position: absolute;
-    top: 0;
-    right: -278px;
+    right: -277px;
 
     height: 12px;
     width: 12px;
@@ -3226,8 +3227,8 @@ body {
     opacity: 1;
   }
 
-
   .prices__title {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 
