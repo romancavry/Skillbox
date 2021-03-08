@@ -1,3 +1,14 @@
+$('a').on('click', function() {
+  $('a').removeClass('not-outlined');
+  $(this).addClass('not-outlined');
+})
+
+$(document).ready(function() {
+  $('.hover').on('touchstart touchend', function(e) {
+    $(this).toggleClass('hover_effect');
+  });
+});
+
 // Header
 $('.header-nav__link').click(function() {
   $("html, body").animate({
