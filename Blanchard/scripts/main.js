@@ -185,6 +185,13 @@ $('.checkbox-label__input').click(function(){
   }
 });
 
+if ($('.js-max-width-767').is(':visible')) {
+  $('.books__checkbox').addClass('books__mobile-container');
+  $('.books__mobile-container').removeClass('books__checkbox');
+  $('.books__mobile-btn').removeClass('not-active');
+  $('.checkbox-label').addClass('mobile__checkbox-label');
+}
+
 $( ".checkbox-label__input" ).focus(function() {
   let target = $(this).parent();
   $(target).addClass('checkbox-label--focus');
@@ -194,10 +201,6 @@ $( ".checkbox-label__input" ).focusout(function() {
   let target = $(this).parent();
   $(target).removeClass('checkbox-label--focus');
 });
-
-if ($('.js-max-width-767').is(':visible')) {
-  $('.books__checkbox')
-}
 
 var mySwiper = new Swiper('.events__swiper', {
   loop: true,

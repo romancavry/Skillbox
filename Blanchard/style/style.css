@@ -1592,6 +1592,19 @@ body {
   cursor: pointer;
 }
 
+.checkbox-label:hover {
+  color: #C283F3;
+}
+
+.checkbox-label:hover > .checkbox__span {
+  background-image: url(../img/checkbox-frame-clicked.svg);
+  transition: background-image .3s ease-in-out;
+}
+
+.checkbox-label:hover > .checkbox__span::before {
+  opacity: 1;
+}
+
 .checkbox-label--focus {
   outline: 2px solid var(--darkPurple);
   outline-offset: 2px;
@@ -1616,6 +1629,7 @@ body {
   transition: border .3s ease-in-out;
 
   background: url(../img/checkbox-frame.svg) no-repeat;
+  transition: background-image .3s ease-in-out;
 
   text-align: center;
 }
@@ -3225,6 +3239,10 @@ body {
 
   .checkbox-label__input:checked + span::after {
     opacity: 1;
+  }
+
+  .checkbox__span {
+    top: 13px;
   }
 
   .prices__title {
