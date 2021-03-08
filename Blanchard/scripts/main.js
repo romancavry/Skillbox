@@ -3,10 +3,8 @@ $('a').on('click', function() {
   $(this).addClass('not-outlined');
 })
 
-$(document).ready(function() {
-  $('.hover').on('touchstart touchend', function(e) {
-    $(this).toggleClass('hover_effect');
-  });
+$('*').on('touchstart touchend', function(e) {
+  $(this).removeClass('hover_effect');
 });
 
 // Header

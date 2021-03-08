@@ -211,7 +211,7 @@ body {
   transition: color .3s ease-in-out;
 }
 
-.header-nav__link:hover, .header-nav__link.hover_effect {
+.header-nav__link:hover {
   color: var(--hoverPurple);
   transition: color .3s ease-in-out;
 }
@@ -247,7 +247,7 @@ body {
   outline-offset: 3px;
 }
 
-.header-enter:hover, .header-enter.hover_effect {
+.header-enter:hover {
   color: var(--hoverPurple);
   transition: color .3s ease-in-out;
 }
@@ -270,7 +270,7 @@ body {
   transition: background-image .3s ease-in-out;
 }
 
-.header-enter:hover:before, .header-enter:before.hover_effect {
+.header-enter:hover:before {
   background-image: url(../img/icon-enter-hover.svg);
   transition: background-image .3s ease-in-out;
 }
@@ -623,7 +623,7 @@ body {
   transition: opacity .3s ease-in-out;
 }
 
-.hero__btn:hover::after, .hero__btn::after.hover_effect {
+.hero__btn.hover_effect:hover::after {
   opacity: 1;
   transition: opacity .3s ease-in-out;
 }
@@ -776,7 +776,7 @@ body {
   color: #C283F3;
 }
 
-.gallery__link:hover, .gallery__link.hover_effect {
+.gallery__link.hover_effect:hover {
   color: #9D5CD0;
   transition: color .3s linear;
 }
@@ -840,7 +840,7 @@ body {
   cursor: pointer;
 }
 
-.gallery__swiper-slide:hover::after,  .gallery__swiper-slide::after.hover_effect {
+.gallery__swiper-slide.hover_effect:hover::after {
   opacity: 1;
   transition: opacity .3s ease-in-out;
 }
@@ -898,12 +898,12 @@ body {
   transition: background .3s ease-in-out;
 }
 
-.pagination-arrows__prev:hover, .pagination-arrows__prev.hover_effect {
+.pagination-arrows__prev.hover_effect:hover {
   background: url(../img/icon-swiper-leftarrow-hover.svg) center no-repeat;
   transition: background .3s ease-in-out;
 }
 
-.pagination-arrows__next:hover, .pagination-arrows__next.hover_effect {
+.pagination-arrows__next.hover_effect:hover {
   background: url(../img/icon-swiper-rightarrow-hover.svg) center no-repeat;
   transition: background .3s ease-in-out;
 }
@@ -1076,7 +1076,7 @@ body {
   box-shadow: rgba(157, 92, 208, 0.7) 0px 0px 20px 2px;
 }
 
-.tabs__link:hover::before, .tabs__link::before.hover_effect {
+.tabs__link.hover_effect:hover::before {
   opacity: 1;
   transition: opacity .3s ease-in-out;
 }
@@ -1174,7 +1174,7 @@ body {
   outline-offset: 1px;
 }
 
-.tabs-content__title:hover, .tabs-content__title.hover_effect {
+.tabs-content__title.hover_effect:hover {
   color: var(--hoverPurple);
   transition: color .3s ease-in-out;
 }
@@ -1229,7 +1229,7 @@ body {
   color: #333;
 }
 
-.tabs-content__link:hover, .tabs-content__link.hover_effect {
+.tabs-content__link.hover_effect:hover {
   color: var(--mainPurple);
   transition: color .3s ease-in-out;
 }
@@ -1249,7 +1249,7 @@ body {
   outline: 2px solid #9D5CD0;
 }
 
-.tabs-content__link:hover::after,  .tabs-content__link::after.hover_effect {
+.tabs-content__link.hover_effect:hover::after {
   opacity: 1;
   transition: opacity .3s ease-in-out;
 }
@@ -1337,7 +1337,7 @@ body {
   background-position: center !important;
 }
 
-.ui-state-hover .ui-icon, .ui-state-hover .ui-icon.hover_effect , .ui-state-focus .ui-icon, .ui-button:hover .ui-icon,.ui-button:hover .ui-icon.hover_effect , .ui-button:focus .ui-icon {
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon {
   background: url(../img/icon-accordion-downarrow-hover.svg);
   transition: background .3s ease-in-out;
   background-size: contain;
@@ -1348,14 +1348,14 @@ body {
   background-color:#fff;
 }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, .ui-button, html .ui-button.ui-state-disabled.hover_effect, html .ui-button.ui-state-disabled:active {
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, .ui-button, html .ui-button.ui-state-disabled:active {
   border-bottom: 1px solid #CACACA;
   border-top: none;
   border-right: none;
   border-left: none;
 }
 
-.ui-state-default:first-child, .ui-widget-content .ui-state-default:first-child, .ui-widget-header .ui-state-default:first-child, .ui-button:first-child, html .ui-button.ui-state-disabled:hover:first-child, html .ui-button.ui-state-disabled:first-child.hover_effect , html .ui-button.ui-state-disabled:active:first-child {
+.ui-state-default:first-child, .ui-widget-content .ui-state-default:first-child, .ui-widget-header .ui-state-default:first-child, .ui-button:first-child, html .ui-button.ui-state-disabled:active:first-child {
   border-top: 1px solid #CACACA;
 }
 
@@ -1473,7 +1473,7 @@ body {
   color:var(--mainPurple) !important;
 }
 
-.events__item-btn:hover, .events__item-btn.hover_effect {
+.events__item-btn.hover_effect:hover {
   font-weight: 700;
   transition: font-weight .3s ease-in-out;
 }
@@ -1505,7 +1505,7 @@ body {
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.events__btn:hover, .events__btn.hover_effect {
+.events__btn:hover {
   background-color: #9D5CD0;
   color: #fff;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
@@ -1529,7 +1529,7 @@ body {
   transition: opacity .3s ease-in-out, border .3s ease-in-out;
 }
 
-.events__btn:hover::after, .events__btn::after.hover_effect  {
+.events__btn:hover::after {
   top: -4px;
   left: -3px;
 
@@ -1601,16 +1601,16 @@ body {
   cursor: pointer;
 }
 
-.checkbox-label:hover, .checkbox__label.hover_effect {
+.checkbox-label.hover_effect:hover {
   color: #C283F3;
 }
 
-.checkbox-label:hover > .checkbox__span, .checkbox-label.hover_effect > .checkbox__span {
+.checkbox-label.hover_effect:hover > .checkbox__span {
   background-image: url(../img/checkbox-frame-clicked.svg);
   transition: background-image .3s ease-in-out;
 }
 
-.checkbox-label:hover > .checkbox__span::before, .checkbox-label.hover_effect > .checkbox__span::before {
+.checkbox-label.hover_effect:hover > .checkbox__span::before {
   opacity: 1;
 }
 
@@ -1810,7 +1810,7 @@ body {
   opacity: 0;
 }
 
-.books-item__btn:hover, .books-item__btn.hover_effect {
+.books-item__btn.hover_effect:hover {
   background-color: #9D5CD0;
   transition: background-color .3s ease-in-out;
 }
@@ -1876,8 +1876,7 @@ body {
   cursor: pointer;
 }
 
-.tooltip__marker:hover,
-.tooltip__marker.hover_effect,
+.tooltip__marker.hover_effect:hover,
 .tooltip__marker:focus {
   background: url(../img/icon-tooltip.svg) center no-repeat;
   transition: background .3s ease-in-out;
@@ -1885,8 +1884,7 @@ body {
   outline: none;
 }
 
-.tooltip__marker:hover + .tooltip__popup,
-.tooltip__marker.hover_effect + .tooltip__popup,
+.tooltip__marker.hover_effect:hover + .tooltip__popup,
 .tooltip__marker:focus + .tooltip__popup {
   opacity: 1;
   transition: opacity .3s ease-in-out;
@@ -1957,8 +1955,7 @@ body {
   cursor: pointer;
 }
 
-.partners__slide:hover,
-.partners__slide.hover_effect {
+.partners__slide.hover_effect:hover {
   filter: grayscale(0);
   transition: filter .3s ease-in-out;
 }
@@ -1980,7 +1977,7 @@ body {
   background-image: url(../img/icon-leftarrow-for_partners_swiper.svg)
 }
 
-.partners__slide:hover, .partners__slide.hover_effect {transition: background .3s ease-in-out;}
+.partners__slide.hover_effect:hover {transition: background .3s ease-in-out;}
 
 /* Contacts */
 .contacts__title {
@@ -2064,7 +2061,7 @@ body {
   color: var(--mainPurple);
 }
 
-.contacts-form__btn:hover, .contacts-form__btn.hover_effect {
+.contacts-form__btn.hover_effect:hover {
   background-color: #9D5CD0;
   color: #fff;
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
@@ -2088,7 +2085,7 @@ body {
   transition: opacity .3s ease-in-out, border .3s ease-in-out;
 }
 
-.contacts-form__btn:hover::after, .contacts-form__btn::after.hover_effect {
+.contacts-form__btn.hover_effect:hover::after {
   top: -2px;
   left: -2px;
 
@@ -2397,7 +2394,7 @@ body {
     left: -3.8%;
   }
 
-  .events__btn:hover::after, .events__btn::after.hover_effect {
+  .events__btn:hover::after {
     top: -3.5%;
     left: -1%;
     width: 191px;
@@ -2729,7 +2726,7 @@ body {
     height: 66px;
   }
 
-  .events__btn:hover::after, .events__btn::after.hover_effect {
+  .events__btn:hover::after {
     top: -2.6%;
     left: -2.5%;
   }
@@ -2815,7 +2812,7 @@ body {
     max-width: 210px;
   }
 
-  .partners__slide:hover, .partners__slide.hover_effect {
+  .partners__slide:hover {
     background-size: 263px 106px;
     transition: background-image .3s ease-in-out;
   }
@@ -3021,7 +3018,7 @@ body {
     margin-right: 19px;
   }
 
-  .tabs__link:hover::before, .tabs__link::before.hover_effect {
+  .tabs__link:hover::before {
     opacity: 0;
   }
 
@@ -3361,7 +3358,7 @@ body {
     max-width: 140px;
   }
 
-  .partners__slide:hover, .partners__slide.hover_effect  {
+  .partners__slide:hover {
     background-size: 195px 65px;
   }
 
