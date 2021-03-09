@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', sans-serif;
   src: url(../fonts/OpenSans-Light.woff2),
   url(../fonts/OpenSans-Light.woff);
   font-weight: 300;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', sans-serif;
   src: url(../fonts/OpenSans-Regular.woff2),
   url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', sans-serif;
   src: url(../fonts/OpenSans-SemiBold.woff2),
   url(../fonts/OpenSans-SemiBold.woff);
   font-weight: 600;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', sans-serif;
   src: url(../fonts/OpenSans-Bold.woff2),
   url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
@@ -114,7 +114,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 body {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', sans-serif;
 }
 
 .container {
@@ -913,10 +913,19 @@ body {
   transition: background .3s ease-in-out;
 }
 
-.pagination-arrows__next:active {
+.pagination-arrows__next:focus {
   background: url(../img/icon-swiper-rightarrow-activeborder.svg) center no-repeat;
   transition: background .3s ease-in-out;
 }
+
+.pagination-arrows__prev:focus {
+  background: url(../img/icon-swiper-leftarrow--focus.svg) center no-repeat;
+}
+
+.pagination-arrows__next:focus {
+  background: url(../img/icon-swiper-rightarrow--focus.svg) center no-repeat;
+}
+
 
 /* Choices */
 .choices__inner {
@@ -1074,6 +1083,10 @@ body {
   opacity: 0;
   transition: opacity .3s ease-in-out;
   box-shadow: rgba(157, 92, 208, 0.7) 0px 0px 20px 2px;
+}
+
+.tabs__link:focus::before {
+  opacity: 1;
 }
 
 .tabs__link.hover_effect:hover::before {
@@ -1381,7 +1394,7 @@ body {
 }
 
 .ui-widget {
-  font-family: 'OpenSans';
+  font-family: 'OpenSans', sans-serif;
 }
 
 /* Events */
