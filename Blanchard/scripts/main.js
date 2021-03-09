@@ -7,6 +7,8 @@ $('*').on('touchstart touchend', function(e) {
   $(this).removeClass('hover_effect');
 });
 
+$('button').mouseup(function() { this.blur() })
+
 // Header
 $('.header-nav__link').click(function() {
   $("html, body").animate({
@@ -80,6 +82,8 @@ const choices = new Choices(element, {
   searchEnabled: false,
   itemSelectText: '',
 });
+
+$('.choices').attr('aria-label', 'Меню фильтр');
 
 $('.gallery__swiper-slide').on('click', function () {
   let target = $(this).children().slideToggle();
@@ -336,3 +340,6 @@ new JustValidate('.js-contacts-form', {
     },
   },
 });
+
+$('.pagination-arrows__prev').attr('aria-label', 'Предыдущий слайд');
+$('.pagination-arrows__next').attr('aria-label', 'Следующий слайд');

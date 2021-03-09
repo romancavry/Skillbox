@@ -26,7 +26,7 @@
     <div class="header__wrapper">
       <div class="container">
         <div class="header-up">
-          <a href="#" class="header-logo"><img class="header-logo__img" src="./img/header-logo-desktop.svg" alt="Blanchard"></a>
+          <a href="#" class="header-logo"><img class="header-logo__img" src="./img/header-logo-desktop.svg" alt="Blanchard логотип"></a>
 
           <div class="js-max-width-767"></div>
 
@@ -170,7 +170,7 @@
             <div class="leftside__up-container">
               <h2 class="title gallery__title">Галерея</h2>
               <p class="gallery__select-title">Фильтровать по</p>
-              <select name="select" id="gallery__select">
+              <select name="select" id="gallery__select" aria-label="Фильтр">
                 <option disabled selected>Автор</option>
                 <option>Направление</option>
                 <option>Техника</option>
@@ -183,9 +183,9 @@
 
           <div class="gallery__rightside-container">
             <div class="pagination-container">
-              <button class="pagination-arrows hover_effect pagination-arrows__prev gallery-prev"></button>
+              <button aria-label="Предыдущий слайд" class="pagination-arrows hover_effect pagination-arrows__prev gallery-prev"></button>
               <span class="pagination-numbers gallery-numbers"></span>
-              <button class="pagination-arrows hover_effect pagination-arrows__next gallery-next"></button>
+              <button aria-label="Следующий слайд" class="pagination-arrows hover_effect pagination-arrows__next gallery-next"></button>
             </div>
 
             <div class="swiper-container gallery__swiper-container">
@@ -505,11 +505,11 @@
           <h2 class="title catalogue__title">Каталог</h2>
           <nav class="catalogue__tabs-nav">
             <ul class="tabs__list">
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-france js-tabs-link tabs__link--active-france active" href="#accordion-france"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-germany js-tabs-link tabs__link--active-germany" href="#accordion-germany"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-italy js-tabs-link tabs__link--active-italy" href="#accordion-italy"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-russia js-tabs-link tabs__link--active-russia" href="#accordion-russia"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-belgium js-tabs-link tabs__link--active-belgium" href="#accordion-belgium"></button></li>
+              <li class="tabs__item"><button class="tabs__link hover_effect tabs-france js-tabs-link tabs__link--active-france active" href="#accordion-france" aria-label="Франция"></button></li>
+              <li class="tabs__item"><button class="tabs__link hover_effect tabs-germany js-tabs-link tabs__link--active-germany" href="#accordion-germany" aria-label="Германия"></button></li>
+              <li class="tabs__item"><button class="tabs__link hover_effect tabs-italy js-tabs-link tabs__link--active-italy" href="#accordion-italy" aria-label="Италия"></button></li>
+              <li class="tabs__item"><button class="tabs__link hover_effect tabs-russia js-tabs-link tabs__link--active-russia" href="#accordion-russia" aria-label="Россия"></button></li>
+              <li class="tabs__item"><button class="tabs__link hover_effect tabs-belgium js-tabs-link tabs__link--active-belgium" href="#accordion-belgium" aria-label="Бельгия"></button></li>
             </ul>
           </nav>
 
@@ -1324,7 +1324,7 @@
           </div>
         </div> <!-- events-inner -->
 
-        <button class="events__btn">Все события</button>
+        <button class="events__btn" aria-label="Все события">Все события</button>
 
         <div class="events__swiper">
           <div class="swiper-wrapper">
@@ -1471,9 +1471,9 @@
 
           <div class="books__rightside-container">
             <div class="pagination-container books__pagination-container">
-              <button class="pagination-arrows pagination-arrows__prev books-prev"></button>
+              <button class="pagination-arrows hover_effect pagination-arrows__prev books-prev"></button>
               <span class="pagination-numbers books-numbers"></span>
-              <button class="pagination-arrows pagination-arrows__next books-next"></button>
+              <button class="pagination-arrows hover_effect pagination-arrows__next books-next"></button>
             </div>
 
             <div class="books__swiper">
@@ -1647,7 +1647,7 @@
             <h3 class="partners__title">Партнёры проектов:</h3>
 
             <div class="partners__inner">
-              <button class="pagination-arrows pagination-arrows__prev partners-prev"></button>
+              <button class="pagination-arrows hover_effect pagination-arrows__prev partners-prev"></button>
 
               <div class="partners__swiper-container">
                 <div class="partners__swiper-wrapper swiper-wrapper">
@@ -1663,7 +1663,7 @@
                 </div>
               </div>
 
-              <button class="pagination-arrows pagination-arrows__next partners-next"></button>
+              <button class="pagination-arrows hover_effect pagination-arrows__next partners-next"></button>
             </div>
 
           </div> <!-- projects__partners -->
@@ -1679,13 +1679,14 @@
       <div class="contacts__inner">
         <div class="contacts__leftside-container">
           <address class="contacts__address">
-            <h3 class="address__title">Шоурум №2</h3>
+            <h3 class="address__title">Шоурум №4</h3>
             <p class="address__subtitle">Покровский бульвар, дом 24, строение 3</p>
           </address>
           <h4 class="form__title form-title__order">Заказать обратный звонок</h4>
           <form action="#" class="contacts-form hover_effect js-contacts-form">
             <input
               style="display: block"
+              aria-label="Введите имя"
               class="contacts-form__input"
               type="text"
               required
@@ -1694,22 +1695,23 @@
               placeholder="Имя*">
             <input
               class="contacts-form__input"
+              aria-label="Введите телефон"
               type="tel"
               name="tel"
               required
               placeholder="Телефон*"
               data-validate-field="tel"
               data-validate-rules="phone">
-            <button class="contacts-form__btn hover_effect">Заказать</button>
+            <button class="contacts-form__btn hover_effect" aria-label="Заказать">Заказать</button>
           </form>
           <h4 class="form__title form-title__message">Связаться в один клик</h4>
           <div class="social-media__container">
-            <a href="#"><span class="social-media__span social-media__whatsapp"></span></a>
-            <a href="#"><span class="social-media__span social-media__tg"></span></a>
+            <a href="#" aria-label="Ссылка на вацап"><span class="social-media__span social-media__whatsapp"></span></a>
+            <a href="#" aria-label="Ссылка на телеграм"><span class="social-media__span social-media__tg"></span></a>
           </div>
         </div>
 
-        <div class="contacts__rightside-container" id="map"></div>
+        <div class="contacts__rightside-container" id="map" aria-label="Карта"></div>
       </div>
     </section>
   </main>
@@ -1717,13 +1719,13 @@
   <footer class="footer" id="footer">
     <div class="container">
       <div class="footer__inner">
-        <a href="#" class="header-logo footer-logo"><img class="footer-logo__img" src="img/header-logo-desktop.svg" alt="Blanchard"></a>
+        <a href="#" class="header-logo footer-logo"><img class="footer-logo__img" src="img/header-logo-desktop.svg" alt="Blanchard логотип"></a>
 
         <nav class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#"><span class="footer__nav-icon" style="background-image: url(./img/icon-footer-vk.svg);"></span></a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#"><span class="footer__nav-icon" style="background-image: url(./img/icon-footer-inst.svg);"></span></a></li>
-            <li class="footer__nav-item"><a class="footer__nav-link" href="#"><span class="footer__nav-icon" style="background-image: url(./img/icon-footer-fb.svg);"></span></a></li>
+            <li class="footer__nav-item"><a aria-label="Ссылка на вконтакте" class="footer__nav-link" href="#"><span class="footer__nav-icon" style="background-image: url(./img/icon-footer-vk.svg);"></span></a></li>
+            <li class="footer__nav-item"><a aria-label="Ссылка на инстаграмм" class="footer__nav-link" href="#"><span class="footer__nav-icon" style="background-image: url(./img/icon-footer-inst.svg);"></span></a></li>
+            <li class="footer__nav-item"><a aria-label="Ссылка на фейсбук" class="footer__nav-link" href="#"><span class="footer__nav-icon" style="background-image: url(./img/icon-footer-fb.svg);"></span></a></li>
           </ul>
         </nav>
       </div>
