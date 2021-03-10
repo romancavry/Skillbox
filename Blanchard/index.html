@@ -43,8 +43,12 @@
           </nav>
 
           <a href="#" class="header-enter">Войти</a>
-          <div class="header__burger"></div>
-          <div class="header__search"></div>
+          <button class="header__burger"></button>
+          <!-- <div class="header__search"></div> -->
+          <form action="" class="header__search">
+            <button class="header__search-btn"></button>
+            <input type="text" class="header__search-input">
+          </form>
         </div>
       </div>
     </div>
@@ -122,7 +126,11 @@
               </div>
             </li>
           </ul> <!-- widger__list -->
-          <div class="widget__search"><div class="widget__search-icon"></div><input class="widget__search-input" type="search" placeholder="Поиск по сайту"></div>
+
+          <form action="" class="widget__search">
+            <button class="widget__search-btn"></button>
+            <input type="search" class="widget__search-input"  placeholder="Поиск по сайту">
+          </form>
         </div>
     </div> <!-- widget -->
     </div>
@@ -149,7 +157,7 @@
           <div class="hero__text">
             <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
             <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-            <button tabindex="0" class="hero__btn hover_effect" href="#contacts">Подписаться на рассылку</button>
+            <button class="hero__btn hover_effect" href="#contacts">Подписаться на рассылку</button>
           </div>
         </div>
       </div>
