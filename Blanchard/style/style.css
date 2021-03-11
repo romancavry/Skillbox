@@ -70,7 +70,7 @@ a {
   outline: none;
 }
 
-a:active {
+*:active {
   outline: none !important;
 }
 
@@ -873,10 +873,8 @@ body {
 }
 
 .pagination-numbers {
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-right: 10px;
+  transform: translateY(6px);
 
   width: fit-content;
 
@@ -890,7 +888,7 @@ body {
 }
 
 .pagination-arrows__prev {
-  margin-right: 70px;
+  margin-right: 10px;
   background: url(../img/icon-swiper-leftarrow.svg) center no-repeat;
   transition: background .3s ease-in-out;
 }
@@ -1380,6 +1378,7 @@ body {
 
 .ui-accordion .ui-accordion-content {
   max-height: 341px;
+  height: fit-content;
   padding: 25px 75px 26px 0;
 }
 
@@ -1422,18 +1421,19 @@ body {
   position: relative;
 
   margin-bottom: 49px;
-  padding: 312px 15px 50px 50px;
   max-width: 500px;
   width: 100%;
   border: 1px solid #cacaca;
   animation: appearance 0.7s linear forwards
 }
 
-.events__item1 {background: url(../img/events-item1-desktop.jpg) no-repeat top;}
-.events__item2 {background: url(../img/events-item2-desktop.jpg) no-repeat top;}
-.events__item3 {background: url(../img/events-item3-desktop.jpg) no-repeat top;}
-.events__item4 {background: url(../img/events-item4-desktop.jpg) no-repeat top;}
-.events__item5 {background: url(../img/events-item5-desktop.jpg) no-repeat top;}
+.events__item-img {
+  margin-bottom: 9px;
+}
+
+.events__item-text {
+  padding: 0 15px 50px 50px;
+}
 
 .events__item:not(:nth-child(3n)) {
   margin-right: 50px;
@@ -1738,10 +1738,6 @@ body {
 .books__pagination-container {
   margin-top: 0;
   margin-bottom: 30px;
-}
-
-.books-prev {
-  margin-right: 70px;
 }
 
 .books-item {
