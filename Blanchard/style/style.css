@@ -1427,8 +1427,13 @@ body {
   animation: appearance 0.7s linear forwards
 }
 
+.events__item:nth-last-child(-n+2) {
+  display: none;
+}
+
 .events__item-img {
   margin-bottom: 9px;
+  max-width: 100%;
 }
 
 .events__item-text {
@@ -2357,12 +2362,14 @@ body {
     letter-spacing: -1px;
   }
 
-
   .events__item {
     max-width: 290px;
     min-height: 683px;
     margin-bottom: 52px;
-    padding: 217px 18px 50px 34px;
+  }
+
+  .events__item-text {
+    padding: 0 15px 50px 34px;
   }
 
   .events__item-title {
@@ -2372,12 +2379,6 @@ body {
   .events__item:not(:nth-child(3n)) {
     margin-right: 27px;
   }
-
-  .events__item1 {background: url(../img/1920-events-item1.jpg) no-repeat top;}
-  .events__item2 {background: url(../img/1920-events-item2.jpg) no-repeat top;}
-  .events__item3 {background: url(../img/1920-events-item3.jpg) no-repeat top;}
-  .events__item4 {background: url(../img/1920-events-item4.jpg) no-repeat top;}
-  .events__item5 {background: url(../img/1920-events-item5.jpg) no-repeat top;}
 
   .events__item-title {
     line-height: 33px;
@@ -2709,10 +2710,13 @@ body {
 
   .events__item {
     margin-bottom: 50px;
-    padding: 215px 18px 50px 34px;
     max-width: 316px;
 
     background-size: 317px 200px;
+  }
+
+  .events__item:nth-last-child(-n+3) {
+    display: none;
   }
 
   .events__item:not(:nth-child(3n)) {
@@ -2723,12 +2727,12 @@ body {
     margin-left: 34px;
   }
 
-  .events__item-title {
-    letter-spacing: 0.004166666666666667em;
+  .events__item-img {
+    margin-bottom: 15px;
   }
 
-  .events__item3 {
-    display: none;
+  .events__item-title {
+    letter-spacing: 0.004166666666666667em;
   }
 
   .events__btn::after {
@@ -2741,6 +2745,7 @@ body {
   .events__btn:hover::after {
     top: -2.6%;
     left: -2.5%;
+    width: 195px;
   }
 
   /* Books */
@@ -3106,14 +3111,14 @@ body {
   }
 
   .events__item {
-    padding: 215px 10px 130px 27px;
     max-height: 682px;
-    min-height: 0;
+    min-height: 681px;
     background-size: contain;
   }
 
   .events__item-title {
-    margin-bottom: 36px;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
   }
 
   .events__item-suptitle {

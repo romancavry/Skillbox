@@ -189,8 +189,7 @@ authorEl.forEach((authorBtn) => {
 // Events
 $('.events__btn').on('click', function() {
   $('.events__btn').addClass('not-active');
-  $('.events__item3').addClass('active');
-  $('.events__item').removeClass('not-active');
+  $('.events__item').addClass('active');
 })
 
 $('.checkbox-label__input').click(function(){

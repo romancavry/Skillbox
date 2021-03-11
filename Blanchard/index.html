@@ -150,16 +150,18 @@
         </div>
       </div>
 
-      <div class="hero__swiper-container swiper-container swiper-scale-effect">
-        <div class="swiper-wrapper">
-          <div class="hero__swiper-slide swiper-slide">
-            <div class="hero1 swiper-slide-plus"></div>
-          </div>
-          <div class="hero__swiper-slide swiper-slide">
-            <div class="hero2 swiper-slide-plus"></div>
-          </div>
-          <div class="hero__swiper-slide swiper-slide">
-            <div class="hero3 swiper-slide-plus"></div>
+      <div class="container">
+        <div class="hero__swiper-container swiper-container swiper-scale-effect">
+          <div class="swiper-wrapper">
+            <div class="hero__swiper-slide swiper-slide">
+              <div class="hero1 swiper-slide-plus"></div>
+            </div>
+            <div class="hero__swiper-slide swiper-slide">
+              <div class="hero2 swiper-slide-plus"></div>
+            </div>
+            <div class="hero__swiper-slide swiper-slide">
+              <div class="hero3 swiper-slide-plus"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -1339,7 +1341,13 @@
         <h2 class="title events__title">События</h2>
         <ul class="events__inner">
           <li class="events__item">
-            <img src="./img/events-item1-desktop.jpg" class="events__item-img" alt="Picture1">
+            <picture>
+              <source srcset="./img/events-item1-desktop.jpg" media="(min-width: 1919px)">
+              <source srcset="./img/1024-events-item1.png" media="(min-width: 1023px)">
+              <source srcset="./img/768-events-item1.png" media="(min-width: 767px)">
+              <source srcset="./img/1024-events-item1.png" media="(min-width: 319px)">
+              <img src="./img/events-item1-desktop.jpg" class="events__item-img" alt="Picture1">
+            </picture>
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Музей им. Щусева</p>
@@ -1352,7 +1360,13 @@
           </li>
 
           <li class="events__item">
-            <img src="./img/events-item2-desktop.jpg" class="events__item-img" alt="Picture2">
+            <picture>
+              <source srcset="./img/events-item2-desktop.jpg" media="(min-width: 1919px)">
+              <source srcset="./img/1024-events-item2.png" media="(min-width: 1023px)">
+              <source srcset="./img/768-events-item2.png" media="(min-width: 767px)">
+              <source srcset="./img/1024-events-item2.png" media="(min-width: 319px)">
+              <img src="./img/events-item2-desktop.jpg" class="events__item-img" alt="Picture2">
+            </picture>
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">ММОМА</p>
@@ -1365,7 +1379,13 @@
           </li>
 
           <li class="events__item">
-            <img src="./img/events-item3-desktop.jpg" class="events__item-img" alt="Picture3">
+            <picture>
+              <source srcset="./img/events-item3-desktop.jpg" media="(min-width: 1919px)">
+              <source srcset="./img/1024-events-item3.png" media="(min-width: 1023px)">
+              <source srcset="./img/768-events-item3.png" media="(min-width: 767px)">
+              <source srcset="./img/1024-events-item3.png" media="(min-width: 319px)">
+              <img src="./img/events-item3-desktop.jpg" class="events__item-img" alt="Picture3">
+            </picture>
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Музей им. Щусева</p>
@@ -1377,28 +1397,41 @@
             </div>
           </li>
 
-          <li class="events__item not-active">
-            <img src="./img/events-item4-desktop.jpg" class="events__item-img" alt="Picture4">
+          <li class="events__item">
+            <picture>
+              <source srcset="./img/events-item4-desktop.jpg" media="(min-width: 1919px)">
+              <source srcset="./img/1024-events-item4.png" media="(min-width: 1023px)">
+              <source srcset="./img/768-events-item4.png" media="(min-width: 767px)">
+              <source srcset="./img/1024-events-item4.png" media="(min-width: 319px)">
+              <img src="./img/events-item4-desktop.jpg" class="events__item-img" alt="Picture4">
+            </picture>
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Третьяковка на Крымском валу</p>
                 <time class="item-subtitle__date">с 30 марта по 30 апреля</time>
               </div>
               <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
-              <p class="events__item-suptitle">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+              <p class="events__item-suptitle">Внезапно, реплицированные с зарубежных источников, современные исследования</p>
               <button class="events__item-btn hover_effect">Подробнее</button>
             </div>
           </li>
 
-          <li class="events__item not-active">
-            <img src="./img/events-item5-desktop.jpg" class="events__item-img" alt="Picture5">
+          <li class="events__item">
+            <picture>
+              <source srcset="./img/events-item5-desktop.jpg" media="(min-width: 1919px)">
+              <source srcset="./img/1024-events-item5.png" media="(min-width: 1023px)">
+              <source srcset="./img/768-events-item5.png" media="(min-width: 767px)">
+              <source srcset="./img/1024-events-item5.png" media="(min-width: 319px)">
+              <img src="./img/events-item5-desktop.jpg" class="events__item-img"
+              alt="Picture5">
+            </picture>
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">ММАМA</p>
                 <time class="item-subtitle__date">с 8 апреля по 20 мая</time>
               </div>
               <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-              <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+              <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
               <button class="events__item-btn hover_effect">Подробнее</button>
             </div>
           </li>
@@ -1407,38 +1440,49 @@
         <button class="events__btn" aria-label="Все события">Все события</button>
 
         <div class="events__swiper">
-          <div class="swiper-wrapper">
-            <div class="events__item events__item1 swiper-slide">
-              <div class="events__item-subtitle">
-                <p class="item-subtitle__location">Музей им. Щусева</p>
-                <p class="item-subtitle__date">с 20 марта по 30 апреля</p>
+          <ul class="swiper-wrapper">
+            <li class="events__item swiper-slide">
+              <img src="./img/1024-events-item1.png" alt="Picture1">
+              <div class="events__item-text">
+                <div class="events__item-subtitle">
+                  <p class="item-subtitle__location">Музей им. Щусева</p>
+                  <time class="item-subtitle__date">с 20 марта по 30 апреля</time>
+                </div>
+                <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+                <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <button class="events__item-btn hover_effect">Подробнее</button>
               </div>
-              <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
-              <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              <button class="events__item-btn">Подробнее</button>
-            </div>
+            </li>
 
-            <div class="events__item events__item2 swiper-slide">
-              <div class="events__item-subtitle">
-                <p class="item-subtitle__location">ММОМА</p>
-                <p class="item-subtitle__date">24 марта 19:00</p>
+            <li class="events__item swiper-slide">
+              <img src="./img/1024-events-item2.png" alt="Picture2">
+              <div class="events__item-text">
+                <div class="events__item-subtitle">
+                  <p class="item-subtitle__location">ММОМА</p>
+                  <p class="item-subtitle__date">24 марта 19:00</p>
+                </div>
+                <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="events__item-suptitle">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
+                <button class="events__item-btn">Подробнее</button>
               </div>
-              <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-              <p class="events__item-suptitle">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
-              <button class="events__item-btn">Подробнее</button>
-            </div>
+            </li>
 
-            <div class="events__item events__item3 swiper-slide">
-              <div class="events__item-subtitle">
-                <p class="item-subtitle__location">Музей им. Щусева</p>
-                <p class="item-subtitle__date">с 20 марта по 30 апреля</p>
+            <li class="events__item swiper-slide">
+              <img src="./img/1024-events-item3.png" alt="Picture3">
+              <div class="events__item-text">
+                <div class="events__item-subtitle">
+                  <p class="item-subtitle__location">Музей им. Щусева</p>
+                  <p class="item-subtitle__date">с 20 марта по 30 апреля</p>
+                </div>
+                <h3 class="events__item-title">Выставка «Формация 2020»</h3>
+                <p class="events__item-suptitle">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
+                <button class="events__item-btn">Подробнее</button>
               </div>
-              <h3 class="events__item-title">Выставка «Формация 2020»</h3>
-              <p class="events__item-suptitle">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
-              <button class="events__item-btn">Подробнее</button>
-            </div>
+            </li>
 
-            <div class="events__item events__item4 swiper-slide">
+            <li class="events__item swiper-slide">
+              <img src="./img/1024-events-item4.png" alt="Picture4">
+             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Третьяковка на Крымском валу</p>
                 <p class="item-subtitle__date">с 30 марта по 30 апреля</p>
@@ -1446,18 +1490,22 @@
               <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
               <p class="events__item-suptitle">Внезапно, реплицированные с зарубежных источников, современные исследования.</p>
               <button class="events__item-btn">Подробнее</button>
-            </div>
+             </div>
+            </li>
 
-            <div class="events__item events__item5 swiper-slide">
-              <div class="events__item-subtitle">
-                <p class="item-subtitle__location">ММАМ</p>
-                <p class="item-subtitle__date">с 8 апреля по 20 мая</p>
+            <li class="events__item swiper-slide">
+              <img src="./img/1024-events-item5.png" alt="Picture5">
+              <div class="events__item-text">
+                <div class="events__item-subtitle">
+                  <p class="item-subtitle__location">ММАМ</p>
+                  <p class="item-subtitle__date">с 8 апреля по 20 мая</p>
+                </div>
+                <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <button class="events__item-btn">Подробнее</button>
               </div>
-              <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-              <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              <button class="events__item-btn">Подробнее</button>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div class="events__dots"></div>
