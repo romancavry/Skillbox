@@ -62,9 +62,12 @@ var mySwiper = new Swiper('.hero__swiper-container', {
   fadeEffect: { crossFade: true },
   autoplay: {
     delay: 10000,
-    disableOnInteraction: false,
   },
 })
+
+setInterval(() => {
+  $('.swiper-slide-plus').toggleClass('swiper-slide-minus');
+}, 5000);
 
 $('.hero__btn').click(function() {
   $("html, body").animate({
