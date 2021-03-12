@@ -26,7 +26,8 @@ $(".widget-list__title").on('click', function(){
   let allIcons = $(".widget-list__title").children();
   let menuTarget = $(this).next('div').slideToggle(300);
 
-  // $('.widget-list__wrapper').not('.not-active').hide(300);
+  // cпрятать все "wrapper'ы" кроме того, на чей "title" кликнули
+  $('.widget-list__wrapper').not(menuTarget).hide(300);
 
   $(".widget-list__title").removeClass('widget__for-icon-darkPurple');
   $(allIcons).removeClass('widget__for-icon-click');
@@ -40,7 +41,7 @@ $(".widget-list__title").on('click', function(){
 $(document).on("click", function (e) {
   let allIcons2 = $(".widget-list__title").children();
   if ($(e.target).is(".widget-list__title") === false) {
-    $(".widget-list__wrapper").hide(500);
+    $(".widget-list__wrapper").hide(300);
     $(allIcons2).removeClass('widget__for-icon-click');
     $('.widget-list__title').removeClass('widget__for-icon-darkPurple');
   }
@@ -342,6 +343,12 @@ new JustValidate('.js-contacts-form', {
     },
   },
 });
+
+$('.contacts-form__btn').on('click', () => {
+  setTimeout(()=>{
+    $('.js-validate-error-label').html('Заполните все поля');
+  }, 1)
+})
 
 $('.pagination-arrows__prev').attr('aria-label', 'Предыдущий слайд');
 $('.pagination-arrows__next').attr('aria-label', 'Следующий слайд');
