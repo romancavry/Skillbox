@@ -24,9 +24,9 @@ $('.header-nav__link').click(function() {
 $(".widget-list__title").on('click', function(){
   let iconTarget = $(this).children();
   let allIcons = $(".widget-list__title").children();
-  let menuTarget = $(this).next('div').slideToggle();
+  let menuTarget = $(this).next('div').slideToggle(300);
 
-  $('.widget-list__wrapper').addClass('not-active');
+  // $('.widget-list__wrapper').not('.not-active').hide(300);
 
   $(".widget-list__title").removeClass('widget__for-icon-darkPurple');
   $(allIcons).removeClass('widget__for-icon-click');
