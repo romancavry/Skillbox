@@ -201,7 +201,7 @@ $('.checkbox-label__input').click(function(){
   }
 });
 
-if ($('.js-max-width-767').is(':visible')) {
+if ($(window).width() < 7670) {
   $('.books__checkbox').addClass('books__mobile-container');
   $('.books__mobile-container').removeClass('books__checkbox');
   $('.books__mobile-btn').removeClass('not-active');
