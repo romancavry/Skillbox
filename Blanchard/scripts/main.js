@@ -102,6 +102,7 @@ $('.gallery__swiper-slide').on('click', function () {
 var mySwiper = new Swiper('.gallery__swiper-container', {
 
   breakpoints: {
+     // больше или равен 320
     320: {
       slidesPerView: 1,
       slidesPerColumn: 1,
@@ -119,7 +120,7 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
       spaceBetween: 34,
     },
 
-    1919: {
+    1920: {
       slidesPerView: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,

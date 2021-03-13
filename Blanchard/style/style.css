@@ -668,7 +668,7 @@ body {
 }
 
 .hero__swiper-slide {
-  height: 800px;  
+  height: 800px;
   overflow: hidden;
 
   text-align: center;
@@ -2259,7 +2259,7 @@ body {
   margin-right: 22px;
 }
 
-@media (max-width: 1919px) {
+@media screen and (max-device-width: 1919px) {
   .container {
     max-width: 925px;
   }
@@ -2633,7 +2633,7 @@ body {
   }
 }
 
-@media (max-width: 1023px) {
+@media screen and (max-device-width: 1024px) {
   .container {
     max-width: 666px;
   }
@@ -2941,7 +2941,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-device-width: 768px) {
   .container {
     max-width: 290px;
   }
