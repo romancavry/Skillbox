@@ -202,7 +202,7 @@ $('.checkbox-label__input').click(function(){
   }
 });
 
-if ($(window).width() < 7670) {
+if ($(window).width() < 767) {
   $('.books__checkbox').addClass('books__mobile-container');
   $('.books__mobile-container').removeClass('books__checkbox');
   $('.books__mobile-btn').removeClass('not-active');
