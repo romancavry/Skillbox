@@ -2259,7 +2259,8 @@ body {
   margin-right: 22px;
 }
 
-@media screen and (max-device-width: 1919px) {
+@media (max-width: 1919px) {
+  /* screen and (max-device-width: 1919px) */
   .container {
     max-width: 925px;
   }
@@ -2388,10 +2389,6 @@ body {
     max-width: 280px;
     max-height: 280px;
   }
-
-  /* .gallery-prev {
-    margin-right: 67px;
-  } */
 
   .gallery-numbers {
     left: 63px;
