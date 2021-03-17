@@ -148,6 +148,7 @@ $( function() {
 
 $('.js-tabs-link').on('click', function(e) {
   e.preventDefault();
+  $('.bio__wrapper').removeClass('card-active');
 
   $('.js-tabs-link').removeClass('active');
   $(this).addClass('active');
@@ -159,55 +160,31 @@ $('.js-tabs-link').on('click', function(e) {
   setTimeout(function() {
     $(href).addClass('in');
   }, 200);
-})
 
-$('.tabs-germany').on('click', function() {
-  $('.js-tabs-link').removeClass('active');
-  $(this).addClass('active');
+  if ($(this).hasClass('tabs-france')) {
+    $('.tabs-content__link[data-path="france-author-1"]').addClass('tabs-content__link--active');
+    $('.bio__wrapper[data-target="france-author-1"]').addClass('card-active');
+  }
 
-  $('.tabs-content__link[data-path="germany-author-1"]').addClass('tabs-content__link--active');
-  $('.bio__wrapper').removeClass('card-active');
-  $('.bio__wrapper[data-target="germany-author-1"]').addClass('card-active');
-})
+  if ($(this).hasClass('tabs-germany')) {
+    $('.tabs-content__link[data-path="germany-author-1"]').addClass('tabs-content__link--active');
+    $('.bio__wrapper[data-target="germany-author-1"]').addClass('card-active');
+  }
 
-$('.tabs-russia').on('click', function() {
-  $('.js-tabs-link').removeClass('active');
-  $(this).addClass('active');
+  if ($(this).hasClass('tabs-russia')) {
+    $('.tabs-content__link[data-path="russia-author-1"]').addClass('tabs-content__link--active');
+    $('.bio__wrapper[data-target="russia-author-1"]').addClass('card-active');
+  }
 
-  $('.tabs-content__link[data-path="russia-author-1"]').addClass('tabs-content__link--active');
-  $('.bio__wrapper').removeClass('card-active');
-  let target = $('.bio__wrapper[data-target="russia-author-1"]');
-  $(target).addClass('card-active');
-})
+  if ($(this).hasClass('tabs-belgium')) {
+    $('.tabs-content__link[data-path="belgium-author-1"]').addClass('tabs-content__link--active');
+    $('.bio__wrapper[data-target="belgium-author-1"]').addClass('card-active');
+  }
 
-$('.tabs-belgium').on('click', function() {
-  $('.js-tabs-link').removeClass('active');
-  $(this).addClass('active');
-
-  $('.tabs-content__link[data-path="belgium-author-1"]').addClass('tabs-content__link--active');
-  $('.bio__wrapper').removeClass('card-active');
-  let target = $('.bio__wrapper[data-target="belgium-author-1"]');
-  $(target).addClass('card-active');
-})
-
-$('.tabs-italy').on('click', function() {
-  $('.js-tabs-link').removeClass('active');
-  $(this).addClass('active');
-
-  $('.tabs-content__link[data-path="italy-author-1"]').addClass('tabs-content__link--active');
-  $('.bio__wrapper').removeClass('card-active');
-  let target = $('.bio__wrapper[data-target="italy-author-1"]');
-  $(target).addClass('card-active');
-})
-
-$('.tabs-france').on('click', function() {
-  $('.js-tabs-link').removeClass('active');
-  $(this).addClass('active');
-
-  $('.tabs-content__link[data-path="france-author-1"]').addClass('tabs-content__link--active');
-  $('.bio__wrapper').removeClass('card-active');
-  let target = $('.bio__wrapper[data-target="france-author-1"]');
-  $(target).addClass('card-active');
+  if ($(this).hasClass('tabs-italy')) {
+    $('.tabs-content__link[data-path="italy-author-1"]').addClass('tabs-content__link--active');
+    $('.bio__wrapper[data-target="italy-author-1"]').addClass('card-active');
+  }
 })
 
 const authorEl = document.querySelectorAll('.tabs-content__link');
