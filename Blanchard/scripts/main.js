@@ -1,4 +1,4 @@
-$('a, h3').on('click', function() {
+$('*').on('click', function() {
   $(this).removeClass('not-outlined');
   $(this).addClass('not-outlined');
 })

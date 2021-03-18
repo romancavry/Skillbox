@@ -1519,16 +1519,15 @@ body {
 
   background-color: #fff;
   color: var(--mainPurple);
-  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  transition: color .3s ease-in-out,
+    background-color .3s ease-in-out;
 }
 
 .events__btn:hover {
   background-color: #9D5CD0;
   color: #fff;
-  border: 3px solid #D1A9F0;
-  padding: 16px 35px;
   transition: all .3s ease-in-out;
-}
+  }
 
 .events__btn::after {
   content: '';
@@ -1892,6 +1891,7 @@ body {
   position: absolute;
   top: 8px;
   right: 2px;
+  z-index: 1000;
 
   width: 16px;
   height: 16px;
