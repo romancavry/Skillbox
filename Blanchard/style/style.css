@@ -693,14 +693,20 @@ body {
 
 .hero__swiper-slide .hero1 {
   background-image: url(../img/hero1-desktop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__swiper-slide .hero2 {
   background-image: url(../img/hero2-desktop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__swiper-slide .hero3 {
   background-image: url(../img/hero3-desktop.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* About */
@@ -2305,11 +2311,11 @@ body {
   }
 
   .swiper-container {
-    max-width: 1024px;
+    /* max-width: 1024px; */
   }
 
   .hero {
-    transform: translateX(-9px);
+    /* transform: translateX(-9px); */
   }
 
   .hero__inner {
@@ -2323,10 +2329,13 @@ body {
   .hero__swiper-slide {
     max-height: 768px;
   }
-
-  .hero__swiper-slide .hero1 {background: url(../img/1920-hero-swiper1.jpg);}
-  .hero__swiper-slide .hero2 {background: url(../img/1920-hero-swiper2.jpg);}
-  .hero__swiper-slide .hero3 {background: url(../img/1920-hero-swiper3.jpg);}
+/*
+  .hero__swiper-slide .hero1 {background: url(../img/1920-hero-swiper1.jpg);
+  background-position: center;}
+  .hero__swiper-slide .hero2 {background: url(../img/1920-hero-swiper2.jpg);
+    background-position: center;}
+  .hero__swiper-slide .hero3 {background: url(../img/1920-hero-swiper3.jpg);
+    background-position: center;} */
 
   .hero__inner {
     padding-bottom: 115px;
@@ -2607,14 +2616,9 @@ body {
   }
 
   /* Hero */
-  .hero__swiper-container {
-    max-width: 768px;
-    transform: translateX(9px);
-  }
-
-  .hero__swiper-slide .hero1 {background: url(../img/768-hero-swiper1.jpg);}
-  .hero__swiper-slide .hero2 {background: url(../img/768-hero-swiper2.jpg);}
-  .hero__swiper-slide .hero3 {background: url(../img/768-hero-swiper3.jpg);}
+  .hero__swiper-slide .hero1 {background: url(../img/768-hero-swiper1.jpg) center cover;}
+  .hero__swiper-slide .hero2 {background: url(../img/768-hero-swiper2.jpg) center cover;}
+  .hero__swiper-slide .hero3 {background: url(../img/768-hero-swiper3.jpg) center cover;}
 
   .hero__fixed {
     left: -5px;
@@ -2934,17 +2938,13 @@ body {
     padding-top: 75px;
   }
 
-  .hero__swiper-container {
-    max-width: 320px;
-  }
-
   .hero__swiper-slide {
     max-height: 356px;
   }
 
-  .hero__swiper-slide .hero1 {background: url(../img/320-hero-swiper1.png) center no-repeat;}
-  .hero__swiper-slide .hero2 {background: url(../img/320-hero-swiper2.png) center no-repeat;}
-  .hero__swiper-slide .hero3 {background: url(../img/320-hero-swiper3.png) center no-repeat;}
+  .hero__swiper-slide .hero1 {background: url(../img/320-hero-swiper1.png) center cover;}
+  .hero__swiper-slide .hero2 {background: url(../img/320-hero-swiper2.png) center cover;}
+  .hero__swiper-slide .hero3 {background: url(../img/320-hero-swiper3.png) center cover;}
 
   .hero__btn {
     padding: 11px 16px 15px 19px;
@@ -3001,9 +3001,9 @@ body {
   }
 
   /* Gallery */
-  .gallery {
-    background: url(../img/320-gallery-background.png) top no-repeat;
-  }
+  /* .gallery {
+    background: url(../img/320-gallery-background.png) top;
+  } */
 
   .gallery__inner {
     padding-top: 50px;
@@ -3213,9 +3213,9 @@ body {
   }
 
   /* Books */
-  .books {
+  /* .books {
     background: url(../img/320-books-background.png) top;
-  }
+  } */
 
   .books__title {
     margin-bottom: 12px;
