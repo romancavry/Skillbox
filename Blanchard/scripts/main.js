@@ -120,6 +120,12 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
       spaceBetween: 34,
     },
 
+    1270: {
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      spaceBetween: 34,
+    },
+
     1920: {
       slidesPerView: 3,
       slidesPerColumn: 2,
@@ -260,6 +266,15 @@ var mySwiper = new Swiper('.events__swiper', {
   },
 })
 
+const eventsItems = $('.events__item');
+let eventsItem3 = eventsItems[3];
+
+if($('.events__inner').width() >= 1268) {
+  $(eventsItem3).addClass('active');
+} else if ($('.events__inner').width() < 1268) {
+  $(eventsItem3).removeClass('active');
+}
+
 // Books
 var mySwiper = new Swiper('.books__swiper', {
   loop: true,
@@ -273,6 +288,11 @@ var mySwiper = new Swiper('.books__swiper', {
 
     1024: {
       slidesPerView: 2,
+      spaceBetween: 50,
+    },
+
+    1180: {
+      slidesPerView: 3,
       spaceBetween: 50,
     },
 
