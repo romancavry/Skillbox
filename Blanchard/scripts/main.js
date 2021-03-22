@@ -259,6 +259,7 @@ $( ".checkbox-label__input" ).focusout(function() {
 var mySwiper = new Swiper('.events__swiper', {
   loop: true,
   slidesPerView: 1,
+  // spaceBetween: 0,
 
   pagination: {
     el: '.events__dots',

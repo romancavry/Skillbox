@@ -2027,7 +2027,7 @@ body {
   padding-top: 121px;
   padding-right: 67px;
   padding-bottom: 105px;
-  padding-left: calc(  (100% - 1604px)/2 );
+  padding-left: calc(  (100% - (100vw - 100px))/2 );
   border-right: 1px solid #cacaca;
 }
 
@@ -2600,7 +2600,7 @@ body {
   }
 
   .contacts__leftside-container {
-    padding-left: calc( (100% - 925px)/2 );
+    padding-left: calc( (100% - (100vw - 100px))/2 );
   }
 
   .contacts-form__input {
@@ -2647,7 +2647,8 @@ body {
 
 @media screen and (max-device-width: 1024px) {
   .container {
-    max-width: 666px;
+    /* max-width: 666px; */
+    max-width: calc(100vw - 100px);
   }
 
   /* Hero */
@@ -2777,6 +2778,7 @@ body {
 
   .tabs-content__wrapper {
     margin-bottom: 50px;
+    width: 100%;
   }
 
   .tabs__item:not(:last-child) {
@@ -2784,7 +2786,8 @@ body {
   }
 
   .tabs-content__bio {
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 100%;
   }
 
   .bio__img {
@@ -2918,7 +2921,7 @@ body {
     padding-top: 122px;
     padding-right: 42px;
     padding-bottom: 100px;
-    padding-left: calc( (100% - 666px)/2);
+    padding-left: calc( (100% - (100vw - 100px))/2);
   }
 
   .address__title {
@@ -2933,7 +2936,8 @@ body {
 
 @media screen and (max-device-width: 768px) {
   .container {
-    max-width: 290px;
+    /* max-width: 290px; */
+    max-width: calc(100vw - 30px);
   }
 
   .title {
@@ -3061,8 +3065,8 @@ body {
   }
 
   .gallery__swiper-container {
-    margin-bottom: 22px;
-    max-width: 100%;
+    margin: 0 auto 22px;
+    max-width: 290px;
   }
 
   .gallery__swiper-wrapper {
@@ -3212,9 +3216,14 @@ body {
 
   .events__swiper {
     display: block;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
+    max-width: 290px;
     max-height: 683px;
     overflow: hidden;
+  }
+
+  .events__item {
+    margin-right: 0 !important;
   }
 
   .events__item:nth-child(2n) {
@@ -3364,6 +3373,7 @@ body {
 
   .books__mobile-list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -3372,9 +3382,10 @@ body {
     max-width: 130px;
   }
 
+  /*
   .books__mobile-item:nth-child(2n) {
     margin-left: 30px;
-  }
+  } */
 
   .books__item-img {
     margin-bottom: 7px;
@@ -3435,6 +3446,14 @@ body {
 
   .popup3::after {
     left: 87%;
+  }
+
+  .popup2 {
+    left: -268px;
+  }
+
+  .popup2::after {
+    left: 92%;
   }
 
   .tooltip2 {
