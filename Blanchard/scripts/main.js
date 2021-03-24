@@ -270,9 +270,10 @@ var mySwiper = new Swiper('.events__swiper', {
 const eventsItems = $('.events__item');
 let eventsItem3 = eventsItems[3];
 
-if($('.events__inner').width() >= 1268) {
+if($('.events__inner').width() >= 1268 && $(window).width() < 1920) {
   $(eventsItem3).addClass('active');
-} else if ($('.events__inner').width() < 1268) {
+}
+if ($('.events__inner').width() < 1268) {
   $(eventsItem3).removeClass('active');
 }
 
