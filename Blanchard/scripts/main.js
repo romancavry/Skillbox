@@ -103,18 +103,18 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
 
   breakpoints: {
      // больше или равен 320
-    320: {
+    321: {
       slidesPerView: 1,
       slidesPerColumn: 1,
     },
 
-    768: {
+    769: {
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34,
     },
 
-    1024: {
+    1025: {
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 34,
@@ -126,7 +126,7 @@ var mySwiper = new Swiper('.gallery__swiper-container', {
       spaceBetween: 34,
     },
 
-    1920: {
+    1921: {
       slidesPerView: 3,
       slidesPerColumn: 2,
       spaceBetween: 50,
@@ -259,7 +259,6 @@ $( ".checkbox-label__input" ).focusout(function() {
 var mySwiper = new Swiper('.events__swiper', {
   loop: true,
   slidesPerView: 1,
-  // spaceBetween: 0,
 
   pagination: {
     el: '.events__dots',
@@ -282,13 +281,13 @@ var mySwiper = new Swiper('.books__swiper', {
   loop: true,
 
   breakpoints: {
-    768: {
+    767: {
       slidesPerView: 2,
       spaceBetween: 34,
-      slidesOffsetBefore: 55,
+      // slidesOffsetBefore: 55,
     },
 
-    1024: {
+    1025: {
       slidesPerView: 2,
       spaceBetween: 50,
     },
@@ -298,7 +297,7 @@ var mySwiper = new Swiper('.books__swiper', {
       spaceBetween: 50,
     },
 
-    1919: {
+    1921: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
@@ -339,16 +338,16 @@ var mySwiper = new Swiper('.partners__swiper-container', {
       spaceBetween: 0,
     },
 
-    768: {
+    769: {
       slidesPerView: 2,
       spaceBetween: 34,
     },
 
-    1024: {
+    1025: {
       slidesPerView: 2,
     },
 
-    1919: {
+    1921: {
       slidesPerView: 3,
     },
   },
