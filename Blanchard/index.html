@@ -42,7 +42,7 @@
 
           <a href="#" class="header-enter">Войти</a>
           <button class="header__burger"></button>
-          <form action="" class="header__search">
+          <form action="#" class="header__search">
             <button class="header__search-btn"></button>
             <input type="text" class="header__search-input">
           </form>
@@ -124,7 +124,7 @@
             </li>
           </ul> <!-- widger__list -->
 
-          <form action="" class="widget__search">
+          <form action="#" class="widget__search">
             <button class="widget__search-btn"></button>
             <input type="search" class="widget__search-input"  placeholder="Поиск по сайту">
           </form>
@@ -137,11 +137,13 @@
     <section class="hero">
       <div class="hero__text-container">
         <div class="container">
-          <div aria-label="Следующая картинка" class="hero__inner">
+          <div class="hero__inner">
             <div class="hero__text">
               <h2 class="hero__title">Прикоснитесь к прекрасному</h2>
               <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-              <button class="hero__btn hover_effect" href="#contacts">Подписаться на рассылку</button>
+              <form action="#contacts">
+                <button class="hero__btn hover_effect">Подписаться на рассылку</button>
+              </form>
             </div>
           </div>
         </div>
@@ -233,7 +235,7 @@
                     <source srcset="./img/1920-gallery-swiper4.jpg" media="(min-width: 1023px)">
                     <source srcset="./img/768-gallery-swiper4.png" media="(min-width: 767px)">
                     <source srcset="./img/320-gallery-swiper4.png" media="(min-width: 319px)">
-                    <img src="./img/gallery-swiper4-desktop.jpg">
+                    <img src="./img/gallery-swiper4-desktop.jpg" alt="Picture4">
                   </picture>
                   <div class="gallery__swiper-slide--clicked"></div>
                 </div>
@@ -475,7 +477,7 @@
                     <source srcset="./img/1920-gallery-swiper28.jpg" media="(min-width: 1023px)">
                     <source srcset="./img/768-gallery-swiper28.png" media="(min-width: 767px)">
                     <source srcset="./img/320-gallery-swiper28.png" media="(min-width: 319px)">
-                    <img src="./img/gallery-swiper28-desktop.jpg">
+                    <img src="./img/gallery-swiper28-desktop.jpg" alt="Picture28">
                   </picture>
                   <div class="gallery__swiper-slide--clicked"></div>
                 </div>
@@ -512,11 +514,35 @@
           <h2 class="title catalogue__title">Каталог</h2>
           <nav class="catalogue__tabs-nav">
             <ul class="tabs__list">
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-france js-tabs-link tabs__link--active-france active" href="#accordion-france" aria-label="Франция"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-germany js-tabs-link tabs__link--active-germany" href="#accordion-germany" aria-label="Германия"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-italy js-tabs-link tabs__link--active-italy" href="#accordion-italy" aria-label="Италия"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-russia js-tabs-link tabs__link--active-russia" href="#accordion-russia" aria-label="Россия"></button></li>
-              <li class="tabs__item"><button class="tabs__link hover_effect tabs-belgium js-tabs-link tabs__link--active-belgium" href="#accordion-belgium" aria-label="Бельгия"></button></li>
+              <li class="tabs__item">
+                <form action="#accordion-france" class="accordion__btn-form">
+                  <button class="tabs__link hover_effect tabs-france js-tabs-link tabs__link--active-france active" aria-label="Франция"></button>
+                </form>
+              </li>
+
+              <li class="tabs__item">
+                <form action="#accordion-germany" class="accordion__btn-form">
+                  <button class="tabs__link hover_effect tabs-germany js-tabs-link tabs__link--active-germany" aria-label="Германия"></button>
+                </form>
+              </li>
+
+              <li class="tabs__item">
+                <form action="#accordion-italy" class="accordion__btn-form">
+                  <button class="tabs__link hover_effect tabs-italy js-tabs-link tabs__link--active-italy" aria-label="Италия"></button>
+                </form>
+              </li>
+
+              <li class="tabs__item">
+                <form action="#accordion-russia" class="accordion__btn-form">
+                  <button class="tabs__link hover_effect tabs-russia js-tabs-link tabs__link--active-russia" aria-label="Россия"></button>
+                </form>
+              </li>
+
+              <li class="tabs__item">
+                <form action="#accordion-belgium" class="accordion__btn-form">
+                  <button class="tabs__link hover_effect tabs-belgium js-tabs-link tabs__link--active-belgium" aria-label="Бельгия"></button>
+                </form>
+              </li>
             </ul>
           </nav>
 
@@ -1905,7 +1931,7 @@
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Музей им. Щусева</p>
-                <time class="item-subtitle__date">с 20 марта по 30 апреля</time>
+                <time class="item-subtitle__date" datetime="2021-03-20 12:00">с 20 марта по 30 апреля</time>
               </div>
               <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
               <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
@@ -1924,7 +1950,7 @@
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">ММОМА</p>
-                <time class="item-subtitle__date">24 марта 19:00</time>
+                <time class="item-subtitle__date"  datetime="2021-03-24 19:00">24 марта 19:00</time>
               </div>
               <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
               <p class="events__item-suptitle">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта.</p>
@@ -1943,7 +1969,7 @@
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Музей им. Щусева</p>
-                <time class="item-subtitle__date">с 20 марта по 30 апреля</time>
+                <time class="item-subtitle__date"  datetime="2021-03-20 12:00">с 20 марта по 30 апреля</time>
               </div>
               <h3 class="events__item-title">Выставка «Формация 2020»</h3>
               <p class="events__item-suptitle">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
@@ -1962,7 +1988,7 @@
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">Третьяковка на Крымском валу</p>
-                <time class="item-subtitle__date">с 30 марта по 30 апреля</time>
+                <time class="item-subtitle__date"  datetime="2021-03-30 12:00">с 30 марта по 30 апреля</time>
               </div>
               <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
               <p class="events__item-suptitle">Внезапно, реплицированные с зарубежных источников, современные исследования</p>
@@ -1982,7 +2008,7 @@
             <div class="events__item-text">
               <div class="events__item-subtitle">
                 <p class="item-subtitle__location">ММАМA</p>
-                <time class="item-subtitle__date">с 8 апреля по 20 мая</time>
+                <time class="item-subtitle__date" datetime="2021-04-08 12:00">с 8 апреля по 20 мая</time>
               </div>
               <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
               <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо</p>
@@ -2000,7 +2026,7 @@
               <div class="events__item-text">
                 <div class="events__item-subtitle">
                   <p class="item-subtitle__location">Музей им. Щусева</p>
-                  <time class="item-subtitle__date">с 20 марта по 30 апреля</time>
+                  <time class="item-subtitle__date" datetime="2021-03-20 12:00">с 20 марта по 30 апреля</time>
                 </div>
                 <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
                 <p class="events__item-suptitle">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
@@ -2308,17 +2334,17 @@
       <div class="container">
         <div class="projects__inner">
           <h2 class="title projects__title">Проекты</h2>
-          <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское &nbsp &nbsp
+          <p class="projects__text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское &nbsp;&nbsp;&nbsp;
           <span class="projects__tooltip">
             <span class="tooltip__marker hover_effect tooltip1" tabindex="0"></span>
             <span class="tooltip__popup popup1">Пример современных тенденций - современная методология разработки</span>
           </span>
-          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены &nbsp &nbsp
+          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены &nbsp;&nbsp;&nbsp;
           <span class="projects__tooltip">
             <span class="tooltip__marker hover_effect tooltip2" tabindex="0"></span>
             <span class="tooltip__popup popup2">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span>
           </span>
-          исключительно в разрезе маркетинговых и финансовых &nbsp &nbsp
+          исключительно в разрезе маркетинговых и финансовых &nbsp;&nbsp;&nbsp;
           <span class="projects__tooltip">
             <span class="tooltip__marker hover_effect tooltip3" tabindex="0"></span>
             <span class="tooltip__popup popup3">В стремлении повысить качество</span>

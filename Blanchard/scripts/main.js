@@ -55,6 +55,16 @@ $('.widget__search-input').on('focus', function() {
 });
 
 // Hero
+$('.hero__btn').click(function() {
+  $("html, body").animate({
+    scrollTop: $($(this).parent().attr("action")).offset().top + "px"
+  }, {
+    duration: 750,
+    easing: "swing"
+  });
+  return false;
+});
+
 var mySwiper = new Swiper('.hero__swiper-container', {
   loop: true,
   allowTouchMove: false,
@@ -158,7 +168,8 @@ $('.js-tabs-link').on('click', function(e) {
   $('.js-tabs-link').removeClass('active');
   $(this).addClass('active');
 
-  let href = $(this).attr('href');
+  let href = $(this).parent().attr('action');
+
   $('.tabs-content__wrapper.active').removeClass('active').removeClass('in')
   $(href).addClass('active');
 

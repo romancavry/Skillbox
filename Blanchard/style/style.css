@@ -1042,7 +1042,13 @@ body {
   display: inline-block;
   margin-top: -20px;
 
-  transform: translate(29px, -17px);}
+  transform: translate(29px, -17px);
+}
+
+.accordion__btn-form {
+  height: 100%;
+  width: 100%;
+}
 
 .tabs__list {
   display: flex;
@@ -1754,10 +1760,6 @@ body {
   margin-bottom: 30px;
 }
 
-.books-item {
-  /* max-width: 350px; */
-}
-
 .books-item__img {
   margin-bottom: 20px;
 }
@@ -1768,6 +1770,10 @@ body {
 }
 
 .books-item__title {
+  max-width: 210px;
+  max-height: 22px;
+  overflow: hidden;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -3485,11 +3491,11 @@ body {
   }
 
   .tooltip__marker {
-    right: 2px;
+    right: -1px;
   }
 
   .tooltip1 {
-    right: -1px;
+    right: 2px;
   }
 
   .partners__title {
