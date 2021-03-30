@@ -2059,13 +2059,13 @@ body {
   font-style: normal;
 }
 
-.address__title {
+.contacts__address-title {
   margin-bottom: 5px;
   font-size: 24px;
   font-weight: 600;
 }
 
-.address__subtitle {
+.contacts__address-subtitle {
   font-size: 16px;
   font-weight: 400;
 }
@@ -2944,7 +2944,7 @@ body {
     padding-left: calc( (100% - (100vw - 100px))/2);
   }
 
-  .address__title {
+  .contacts__address-title {
     margin-bottom: 2px;
   }
 
@@ -3582,14 +3582,14 @@ body {
     margin-bottom: 355px;
   }
 
-  .address__title {
+  .contacts__address-title {
     margin-bottom: 0px;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .address__subtitle {
+  .contacts__address-subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;

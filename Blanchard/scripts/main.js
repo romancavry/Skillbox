@@ -47,6 +47,8 @@ $(document).on("click", function (e) {
   }
 });
 
+$('.widget-list').attr('aria-label', 'Выбор направления');
+
 $('.widget__search-input').on('focus', function() {
   $('.widget__search-btn').addClass('widget__search-btn--hover');
   setTimeout(function(){

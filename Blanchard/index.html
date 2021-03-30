@@ -18,7 +18,8 @@
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="scripts/swiper-bundle.min.js"></script>
   <script src="scripts/choices.min.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script> -->
   <script defer src="scripts/main.js"></script>
 </head>
 <body>
@@ -57,7 +58,7 @@
             <li class="widget__list-section">
               <button class="widget-list__title">Реализм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="realizm">
-                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                <ul data-simplebar class="widget-list">
                   <li class="widget-list__item" style="background-image: url(img/widget-background-TINTORETTO.jpg);"><div class="item-wrapper"><a href="#">Тинторетто</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-FRIDRIH.jpg);"><div class="item-wrapper"><a href="#">Фридрих</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-LEONARDO.jpg);"><div class="item-wrapper"><a href="#">Леонардо</a></div></li>
@@ -73,7 +74,7 @@
             <li class="widget__list-section">
               <button class="widget-list__title">Импрессионизм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="impressionizm">
-                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                <ul data-simplebar class="widget-list">
                   <li class="widget-list__item" style="background-image: url(img/widget-background-MONE.jpg);"><div class="item-wrapper"><a href="#">Моне</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-SISLEY.jpg);"><div class="item-wrapper"><a href="#">Сислей</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-MANE.jpg);"><div class="item-wrapper"><a href="#">Мане</a></div></li>
@@ -88,7 +89,7 @@
             <li class="widget__list-section">
               <button class="widget-list__title">Постимпрессионизм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="post-impressionizm">
-                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                <ul data-simplebar class="widget-list">
                   <li class="widget-list__item" style="background-image: url(img/widget-background-VANGOG.jpg);"><div class="item-wrapper"><a href="#">Ван Гог</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-SEZANN.jpg);"><div class="item-wrapper"><a href="#">Сезанн</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-GOGEN.jpg);"><div class="item-wrapper"><a href="#">Гоген</a></div></li>
@@ -100,7 +101,7 @@
             <li class="widget__list-section">
               <button class="widget-list__title">Авангард<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="avangard">
-                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                <ul data-simplebar class="widget-list">
                   <li class="widget-list__item" style="background-image: url(img/widget-background-KANDINSKIY.jpg);"><div class="item-wrapper"><a href="#">Кандинский</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-MARINETTI.jpg);"><div class="item-wrapper"><a href="#">Маринетти</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-MALEVICH.jpg);"><div class="item-wrapper"><a href="#">Малевич</a></div></li>
@@ -116,7 +117,7 @@
             <li class="widget__list-section">
               <button class="widget-list__title">Футуризм<span class="widget__for-icon"></span></button>
               <div class="widget-list__wrapper not-active" data-target="futurizm">
-                <ul data-simplebar class="widget-list" aria-label="Выбор направления">
+                <ul data-simplebar class="widget-list">
                   <li class="widget-list__item" style="background-image: url(img/widget-background-KAPPA.jpg);"><div class="item-wrapper"><a href="#">Карра</a></div></li>
                   <li class="widget-list__item" style="background-image: url(img/widget-background-PRATELLA.jpg);"><div class="item-wrapper"><a href="#">Прателла</a></div></li>
                 </ul>
@@ -2387,8 +2388,8 @@
       <div class="contacts__inner">
         <div class="contacts__leftside-container">
           <address class="contacts__address">
-            <h3 class="address__title">Шоурум №4</h3>
-            <p class="address__subtitle">Покровский бульвар, дом 24, строение 3</p>
+            <p class="contacts__address-title">Шоурум №4</p>
+            <p class="contacts__address-subtitle">Покровский бульвар, дом 24, строение 3</p>
           </address>
           <h4 class="form__title form-title__order">Заказать обратный звонок</h4>
           <form action="#" class="contacts-form hover_effect js-contacts-form">
@@ -2419,7 +2420,7 @@
           </div>
         </div>
 
-        <div class="contacts__rightside-container" id="map" aria-label="Карта"></div>
+        <div class="contacts__rightside-container" id="map"></div>
       </div>
     </section>
   </main>
